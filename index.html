@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scaleable=no, width=device-width" />
+        <title>LCN:Legacy Mobile</title>
+        <link rel="stylesheet" href="css/jquery.mobile.min.css" type="text/css" media="screen" />
+        <script src="js/phonegap.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.mobile.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/system.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="mainMenu" data-role="page">
+            <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
+            <div data-role="content">        
+                Current Version: 1.0.3<br>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="javascript:loadVersionNotes();">Version Notes</a></li>
+                    <li><a href="javascript:loadItemList();">Items</a></li>
+                    <li>Monsters</li>
+                    <li>Enviroments</li>
+                    <li>NPCs</li>  
+                    <li>About</li>
+                </ul>        
+            </div>            
+        </div>            
+        <div id="versionNotes" data-role="page">
+            <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>
+            <div data-role="content">
+                <b>Player:</b><br>
+                &nbsp;&nbsp;Players can no longer repeatedly jump after touching the top of the world<br>
+                <b>Items:</b><br>
+                &nbsp;&nbsp;Black Lens (NEW)<br>
+                &nbsp;&nbsp;Sunglasses (NEW)<br>
+                &nbsp;&nbsp;Jungle Armor (Replaces Cobalt Armor)<br>
+                &nbsp;&nbsp;Hidden Caster Item (NEW)
+                &nbsp;&nbsp;Fixed a bug that prevented Underground Jundle Seeds from spawneing
+            </div>            
+        </div>
+        <!--End versionNotes-->
+        <div id="itemList" data-role="page">
+            <div data-role="header"><h1>Items</h1></div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" id="itemlv" data-filter="true">
+                    
+                </ul>
+            </div>
+        </div>
+        <!--End itemList-->
+        <div id="item" data-role="page">
+            <div data-role="header"><h1><span id="item_name"></span></h1></div>
+            <div data-role="content">
+                <div align="center"><img id="item_img" src="" width="64" height="64"/></div>
+                <table>
+                    <tr><th colspan=2>Tool Stats</th></tr>
+                    <tr><th>Damage</th><td><span id="item_dmg"></span></td></tr>
+                    <tr><th>Power</th><td><span id="item_power"></span></td></tr>
+                    <tr><th>Placeable</th><td><span id="item_placeable"></span></td></tr>
+                    <tr><th>Max Stack</th><td><span id="item_max_stack"></span></td></tr>
+                    <tr><th>Speed</th><td><span id="item_speed"></span></td></tr>
+                </table>
+                <table id='item_craft_table'>
+                    <thead>
+                        <tr><th colspan="2">Crafting</th></tr>
+                        <tr><th colspan="2">Tool</th></tr>
+                        <tr><td colspan="2"><span id="item_craft_tool"></span></td></tr>
+                        <tr><th>Ingredient(s)</th><th>Amount</th></tr>
+                    </thead>
+                    <tbody id="item_craft">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+
