@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scaleable=no, width=device-width" />
+        <title>LCN:Legacy Mobile</title>
+        <link rel="stylesheet" href="css/jquery.mobile.min.css" type="text/css" media="screen" />
+        <script src="js/phonegap.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.mobile.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/system.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="mainMenu" data-role="page">
+            <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
+            <div data-role="content">        
+                Current Version: 1.0.3<br>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="javascript:loadPage('versionNotes');">Version Notes</a></li>
+                    <li><a href="javascript:loadPage('itemList');">Items</a></li>
+                    <li>Monsters</li>
+                    <li>Enviroments</li>
+                    <li>NPCs</li>  
+                    <li>About</li>
+                </ul>        
+            </div>            
+        </div>            
+        <div id="versionNotes" data-role="page">
+            <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>
+            <div data-role="content">
+                {VERSIONNOTES}
+            </div>            
+        </div>
+        <!--End versionNotes-->
+        <div id="itemList" data-role="page">
+            <div data-role="header" data-position="fixed"><h1>Items</h1></div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" id="itemlv" data-filter="true">
+                    {ITEMLIST}
+                </ul>
+            </div>
+        </div>
+        <!--End itemList-->
+        {ITEMS}
+        <!--End Items-->
+    </body>
+</html>
+
