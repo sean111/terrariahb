@@ -4,5 +4,9 @@ if (!window.console) {
     window.console.log = function(){};
 }
 function loadPage(id) {
-    $.mobile.changePage("#"+id);
+    $.mobile.changePage("#"+id,'slide');
 }
+
+$(document).bind("mobileinit", function(){
+    $.mobile.defaultTransition='none';
+});
