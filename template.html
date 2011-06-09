@@ -8,6 +8,21 @@
         <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/system.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.mobile.min.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+            .item_stats {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .item_ingredients {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .item_image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
     <body>
         <div id="mainMenu" data-role="page">
@@ -15,8 +30,8 @@
             <div data-role="content">        
                 Current Version: 1.0.3<br>
                 <ul data-role="listview" data-inset="true">
-                    <li><a href="#versionNotes">Version Notes</a></li>
-                    <li><a href="#itemList">Items</a></li>
+                    <li><a href="javascript:loadPage('versionNotes');">Version Notes</a></li>
+                    <li><a href="javascript:loadPage('catList');">Items</a></li>
                     <li>Monsters</li>
                     <li>Enviroments</li>
                     <li>NPCs</li>  
@@ -31,14 +46,16 @@
             </div>            
         </div>
         <!--End versionNotes-->
-        <div id="itemList" data-role="page">
+        <div id="catList" data-role="page">
             <div data-role="header" data-position="fixed"><h1>Items</h1></div>
             <div data-role="content">
-                <ul data-role="listview" data-inset="true" id="itemlv" data-filter="true">
-                    {ITEMLIST}
+                <ul data-role="listview" data-inset="true" id="itemlv">
+                    {CATLIST}
                 </ul>
             </div>
         </div>
+        <!--End catList-->
+        {ITEMLIST}
         <!--End itemList-->
         {ITEMS}
         <!--End Items-->
