@@ -4,40 +4,33 @@
         <meta name="viewport" content="initial-scale=1.0, user-scaleable=no, width=device-width" />
         <title>LCN:Legacy Mobile</title>
         <link rel="stylesheet" href="css/jquery.mobile.min.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
         <script src="js/phonegap.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/system.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.mobile.min.js" type="text/javascript" charset="utf-8"></script>
-        <style>
-            .item_stats {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .item_ingredients {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .item_image {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        </style>
     </head>
     <body>
         <div id="mainMenu" data-role="page">
             <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
             <div data-role="content">        
-                Current Version: 1.0.4<br>
+                Terraria Version: 1.0.4<br>
                 <ul data-role="listview" data-inset="true">
                     <li><a href="javascript:loadPage('versionNotes');">Version Notes</a></li>
                     <li><a href="javascript:loadPage('catList');">Items</a></li>
                     <li>Monsters</li>
                     <li>Enviroments</li>
                     <li>NPCs</li>  
-                    <li>About</li>
+                    <li><a href="javascript:loadPage('about');">About</a></li>
                 </ul>        
             </div>            
+        </div>
+        <div id="about" data-role="page">
+            <div data-role="header"><h1>About</h1></div>
+            <div data-role="content">
+                <p>This application was developed using jQuery Mobile, Phonegap, PHP, mySQL and Data from the Terraria Wiki</p>
+                <p>Thank you a11111 and Dymir for helping me test the application and all of the members who keep the wiki up to date</p>
+            </div>
         </div>            
         <div id="versionNotes" data-role="page">
             <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>

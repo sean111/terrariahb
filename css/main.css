@@ -1,0 +1,37 @@
+#item_stats {
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid #000;
+	border-radius: 10px;
+	font-size: 12px;
+}
+#item_ingredients {
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid #000;
+	border-radius: 10px;
+	font-size: 12px;
+}
+.item_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#item_stats td {
+	padding: 5px;
+}
+
+#item_stats th {
+	background-color: #E4F0F7;
+	color: #063B5E;
+}
+
+#item_ingredients td {
+	padding: 5px;
+}
+
+#item_ingredients th {
+	background-color: #E4F0F7;
+	color: #063B5E;
+}
