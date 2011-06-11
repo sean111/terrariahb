@@ -28,7 +28,7 @@
         <div id="mainMenu" data-role="page">
             <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
             <div data-role="content">        
-                Current Version: 1.0.3<br>
+                Current Version: 1.0.4<br>
                 <ul data-role="listview" data-inset="true">
                     <li><a href="javascript:loadPage('versionNotes');">Version Notes</a></li>
                     <li><a href="javascript:loadPage('catList');">Items</a></li>
@@ -47,9 +47,9 @@
         </div>
         <!--End versionNotes-->
         <div id="catList" data-role="page">
-            <div data-role="header" data-position="fixed"><h1>Items</h1></div>
+            <div data-role="header"><h1>Items</h1></div>
             <div data-role="content">
-                <ul data-role="listview" data-inset="true" id="itemlv">
+                <ul data-role="listview" data-inset="false" id="itemlv">
                     {CATLIST}
                 </ul>
             </div>
