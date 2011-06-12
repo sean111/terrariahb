@@ -23,8 +23,8 @@
 }
 
 #item_stats th {
-	background-color: #E4F0F7;
-	color: #063B5E;
+	background-color: #033251;
+	color: #fff;
 }
 
 #item_ingredients td {
@@ -32,6 +32,6 @@
 }
 
 #item_ingredients th {
-	background-color: #E4F0F7;
-	color: #063B5E;
+	background-color: #033251;
+	color: #fff;
 }
