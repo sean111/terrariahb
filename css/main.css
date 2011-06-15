@@ -35,3 +35,20 @@
 	background-color: #033251;
 	color: #fff;
 }
+
+#monster_stats {
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid #000;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+#monster_stats th {
+    background-color: #033251;
+    color: #fff;
+}
+
+#monster_stats td {
+    padding: 5px;
+}
