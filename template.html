@@ -19,7 +19,7 @@
                     <li><a href="javascript:loadPage('versionNotes');">Version Notes</a></li>
                     <li><a href="javascript:loadPage('catList');">Items</a></li>
                     <li><a href="javascript:loadPage('mcatList');">Monsters</a></li>
-                    <li>Environments</li>
+                    <li><a href="javascript:loadPage('ecatList');">Environments</a></li>
                     <li>NPCs</li>  
                     <li><a href="javascript:loadPage('about');">About</a></li>
                 </ul>        
@@ -51,12 +51,21 @@
         <div id="mcatList" data-role="page">
              <div data-role="header"><h1>Monsters</h1></div>
              <div data-role="content">
-                 <ul data-role="listview" data-inset="false" id="itemlv">
+                 <ul data-role="listview" data-inset="false">
                      {MCATLIST}
                  </ul>
              </div>
-         </div>
-        <!--End mcatList-->
+         </div>         
+         <!--End mcatList-->
+         <div id='ecatList' data-role='page'>
+            <div data-role="header"><h1>Enviroments</h1></div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="false">
+                    {ECATLIST}
+                </ul>
+            </div>
+        </div>
+        <!--End ecatList-->
         {ITEMLIST}
         <!--End itemList-->
         {ITEMS}
@@ -65,6 +74,8 @@
         <!--End monsterList-->
         {MONSTERS}
         <!--End Monsters-->
+        {ENVS}
+        <!--End envs-->
     </body>
 </html>
 
