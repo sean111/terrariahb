@@ -8,5 +8,6 @@ function loadPage(id) {
 }
 
 $(document).bind("mobileinit", function(){
-    $.mobile.defaultTransition='none';
+    //$.mobile.defaultTransition='none';
+	$.fx.off=true;
 });
