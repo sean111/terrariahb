@@ -278,6 +278,7 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <li><a href="#Sandgun"><img src="img/Sandgun.png" alt="Sandgun" width='20' height='20' class='ui-li-icon' />Sandgun</a></li>
 <li><a href="#Throwing_Knife"><img src="img/Throwing_Knife.png" alt="Throwing Knife" width='20' height='20' class='ui-li-icon' />Throwing Knife</a></li>
 <li><a href="#Poisoned_Knife"><img src="img/Poisoned_Knife.png" alt="Poisoned Knife" width='20' height='20' class='ui-li-icon' />Poisoned Knife</a></li>
+<li><a href="#Wooden_Boomerang"><img src="img/Wooden_Boomerang.png" alt="Wooden Boomerang" width='20' height='20' class='ui-li-icon' />Wooden Boomerang</a></li>
 </ul>
 </div>
 </div>
@@ -387,6 +388,10 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <li><a href="#Emerald"><img src="img/Emerald.png" alt="Emerald" width='20' height='20' class='ui-li-icon' />Emerald</a></li>
 <li><a href="#Ruby"><img src="img/Ruby.png" alt="Ruby" width='20' height='20' class='ui-li-icon' />Ruby</a></li>
 <li><a href="#Diamond"><img src="img/Diamond.png" alt="Diamond" width='20' height='20' class='ui-li-icon' />Diamond</a></li>
+<li><a href="#Blinkroot"><img src="img/Blinkroot.png" alt="Blinkroot" width='20' height='20' class='ui-li-icon' />Blinkroot</a></li>
+<li><a href="#Daybloom"><img src="img/Daybloom.png" alt="Daybloom" width='20' height='20' class='ui-li-icon' />Daybloom</a></li>
+<li><a href="#Daybloom_Seeds"><img src="img/Daybloom_Seeds.png" alt="Daybloom Seeds" width='20' height='20' class='ui-li-icon' />Daybloom Seeds</a></li>
+<li><a href="#Silver_Bullet"><img src="img/Silver_Bullet.png" alt="Silver Bullet" width='20' height='20' class='ui-li-icon' />Silver Bullet</a></li>
 </ul>
 </div>
 </div>
@@ -528,6 +533,10 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <li><a href="#Top_Hat"><img src="img/Top_Hat.png" alt="Top Hat" width='20' height='20' class='ui-li-icon' />Top Hat</a></li>
 <li><a href="#Tuxedo_Pants"><img src="img/Tuxedo_Pants.png" alt="Tuxedo Pants" width='20' height='20' class='ui-li-icon' />Tuxedo Pants</a></li>
 <li><a href="#Tuxedo_Shirt"><img src="img/Tuxedo_Shirt.png" alt="Tuxedo Shirt" width='20' height='20' class='ui-li-icon' />Tuxedo Shirt</a></li>
+<li><a href="#Familiar_Clothes">Familiar Clothes</a></li>
+<li><a href="#Mime_Mask"><img src="img/Mime_Mask.png" alt="Mime Mask" width='20' height='20' class='ui-li-icon' />Mime Mask</a></li>
+<li><a href="#The_Doctors_Shirt"><img src="img/The_Doctor's_Shirt.png" alt="The Doctor's Shirt" width='20' height='20' class='ui-li-icon' />The Doctor's Shirt</a></li>
+<li><a href="#The_Doctors_Pants"><img src="img/The_Doctor's_Pants.png" alt="The Doctor's Pants" width='20' height='20' class='ui-li-icon' />The Doctor's Pants</a></li>
 </ul>
 </div>
 </div>
@@ -1084,6 +1093,17 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <div data-role='content'>
 <img src="img/Diving_Helmet.png" alt="Diving Helmet" class='item_image'/>
 <p>They have a 2% (1:50) chance of being dropped by Sharks. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Greatly extends underwater breathing</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>2</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>2 {{sc</td></tr>
+</table>
 </div>
 </div>
 <div id="Vile_Powder" data-role='page'>
@@ -2140,6 +2160,15 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 Throwing knives are affected by gravity - they will arc similarly to Shurikens when thrown. When they hit a wall, there is a chance that they will break. If they do not break, they can be picked up again.
 
 Throwing knives are considered a compromise between the Shuriken (which can hit many enemies with one weapon) and Bones (which can only hit one). </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>12</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Use Time</td><td>Very Fast</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>50 {{cc</td></tr>
+</table>
 </div>
 </div>
 <div id="Poisoned_Knife" data-role='page'>
@@ -2147,6 +2176,32 @@ Throwing knives are considered a compromise between the Shuriken (which can hit 
 <div data-role='content'>
 <img src="img/Poisoned_Knife.png" alt="Poisoned Knife" class='item_image'/>
 <p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>15</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Use Time</td><td>very fast</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>12 {{cc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Throwing_Knife.png" alt="Throwing Knife" />Throwing Knife</td><td>20</td></tr><tr><td><img src="img/Vile_Powder.png" alt="Vile Powder" />Vile Powder</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x20</td></tr></table></div>
+</div>
+<div id="Wooden_Boomerang" data-role='page'>
+<div data-role='header'><h1>Wooden Boomerang</h1></div>
+<div data-role='content'>
+<img src="img/Wooden_Boomerang.png" alt="Wooden Boomerang" class='item_image'/>
+<p>While not very powerful and not as fast as other boomerangs, the Wooden Boomerang is a very good weapon for new characters to use before they make their first bow, or even after that, find their first gun. The range on it is good for picking off Demon Eyes, and can help newcomers survive much more easily. It's recommended that new characters pick one up right away.
+
+
+</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>7</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>false</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>10 {{sc</td></tr>
+</table>
 </div>
 </div>
 <div id="Alchemy_Station" data-role='page'>
@@ -3321,13 +3376,11 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <img src="img/Worm_Food.png" alt="Worm Food" class='item_image'/>
 <p>Uses this will summon the Eater of Worlds when on Corruption. Using this off of Corruption will cause 10,000 points of dmg instantly killing the player. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>May attract giant worms.</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>45</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Demon_Altar.png" alt="Demon Altar" />Demon Altar</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Vile_Powder.png" alt="Vile Powder" />Vile Powder</td><td>30</td></tr><tr><td><img src="img/Rotten_Chunk.png" alt="Rotten Chunk" />Rotten Chunk</td><td>15</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -3583,6 +3636,51 @@ A cactus deals 10 damage to you if you touch one. </p>
 <div data-role='content'>
 <img src="img/Diamond.png" alt="Diamond" class='item_image'/>
 <p>Sells for 60 Silver</p>
+</div>
+</div>
+<div id="Blinkroot" data-role='page'>
+<div data-role='header'><h1>Blinkroot</h1></div>
+<div data-role='content'>
+<img src="img/Blinkroot.png" alt="Blinkroot" class='item_image'/>
+<p>Blinkroot appears as a cluster of pulsing, grey and yellow fungus. It grows in natural caverns underground and can be cut with virtually any weapon or tool. 1-3 Blinkroot Seeds will drop if the Blinkroot is cut while it is glowing. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+</table>
+</div>
+</div>
+<div id="Daybloom" data-role='page'>
+<div data-role='header'><h1>Daybloom</h1></div>
+<div data-role='content'>
+<img src="img/Daybloom.png" alt="Daybloom" class='item_image'/>
+<p>Daybloom appears as a small, yellow flower with a straight stem. It can grow in normal grass and can be cut with virtually any weapon or tool. If cut during the day 1-3 Daybloom Seeds will be dropped.
+
+</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+</table>
+</div>
+</div>
+<div id="Daybloom_Seeds" data-role='page'>
+<div data-role='header'><h1>Daybloom Seeds</h1></div>
+<div data-role='content'>
+<img src="img/Daybloom_Seeds.png" alt="Daybloom Seeds" class='item_image'/>
+<p>They can be found when cutting down Daybloom flowers growing in grass or Clay Pots. Daybloom Seeds can be placed in empty Clay Pots or planted in grass (like Acorns) and grown into additional, harvestable Daybloom.
+
+Daybloom takes a long time to grow, as much 2 in-game days if you're unlucky, so if you wish to have a renewable supply of Daybloom, you're going to need plenty of Clay Pots and Daybloom Seeds. If you try and harvest potted Daybloom before the yellow flower appears, it's not a waste: although you will rarely get Daybloom, Daybloom Seeds are still quite likely to drop for you. </p>
+</div>
+</div>
+<div id="Silver_Bullet" data-role='page'>
+<div data-role='header'><h1>Silver Bullet</h1></div>
+<div data-role='content'>
+<img src="img/Silver_Bullet.png" alt="Silver Bullet" class='item_image'/>
+<p>Silver Bullet is an ammunition item used by any gun that can use Musket Balls. It that was introduced in the 1.0.5 patch. They can be found in chests and the Arms Dealer sells these during Blood Moons only. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Ammunition</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+</table>
 </div>
 </div>
 <div id="Anklet_of_the_Wind" data-role='page'>
@@ -5290,6 +5388,59 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silk.png" alt="Silk" />Silk</td><td>20</td></tr><tr><td><img src="img/Black_Dye.png" alt="Black Dye" />Black Dye</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
+<div id="Familiar_Clothes" data-role='page'>
+<div data-role='header'><h1>Familiar Clothes</h1></div>
+<div data-role='content'>
+<p>This is a vanity set that will make the character look like thehy do without armor on. 
+
+I didn't add images for these items since they change based on your character. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Name</td><td>Familiar Clothes</td></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Vanity</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>3{{gc</td></tr>
+</table>
+</div>
+</div>
+<div id="Mime_Mask" data-role='page'>
+<div data-role='header'><h1>Mime Mask</h1></div>
+<div data-role='content'>
+<img src="img/Mime_Mask.png" alt="Mime Mask" class='item_image'/>
+<p>Mime Mask is a vanity item equipped on the Social Helmet Slot. It is sold by the Clothier NPC during a certain moon phase</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Name</td><td>Mime Mask</td></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Vanity</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Body slot</td><td>Social Helmet</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>2{{gc</td></tr>
+</table>
+</div>
+</div>
+<div id="The_Doctors_Shirt" data-role='page'>
+<div data-role='header'><h1>The Doctor's Shirt</h1></div>
+<div data-role='content'>
+<img src="img/The_Doctor's_Shirt.png" alt="The Doctor's Shirt" class='item_image'/>
+<p>The Doctor's Clothes is a set of vanity items introduced in 1.0.5 patch, made up of the The Doctor's Shirt and The Doctor's Pants. They can be bought from the Clothier NPC during the night after a full moon. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Vanity</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Body Slot</td><td>Social Shirt</td></tr>
+<tr><td style='font-weight: bold;'>Tooltop</td><td>Equipped in social slot. No stats will be gained.</td></tr>
+</table>
+</div>
+</div>
+<div id="The_Doctors_Pants" data-role='page'>
+<div data-role='header'><h1>The Doctor's Pants</h1></div>
+<div data-role='content'>
+<img src="img/The_Doctor's_Pants.png" alt="The Doctor's Pants" class='item_image'/>
+<p>The Doctor's Clothes is a set of vanity items introduced in 1.0.5 patch, made up of the The Doctor's Shirt and The Doctor's Pants. They can be bought from the Clothier NPC during the night after a full moon. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Vanity</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Body Slot</td><td>Social Pants</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Equipped in social slot. No stats will be gained. </td></tr>
+</table>
+</div>
+</div>
 <div id="Lesser_Healing_Potion" data-role='page'>
 <div data-role='header'><h1>Lesser Healing Potion</h1></div>
 <div data-role='content'>
@@ -5449,7 +5600,7 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 <tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Feather.png" alt="Feather" />Feather</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td><img src="img/Feather.png" alt="Feather" />Feather</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Gravitation_Potion" data-role='page'>
 <div data-role='header'><h1>Gravitation Potion</h1></div>
@@ -5464,7 +5615,7 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Fireblossom.png" alt="Fireblossom" />Fireblossom</td><td>1</td></tr><tr><td><img src="img/Deathweed.png" alt="Deathweed" />Deathweed</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Feather.png" alt="Feather" />Feather</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Fireblossom.png" alt="Fireblossom" />Fireblossom</td><td>1</td></tr><tr><td><img src="img/Deathweed.png" alt="Deathweed" />Deathweed</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td><img src="img/Feather.png" alt="Feather" />Feather</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Invisibility_Potion" data-role='page'>
 <div data-role='header'><h1>Invisibility Potion</h1></div>
@@ -5478,7 +5629,7 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Ironskin_Potion" data-role='page'>
 <div data-role='header'><h1>Ironskin Potion</h1></div>
@@ -5491,7 +5642,7 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Iron_Ore.png" alt="Iron Ore" />Iron Ore</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Iron_Ore.png" alt="Iron Ore" />Iron Ore</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Mana_Regeneration_Potion" data-role='page'>
 <div data-role='header'><h1>Mana Regeneration Potion</h1></div>
@@ -5506,7 +5657,7 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Obsidian_Skin_Potion" data-role='page'>
 <div data-role='header'><h1>Obsidian Skin Potion</h1></div>
@@ -5536,7 +5687,7 @@ Obsidian Skin Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Spelunker_Potion" data-role='page'>
 <div data-role='header'><h1>Spelunker Potion</h1></div>
@@ -5549,7 +5700,7 @@ Obsidian Skin Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td><img src="img/Gold_Ore.png" alt="Gold Ore" />Gold Ore</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td><img src="img/Gold_Ore.png" alt="Gold Ore" />Gold Ore</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Water_Walking_Potion" data-role='page'>
 <div data-role='header'><h1>Water Walking Potion</h1></div>
@@ -5577,7 +5728,7 @@ Archery Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Lens.png" alt="Lens" />Lens</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Lens.png" alt="Lens" />Lens</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Hunter_Potion" data-role='page'>
 <div data-role='header'><h1>Hunter Potion</h1></div>
@@ -5591,7 +5742,7 @@ Archery Potion </p>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Shark_Fin.png" alt="Shark Fin" />Shark Fin</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td><img src="img/Shark_Fin.png" alt="Shark Fin" />Shark Fin</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Magic_Power_Potion" data-role='page'>
 <div data-role='header'><h1>Magic Power Potion</h1></div>
@@ -5616,7 +5767,7 @@ Magic Power Potion </p>
 <tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
 <tr><td style='font-weight: bold;'>Bonus</td><td>Increased night vision</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Regeneration_Potion" data-role='page'>
 <div data-role='header'><h1>Regeneration Potion</h1></div>
@@ -5630,7 +5781,7 @@ Magic Power Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Alcehmy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Mushroom.png" alt="Mushroom" />Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Alcehmy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Daybloom.png" alt="Daybloom" />Daybloom</td><td>1</td></tr><tr><td><img src="img/Mushroom.png" alt="Mushroom" />Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Swiftness_Potion" data-role='page'>
 <div data-role='header'><h1>Swiftness Potion</h1></div>
@@ -5644,7 +5795,7 @@ Magic Power Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Cactus.png" alt="Cactus" />Cactus</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Blinkroot.png" alt="Blinkroot" />Blinkroot</td><td>1</td></tr><tr><td><img src="img/Cactus.png" alt="Cactus" />Cactus</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 
         <!--End Items-->
@@ -5695,6 +5846,8 @@ Magic Power Potion </p>
 <li><a href="#Shark"><img src="img/Shark.png" alt="Shark" width='20' height='20' class='ui-li-icon' />Shark</a></li>
 <li><a href="#Blue_Jellyfish"><img src="img/Blue_Jellyfish.png" alt="Blue Jellyfish" width='20' height='20' class='ui-li-icon' />Blue Jellyfish</a></li>
 <li><a href="#Pink_Jellyfish"><img src="img/Pink_Jellyfish.png" alt="Pink Jellyfish" width='20' height='20' class='ui-li-icon' />Pink Jellyfish</a></li>
+<li><a href="#Crab"><img src="img/Crab.png" alt="Crab" width='20' height='20' class='ui-li-icon' />Crab</a></li>
+<li><a href="#Lava_Slime"><img src="img/Lava_Slime.png" alt="Lava Slime" width='20' height='20' class='ui-li-icon' />Lava Slime</a></li>
 </ul>
 </div>
 </div>
@@ -6242,6 +6395,22 @@ Drops:<br />
 Glowsticks: 1-5 100%</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Water</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Jellyfish</td></tr><tr><td style='font-weight: bold;'>Life</td><td>70</td></tr></table></div>
+</div>
+<div id="Crab" data-role='page'>
+<div data-role='header'><h1>Crab</h1></div>
+<div data-role='content'>
+<img src="img/Crab.png" alt="]" class='item_image'/>
+<p>Found in the oceans and drop coins</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Ocean</td></tr><tr><td style='font-weight: bold;'>Life</td><td>40</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>10</td></tr></table></div>
+</div>
+<div id="Lava_Slime" data-role='page'>
+<div data-role='header'><h1>Lava Slime</h1></div>
+<div data-role='content'>
+<img src="img/Lava_Slime.png" alt="]" class='item_image'/>
+<p>It gives of an orange glow like Molten armor. When killed it melts into lava, which can do a serious amount of damage to the player if he/she does not get out of the way. It also does not receive damage from lava, in fact it floats in it like other slimes float in water. It is suggested to kill Lava slimes with a ranged weapon.</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Slime</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>The Underworld</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Slime</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>28</td></tr><tr><td style='font-weight: bold;'>Life</td><td>50</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>3</td></tr></table></div>
 </div>
 <div id="Dead_Miner" data-role='page'>
 <div data-role='header'><h1>Dead Miner</h1></div>
