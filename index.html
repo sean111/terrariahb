@@ -7,12 +7,13 @@
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
 		<script src="js/libs.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/system.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.mobile.min.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
         <div id="mainMenu" data-role="page">
             <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
             <div data-role="content">        
-                Terraria Version: 1.0.4<br>
+                Terraria Version: 1.0.5<br>
                 <ul data-role="listview" data-inset="true">
                     <li><a href="#versionNotes">Version Notes</a></li>
                     <li><a href="#catList">Items</a></li>
@@ -33,102 +34,113 @@
         <div id="versionNotes" data-role="page">
             <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>
             <div data-role="content">
-                <b><u>Items</u></b><br />
+                <strong>NPCs</strong><br />
 <br />
-    Added Feature! - Social Slots. All normal armor and vanity items can be placed here to use their graphical appearance in place of equipped gear without overriding their stat gains.<br />
-    New Vanity Items - Tuxedo Shirt and Pants<br />
-    New Vanity Items - Plumber Outfit and Hat<br />
-    New Vanity Items - Hero Outfit and Hat<br />
-    New Vanity Item - Bunny Hood<br />
-    New Vanity Item - Fish Bowl<br />
-    New Vanity Item - Top Hat<br />
-    New Vanity Items - Archaeologist's Outfit and Hat<br />
-    New Vanity Item - Ninja Outfit.<br />
-    New Vanity Item - Red Hat.<br />
-    New Vanity Item - Summer Hat<br />
-    New Vanity Item - Robe<br />
-    New Vanity Item - Robot Hat<br />
-    New Vanity Item - Gold Crown<br />
-    New Item - Leather<br />
-    New Item - Green Dye<br />
-    New Item - Black Dye<br />
-    You can now wear the Jungle Rose in your hair.<br />
-    The Water Candle's enemy spawn rate increase effect now works correctly when held<br />
-    Some items that were missing 'lore text' in their tool-tips now have them.(Breathing Reed,Grappling Hook Jungle Rose.)<br />
-    Ammo items are now listed as Ammo in their tool-tip and Equipable Items that offer no stat bonus list as Vanity Items in their tool-tip. Items used in any recipe now list as Materials, in their tool-tip.<br />
-    The Magic Hat now offers 2 Defense to its wearer and the Empty Bucket now offers 1 Defense to its wearer.<br />
-    Dungeon Blocks now require at least a Nightmare Pick to mine, unless they are near the spawn location, where they can be mined by any pick.<br />
-    Phoenix Blaster has had a reduction of stats to balance better with other items of its tier.<br />
-    Gem, Mushroom and Bottle sell values have been reduced.<br />
-    Hell Forges above the rock layer can be moved with any hammer, but below require a 60% power hammer or stronger.<br />
-    Angel Statues are now more rare of a find.<br />
+8 New Enemies, find them!<br />
+Changed the way worm enemies spawn.<br />
+Bats, Hornets, and Eyeballs no longer enter water<br />
+Slimes now float in water.<br />
+Only one giant slime will appear at a time.<br />
+The Guide now seems quite knowledgeable in what an item can be made into if you show it to him.<br />
+NPC shops now sell some items on certain nights, or after certain events.<br />
+Devourers should no longer gain random other enemies as its head.<br />
+The Nurse now charges the correct amount for healing.<br />
+Bats now have a death sound effect.<br />
+Talking to the old man at night will give the player a warning now before summoning the dungeon boss.<br />
+Entering the dungeon before defeating Skeletron now spawns a new NPC  instead of Skeletron&rsquo;s head. This should fix several issues with that  event.<br />
+Enemy coin drops have been adjusted.<br />
+Man Eaters and Snatchers are no longer effected by knockback and can attack through walls.<br />
+Eater of Souls&rsquo; and Hornet AI has been improved.<br />
+Enemies now take up different amount of *slots* depending on AI style  and strength. This will help balance conditions when there are lots of  strong monsters spawned at once, such as Imps and Bone Serpents.<br />
+Fish are no longer upside-down when out of water.<br />
+Green slimes have been weakend so that start players can deal with them more easily.<br />
+Slimes and Flying enemies no longer make a splash sound when hitting water.<br />
+Items of &ldquo;Blue Rarity&rdquo; or higher no longer burn up in lava.<br />
+Burning Skull has been renamed to Cursed Skull, and given different AI.<br />
+Enemy caster&rsquo;s have had their rate of fire slowed down.<br />
+Meteor heads have less health, do more damage, and move slower.<br />
+There are now slight size variations to the Eater of Souls and the Angry Bones.<br />
+Skeletron has less defense and health.<br />
 <br />
-<b><u>NPCs</u></b><br />
 <br />
-    New NPC - Bunny<br />
-    New NPC - Goldfish (Is also an Item)<br />
-    New Enemy - Corrupt Bunny<br />
-    New Enemy - Corrupt Goldfish<br />
-    New Enemy - Piranha<br />
-    New Enemy - Harpy<br />
-    New Random Mini- Boss - King Slime<br />
-    New Enemy - Bat<br />
-    New Enemy - Jungle Bat<br />
-    New Enemy - Jungle Slime<br />
-    New Enemy - Snatcher<br />
-    New Rare Enemy - Dr. Bones<br />
-    New Rare Enemy - The Groom<br />
-    New NPC - A Clothier will now move into your town when the conditions are met.<br />
-    Enemy spawn distance has been pushed back to the maximum resolution to ensure that they will never spawn on the screen.<br />
-    Enemy spawn rates have been adjusted to account for the increased spawn distance.<br />
-    Enemy projectiles no longer drop hearts or stars when killed by the player.<br />
-    The Eater of Worlds now has Higher HP, Def and Dmg, making battling him more difficult.<br />
-    Hornets no longer appear as if they are about to flip over while flying.<br />
-    The Dead Miner is now a bit stronger.<br />
-    Tim's spawn chance has been reduced.<br />
 <br />
-<b><u>Player</u></b><br />
+<strong>Items</strong><br />
 <br />
-    Players now have 1 second of invulnerability after they spawn.<br />
-    The eat/drink animation now plays correctly.<br />
+<strong>New Feature : Buffs activated by Using Potions. Right click a buff to remove it from yourself.</strong><br />
+<strong>Over 50 new items!</strong><br />
+The Silver Short swords recipe has been corrected, it is now craftable.<br />
+Torches and candles no longer work when wet.<br />
+Destroying a placed sign while you are reading it will no longer cause your character to become frozen.<br />
+Rocket boots no longer require mana. They will provide lift for 1  second and recharge every time the player touches the ground or uses  grapple. Lift speed has been slightly increased to offset loss of long  flights. This makes the boots more viable for caster Characters.<br />
+The explosion animation for bombs is now correctly displayed in multiplayer.<br />
+There is now a message pop-up when the player receives an item.<br />
+Filled Buckets may no longer be emptied into solid ground.<br />
+Pots in the underworld now have a chance to drop new items<br />
+Handgun and Phoenix Blaster have been reduced in size.<br />
+Lowered the knockback of Muramasa.<br />
+Reduced the damage of the Blue Moon.<br />
+Flintlock Pistol and Musket have increased damage.<br />
+Only normal trees drop acorns.<br />
+Falling sand clumps are no longer carried by magic missiles/flamelash.<br />
+Jungle armor is no longer a drop. It is a craftable set.<br />
+Magic Mirror now requires mana to be used.<br />
+Harpoon and Maces now correctly show the player&rsquo;s arm animation.<br />
+The arms dealer will sell unholy arrows at night after the Eater of Worlds has been defeated.<br />
+Space Gun does more damage, but only penetrates 2 enemies.<br />
 <br />
-<b><u>World-Gen</u></b><br />
 <br />
-    Surface Jungle's are now possible on mud that is on the surface. Jungle trees will auto-grow on their own, as acorns are not usable on the jungle grass.<br />
-    Chasms are now less frequent to appear, but always have an orb.<br />
-    Mud now 'blends' graphically with dirt, rather than stone to add for a more crisp look in Jungles.<br />
-    Jungle plants now grow underwater.<br />
 <br />
-<b><u>Multiplayer</u></b><br />
+<strong>Server</strong><br />
 <br />
-    Increased client side security.<br />
-    Selecting summon items will no longer cause monsters to summon.<br />
-    Players with a name over 20 characters will now get booted from the server.<br />
-    Added some minor anti-grief protection.<br />
-    Fixed a bug that would cause the client to attempt to summon an NPC during a multiplayer game and crash.<br />
-    Added the -host command line parameter to the client.<br />
+Spam detection is less aggressive.<br />
+Increase multiplayer security.<br />
+Fixed a bug that could crash the server when the max amount of clients are connected.<br />
+Added an option to enable additional cheat protection for servers.<br />
+Servers now hibernate when no players are connected.<br />
+Blood Moons now stop correctly if time is changed to day by the server.<br />
 <br />
-<b><u>Server</u></b/><br />
 <br />
-    Improved server timing, which should help reduce lag.<br />
-    Added several new command line and config options. These are listed in serverconfig.txt<br />
-    Servers will now output to crashlog.txt before crashing, allowing for more specific bug reporting.<br />
-    Clients will now output to client-crashlog.txt before crashing, allowing for more specific bug reporting.<br />
 <br />
-<b><u>Misc.</u></b><br />
+<strong>Misc</strong><br />
 <br />
-    Screen resolutions now have limits of 800x600 minimum and 1920x1200 maximum.<br />
-    Added an option that will pause the game while talking to an NPC or opening your inventory in single player. It defaults to off.<br />
-    Added an option to automatically save the world every 10 minutes. Defaults to on.<br />
-    Added a prompt to load a world backup if the current world is corrupt.<br />
-    Added a check to determine if a world file was loaded successfully.<br />
-    Attempting to Launch the game from the Terraria.exe, will now inform you to launch via Steam rather then doing nothing at all with no indication of why.<br />
-    Backing out of the port selection screen now plays the correct sound.<br />
-    Setting options now correctly align with the center of the screen in all resolutions.<br />
-    The settings menu has been reorganized. All video related options have their own menu<br />
-    The 'Tink' sound now has a more dull sound.<br />
-    The Re-Logic splash screen, now scales correctly in other resolutions.<br />
-
+<strong>Corrected some spelling and grammar mistakes.</strong><br />
+<strong>Lighting code has been optimized to increase performance.</strong><br />
+Mud and ash now have a chance to fall like sand when struck.<br />
+World update rate has been reduced slightly.<br />
+Water now evaporates when it reaches the underworld.<br />
+Slowed the rate of plant growth.<br />
+Hardcore is now an option when creating a new player. Hardcore players are gone for good after dying.<br />
+The Jungle now has its own music track.<br />
+Vines that refused to grow longer than 1 tile in length while underwater, will now grow correctly.<br />
+Pot graphic was brightened to make it more visible.<br />
+Plants growing out of a clay pot can no longer be cut with a weapon. The new alchemy plants can be grown in these pots.<br />
+Gems, ore, and gold chests now have a sparkle effect.<br />
+Giant glowing mushrooms will now grow back over time.<br />
+The player now starts out with a copper shortsword.<br />
+Dungeon bricks and walls have had their brightness reduced.<br />
+<br />
+<strong>Game Interface</strong><br />
+<br />
+Upon death, A more specific death message will appear for other players, so they know how you died.<br />
+<strong>The crafting and armor interface text will fade out when an item tooltip is in front of it.</strong><br />
+<strong>The Hot Bar now shows the name of the selected item.</strong><br />
+<strong>PVP now requires 5 seconds between Activation and Deactivation and visa  versa to prevent PVP spam. The same cooldown is in effect for Team  Changing as well.</strong><br />
+Added hotkeys for quickly drinking healing, mana, and buff potions.The  healing/mana potion you use is based on the same principle arrows are.  Top-Left most item first. The buff potions are all used at once.<br />
+Holding right click on an empty space in the inventory will no longer  make a sound effect as if something was there to be picked up.<br />
+Defense totals are now shown in your inventory.<br />
+<br />
+<strong>World Gen</strong><br />
+<br />
+Tweaked the way sand is created during world gen. (Requires new world.)<br />
+Oceans are now slightly larger and generation layout has been improved. (Requires new world.)<br />
+Cactus now grow on sand.<br />
+Coral now grows in the ocean.<br />
+Chests can now spawn near the surface of the world. They will contain  treasure that new players may find useful. (Requires new world.)<br />
+Chests and pots now contain loot based on the level they spawn in. (Requires new world.)<br />
+Gold chests will now spawn in some parts of the world. (Requires new world.)<br />
+Corrupt chasms have less of a chance to spawn on jungles. They also now  have a cave connecting most of the chasms. (Requires new world.<br />
+Traces of demonite are created during world gen. (Requires new world.)<br />
+Surface jungles have been enlarged, and will override deserts. (Requires new world.)
             </div>            
         </div>
         <!--End versionNotes-->
@@ -145,6 +157,7 @@
 <li><a href="#ores_and_special_blocks">Ores and Special Blocks</a></li>
 <li><a href="#defensive">Defensive</a></li>
 <li><a href="#vanity">Vanity</a></li>
+<li><a href="#potions">Potions</a></li>
 
                 </ul>
             </div>
@@ -167,7 +180,7 @@
             <div data-role="header"><h1>Enviroments</h1></div>
             <div data-role="content">
                 <ul data-role="listview" data-inset="false">
-                    <li><a href="#Cavern">Cavern</a></li><li><a href="#Deserts">Deserts</a></li><li><a href="#Dungeon">Dungeon</a></li><li><a href="#FloatingIsland">Floating Island</a></li><li><a href="#Forests">Forests</a></li><li><a href="#Jungle">Jungle</a></li><li><a href="#Meteorite">Meteorite</a></li><li><a href="#TheCorruption">The Corruption</a></li><li><a href="#TheUnderworld">The Underworld</a></li><li><a href="#UndergroundJungle">Underground Jungle</a></li><li><a href="#Underground">Underground</a></li>
+                    <li><a href="#Cavern">Cavern</a></li><li><a href="#Deserts">Deserts</a></li><li><a href="#Dungeon">Dungeon</a></li><li><a href="#FloatingIsland">Floating Island</a></li><li><a href="#Forests">Forests</a></li><li><a href="#Jungle">Jungle</a></li><li><a href="#Meteorite">Meteorite</a></li><li><a href="#Ocean">Ocean</a></li><li><a href="#TheCorruption">The Corruption</a></li><li><a href="#TheUnderworld">The Underworld</a></li><li><a href="#UndergroundJungle">Underground Jungle</a></li><li><a href="#Underground">Underground</a></li>
                 </ul>
             </div>
         </div>
@@ -203,6 +216,8 @@
 <li><a href="#Dirt_Rod"><img src="img/Dirt_Rod.png" alt="Dirt Rod" width='20' height='20' class='ui-li-icon' />Dirt Rod</a></li>
 <li><a href="#Grappling_Hook"><img src="img/Grappling_Hook.png" alt="Grappling Hook" width='20' height='20' class='ui-li-icon' />Grappling Hook</a></li>
 <li><a href="#Ivy_Whip"><img src="img/Ivy_Whip.png" alt="Ivy Whip" width='20' height='20' class='ui-li-icon' />Ivy Whip</a></li>
+<li><a href="#Mining_Helmet"><img src="img/Mining_Helmet.png" alt="Mining Helmet" width='20' height='20' class='ui-li-icon' />Mining Helmet</a></li>
+<li><a href="#Diving_Helmet"><img src="img/Diving_Helmet.png" alt="Diving Helmet" width='20' height='20' class='ui-li-icon' />Diving Helmet</a></li>
 </ul>
 </div>
 </div>
@@ -257,8 +272,12 @@
 <li><a href="#Staff_of_Regrowth"><img src="img/Staff_of_Regrowth.png" alt="Staff of Regrowth" width='20' height='20' class='ui-li-icon' />Staff of Regrowth</a></li>
 <li><a href="#Phaseblade"><img src="img/Phaseblade.png" alt="Phaseblade" width='20' height='20' class='ui-li-icon' />Phaseblade</a></li>
 <li><a href="#Muramasa"><img src="img/Muramasa.png" alt="Muramasa" width='20' height='20' class='ui-li-icon' />Muramasa</a></li>
-<li><a href="#Blade_of_Grass"><img src="img/Muramasa.png" alt="Blade of Grass" width='20' height='20' class='ui-li-icon' />Blade of Grass</a></li>
+<li><a href="#Blade_of_Grass"><img src="img/Blade_of_Grass.png" alt="Blade of Grass" width='20' height='20' class='ui-li-icon' />Blade of Grass</a></li>
 <li><a href="#Fiery_Greatsword"><img src="img/Fiery_Greatsword.png" alt="Fiery Greatsword" width='20' height='20' class='ui-li-icon' />Fiery Greatsword</a></li>
+<li><a href="#Nights_Edge"><img src="img/Night's_Edge.png" alt="Night's Edge" width='20' height='20' class='ui-li-icon' />Night's Edge</a></li>
+<li><a href="#Sandgun"><img src="img/Sandgun.png" alt="Sandgun" width='20' height='20' class='ui-li-icon' />Sandgun</a></li>
+<li><a href="#Throwing_Knife"><img src="img/Throwing_Knife.png" alt="Throwing Knife" width='20' height='20' class='ui-li-icon' />Throwing Knife</a></li>
+<li><a href="#Poisoned_Knife"><img src="img/Poisoned_Knife.png" alt="Poisoned Knife" width='20' height='20' class='ui-li-icon' />Poisoned Knife</a></li>
 </ul>
 </div>
 </div>
@@ -339,15 +358,9 @@
 <li><a href="#Meteor_Shot"><img src="img/Meteor_Shot.png" alt="Meteor Shot" width='20' height='20' class='ui-li-icon' />Meteor Shot</a></li>
 <li><a href="#Mushroom"><img src="img/Mushroom.png" alt="Mushroom" width='20' height='20' class='ui-li-icon' />Mushroom</a></li>
 <li><a href="#Glowing_Mushroom"><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" width='20' height='20' class='ui-li-icon' />Glowing Mushroom</a></li>
-<li><a href="#Lesser_Healing_Potion"><img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" width='20' height='20' class='ui-li-icon' />Lesser Healing Potion</a></li>
-<li><a href="#Healing_Potion"><img src="img/Healing_Potion.png" alt="Healing Potion" width='20' height='20' class='ui-li-icon' />Healing Potion</a></li>
 <li><a href="#Life_Crystal"><img src="img/Life_Crystal.png" alt="Life Crystal" width='20' height='20' class='ui-li-icon' />Life Crystal</a></li>
 <li><a href="#Fallen_Star"><img src="img/Fallen_Star.png" alt="Fallen Star" width='20' height='20' class='ui-li-icon' />Fallen Star</a></li>
-<li><a href="#Lesser_Mana_Potion"><img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" width='20' height='20' class='ui-li-icon' />Lesser Mana Potion</a></li>
-<li><a href="#Mana_Potion"><img src="img/Mana_Potion.png" alt="Mana Potion" width='20' height='20' class='ui-li-icon' />Mana Potion</a></li>
 <li><a href="#Mana_Crystal"><img src="img/Mana_Crystal.png" alt="Mana Crystal" width='20' height='20' class='ui-li-icon' />Mana Crystal</a></li>
-<li><a href="#Lesser_Restoration_Potion"><img src="img/Lesser_Restoration_Potion.png" alt="Lesser Restoration Potion" width='20' height='20' class='ui-li-icon' />Lesser Restoration Potion</a></li>
-<li><a href="#Restoration_Potion"><img src="img/Restoration_Potion.png" alt="Restoration Potion" width='20' height='20' class='ui-li-icon' />Restoration Potion</a></li>
 <li><a href="#Suspicious_Looking_Eye"><img src="img/Suspicious_Looking_Eye.png" alt="Suspicious Looking Eye" width='20' height='20' class='ui-li-icon' />Suspicious Looking Eye</a></li>
 <li><a href="#Worm_Food"><img src="img/Worm_Food.png" alt="Worm Food" width='20' height='20' class='ui-li-icon' />Worm Food</a></li>
 <li><a href="#Angel_Statue"><img src="img/Angel_Statue.png" alt="Angel Statue" width='20' height='20' class='ui-li-icon' />Angel Statue</a></li>
@@ -357,6 +370,23 @@
 <li><a href="#Black_Dye"><img src="img/Black_Dye.png" alt="Black Dye" width='20' height='20' class='ui-li-icon' />Black Dye</a></li>
 <li><a href="#Green_Dye"><img src="img/Green_Dye.png" alt="Green Dye" width='20' height='20' class='ui-li-icon' />Green Dye</a></li>
 <li><a href="#Goldfish"><img src="img/Goldfish.png" alt="Goldfish" width='20' height='20' class='ui-li-icon' />Goldfish</a></li>
+<li><a href="#Shark_Fin"><img src="img/Shark_Fin.png" alt="Shark Fin" width='20' height='20' class='ui-li-icon' />Shark Fin</a></li>
+<li><a href="#Waterleaf"><img src="img/Waterleaf.png" alt="Waterleaf" width='20' height='20' class='ui-li-icon' />Waterleaf</a></li>
+<li><a href="#Deathweed"><img src="img/Deathweed.png" alt="Deathweed" width='20' height='20' class='ui-li-icon' />Deathweed</a></li>
+<li><a href="#Coral"><img src="img/Coral.png" alt="Coral" width='20' height='20' class='ui-li-icon' />Coral</a></li>
+<li><a href="#Bottled_Water"><img src="img/Bottled_Water.png" alt="Bottled Water" width='20' height='20' class='ui-li-icon' />Bottled Water</a></li>
+<li><a href="#Cactus"><img src="img/Cactus.png" alt="Cactus" width='20' height='20' class='ui-li-icon' />Cactus</a></li>
+<li><a href="#Feather"><img src="img/Feather.png" alt="Feather" width='20' height='20' class='ui-li-icon' />Feather</a></li>
+<li><a href="#Fireblossom"><img src="img/Fireblossom.png" alt="Fireblossom" width='20' height='20' class='ui-li-icon' />Fireblossom</a></li>
+<li><a href="#Moonglow"><img src="img/Moonglow.png" alt="Moonglow" width='20' height='20' class='ui-li-icon' />Moonglow</a></li>
+<li><a href="#Illegal_Gun_Parts"><img src="img/Illegal_Gun_Parts.png" alt="Illegal Gun Parts" width='20' height='20' class='ui-li-icon' />Illegal Gun Parts</a></li>
+<li><a href="#Antlion_Mandible"><img src="img/Antlion_Mandible.png" alt="Antlion Mandible" width='20' height='20' class='ui-li-icon' />Antlion Mandible</a></li>
+<li><a href="#Amethyst"><img src="img/Amethyst.png" alt="Amethyst" width='20' height='20' class='ui-li-icon' />Amethyst</a></li>
+<li><a href="#Topaz"><img src="img/Topaz.png" alt="Topaz" width='20' height='20' class='ui-li-icon' />Topaz</a></li>
+<li><a href="#Sapphire"><img src="img/Sapphire.png" alt="Sapphire" width='20' height='20' class='ui-li-icon' />Sapphire</a></li>
+<li><a href="#Emerald"><img src="img/Emerald.png" alt="Emerald" width='20' height='20' class='ui-li-icon' />Emerald</a></li>
+<li><a href="#Ruby"><img src="img/Ruby.png" alt="Ruby" width='20' height='20' class='ui-li-icon' />Ruby</a></li>
+<li><a href="#Diamond"><img src="img/Diamond.png" alt="Diamond" width='20' height='20' class='ui-li-icon' />Diamond</a></li>
 </ul>
 </div>
 </div>
@@ -441,7 +471,6 @@
 <div data-role='content'>
 <ul data-role='listview' data-inset='false' data-filter='true'>
 <li><a href="#Goggles"><img src="img/Goggles.png" alt="Goggles" width='20' height='20' class='ui-li-icon' />Goggles</a></li>
-<li><a href="#Mining_Helmet"><img src="img/Mining_Helmet.png" alt="Mining Helmet" width='20' height='20' class='ui-li-icon' />Mining Helmet</a></li>
 <li><a href="#Wizard_Hat"><img src="img/Wizard_Hat.png" alt="Wizard Hat" width='20' height='20' class='ui-li-icon' />Wizard Hat</a></li>
 <li><a href="#Copper_Helmet"><img src="img/Copper_Helmet.png" alt="Copper Helmet" width='20' height='20' class='ui-li-icon' />Copper Helmet</a></li>
 <li><a href="#Copper_Chainmail"><img src="img/Copper_Chainmail.png" alt="Copper Chainmail" width='20' height='20' class='ui-li-icon' />Copper Chainmail</a></li>
@@ -502,6 +531,37 @@
 </ul>
 </div>
 </div>
+<div id='potions' data-role='page'>
+<div data-role='header'><h1>Potions</h1></div>
+<div data-role='content'>
+<ul data-role='listview' data-inset='false' data-filter='true'>
+<li><a href="#Lesser_Healing_Potion"><img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" width='20' height='20' class='ui-li-icon' />Lesser Healing Potion</a></li>
+<li><a href="#Healing_Potion"><img src="img/Healing_Potion.png" alt="Healing Potion" width='20' height='20' class='ui-li-icon' />Healing Potion</a></li>
+<li><a href="#Lesser_Mana_Potion"><img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" width='20' height='20' class='ui-li-icon' />Lesser Mana Potion</a></li>
+<li><a href="#Mana_Potion"><img src="img/Mana_Potion.png" alt="Mana Potion" width='20' height='20' class='ui-li-icon' />Mana Potion</a></li>
+<li><a href="#Lesser_Restoration_Potion"><img src="img/Lesser_Restoration_Potion.png" alt="Lesser Restoration Potion" width='20' height='20' class='ui-li-icon' />Lesser Restoration Potion</a></li>
+<li><a href="#Restoration_Potion"><img src="img/Restoration_Potion.png" alt="Restoration Potion" width='20' height='20' class='ui-li-icon' />Restoration Potion</a></li>
+<li><a href="#Gills_Potion"><img src="img/Gills_Potion.png" alt="Gills Potion" width='20' height='20' class='ui-li-icon' />Gills Potion</a></li>
+<li><a href="#Battle_Potion"><img src="img/Battle_Potion.png" alt="Battle Potion" width='20' height='20' class='ui-li-icon' />Battle Potion</a></li>
+<li><a href="#Thorns_Potion"><img src="img/Thorns_Potion.png" alt="Thorns Potion" width='20' height='20' class='ui-li-icon' />Thorns Potion</a></li>
+<li><a href="#Featherfall_Potion"><img src="img/Featherfall_Potion.png" alt="Featherfall Potion" width='20' height='20' class='ui-li-icon' />Featherfall Potion</a></li>
+<li><a href="#Gravitation_Potion"><img src="img/Gravitation_Potion.png" alt="Gravitation Potion" width='20' height='20' class='ui-li-icon' />Gravitation Potion</a></li>
+<li><a href="#Invisibility_Potion"><img src="img/Invisibility_Potion.png" alt="Invisibility Potion" width='20' height='20' class='ui-li-icon' />Invisibility Potion</a></li>
+<li><a href="#Ironskin_Potion"><img src="img/Ironskin_Potion.png" alt="Ironskin Potion" width='20' height='20' class='ui-li-icon' />Ironskin Potion</a></li>
+<li><a href="#Mana_Regeneration_Potion"><img src="img/Mana_Regeneration_Potion.png" alt="Mana Regeneration Potion" width='20' height='20' class='ui-li-icon' />Mana Regeneration Potion</a></li>
+<li><a href="#Obsidian_Skin_Potion"><img src="img/Obsidian_Skin_Potion.png" alt="Obsidian Skin Potion" width='20' height='20' class='ui-li-icon' />Obsidian Skin Potion</a></li>
+<li><a href="#Shine_Potion"><img src="img/Shine_Potion.png" alt="Shine Potion" width='20' height='20' class='ui-li-icon' />Shine Potion</a></li>
+<li><a href="#Spelunker_Potion"><img src="img/Spelunker_Potion.png" alt="Spelunker Potion" width='20' height='20' class='ui-li-icon' />Spelunker Potion</a></li>
+<li><a href="#Water_Walking_Potion"><img src="img/Water_Walking_Potion.png" alt="Water Walking Potion" width='20' height='20' class='ui-li-icon' />Water Walking Potion</a></li>
+<li><a href="#Archery_Potion"><img src="img/Archery_Potion.png" alt="Archery Potion" width='20' height='20' class='ui-li-icon' />Archery Potion</a></li>
+<li><a href="#Hunter_Potion"><img src="img/Hunter_Potion.png" alt="Hunter Potion" width='20' height='20' class='ui-li-icon' />Hunter Potion</a></li>
+<li><a href="#Magic_Power_Potion"><img src="img/Magic_Power_Potion.png" alt="Magic Power Potion" width='20' height='20' class='ui-li-icon' />Magic Power Potion</a></li>
+<li><a href="#Night_Owl_Potion"><img src="img/Night_Owl_Potion.png" alt="Night Owl Potion" width='20' height='20' class='ui-li-icon' />Night Owl Potion</a></li>
+<li><a href="#Regeneration_Potion"><img src="img/Regeneration_Potion.png" alt="Regeneration Potion" width='20' height='20' class='ui-li-icon' />Regeneration Potion</a></li>
+<li><a href="#Swiftness_Potion"><img src="img/Swiftness_Potion.png" alt="Swiftness Potion" width='20' height='20' class='ui-li-icon' />Swiftness Potion</a></li>
+</ul>
+</div>
+</div>
 
         <!--End itemList-->
         <div id="Copper_Pickaxe" data-role='page'>
@@ -511,7 +571,7 @@
 <p>New characters will spawn with this item</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>5</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Pick</td><td>35%</td></tr>
 <tr><td style='font-weight: bold;'>Placeable</td><td>No</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
@@ -528,7 +588,7 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>5</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>45%</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>40%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -580,7 +640,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>11</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
 <tr><td style='font-weight: bold;'>Pick</td><td>65</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
@@ -623,8 +683,7 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>3</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>8%</td></tr>
-<tr><td style='font-weight: bold;'>Placeable</td><td>No</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>35%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Buy</td><td>4{{sc</td></tr>
@@ -639,12 +698,11 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>5</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>9%</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>45%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>4.5</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>19</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Iron_Bar.png" alt="Iron Bar" />Iron Bar</td><td>9</td></tr><tr><td><img src="img/Wood.png" alt="Wood" />Wood</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -657,13 +715,12 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>6</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>10%</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>50%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>false</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>false</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>false</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>8{{sc</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silver_Bar.png" alt="Silver Bar" />Silver Bar</td><td>9</td></tr><tr><td><img src="img/Wood.png" alt="Wood" />Wood</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -676,7 +733,7 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>7</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>11%</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>55%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>16{{sc</td></tr>
@@ -690,8 +747,8 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>21</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>15%</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>18</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>75%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>6</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -719,7 +776,6 @@
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>16</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>30{{sc</td></tr>
 </table>
@@ -741,7 +797,6 @@
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>14</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>30{{sc</td></tr>
 </table>
@@ -754,7 +809,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-2</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Pick</td><td>25%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Very Slow</td></tr>
@@ -770,7 +825,7 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>4</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>35% Hammer Power</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>35%</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>80{{cc</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Copper_Bar.png" alt="Copper Bar" />Copper Bar</td><td>10</td></tr><tr><td><img src="img/Wood.png" alt="Wood" />Wood</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -783,14 +838,13 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>7</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>45%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>5.5</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>20</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>45% hammer power</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>3{{sc</td></tr>
 </table>
@@ -804,8 +858,8 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>45%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>45% hammer power</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
@@ -823,11 +877,10 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>55%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>55% Hammer Power</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Shoot</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>Slow</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
@@ -842,15 +895,14 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>28</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>23</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>55%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>6.5</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>55% Hammer Power</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>19</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>30{{sc</td></tr>
 </table>
@@ -930,10 +982,11 @@
 <div data-role='header'><h1>Magic Mirror</h1></div>
 <div data-role='content'>
 <img src="img/Magic_Mirror.png" alt="Magic Mirror" class='item_image'/>
-<p></p>
+<p>Uses 20 mana to teleport you to your spawn point</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Mana</td><td>20</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>Gaze in the mirror to return home.</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
@@ -974,6 +1027,7 @@
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>7</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Get over here!</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Shoot</td><td>13</td></tr>
@@ -1004,6 +1058,33 @@
 <tr><td style='font-weight: bold;'>Sell</td><td>40{{sc</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Grappling_Hook.png" alt="Grappling Hook" />Grappling Hook</td><td>1</td></tr><tr><td><img src="img/Vine.png" alt="Vine" />Vine</td><td>3</td></tr><tr><td><img src="img/Jungle_Rose.png" alt="Jungle Rose" />Jungle Rose</td><td>30</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Mining_Helmet" data-role='page'>
+<div data-role='header'><h1>Mining Helmet</h1></div>
+<div data-role='content'>
+<img src="img/Mining_Helmet.png" alt="Mining Helmet" class='item_image'/>
+<p>Purchased from the Merchant for 8 Gold Coins</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
+<tr><td style='font-weight: bold;'>Defense</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Provides light when worn</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Body slot</td><td>Helmet</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>8{{gc</td></tr>
+</table>
+</div>
+</div>
+<div id="Diving_Helmet" data-role='page'>
+<div data-role='header'><h1>Diving Helmet</h1></div>
+<div data-role='content'>
+<img src="img/Diving_Helmet.png" alt="Diving Helmet" class='item_image'/>
+<p>They have a 2% (1:50) chance of being dropped by Sharks. </p>
+</div>
 </div>
 <div id="Vile_Powder" data-role='page'>
 <div data-role='header'><h1>Vile Powder</h1></div>
@@ -1213,7 +1294,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>30</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>23</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>7</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1235,7 +1316,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>33</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>7</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1257,7 +1338,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>5</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>Depends On Arrow</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1278,7 +1359,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>8</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>Depends On Arrow</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1299,7 +1380,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>10</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>Depends On Arrow</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1446,7 +1527,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>14</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>20</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1715,7 +1796,7 @@
 <div data-role='header'><h1>Space Gun</h1></div>
 <div data-role='content'>
 <img src="img/Space_Gun.png" alt="Space Gun" class='item_image'/>
-<p></p>
+<p>It shoots lasers that can go through two enemies. This items does not count as a firearm.</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>14</td></tr>
@@ -1781,7 +1862,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>6</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>5</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1955,7 +2036,7 @@
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>54{{sc</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Meteorite_Bar.png" alt="Meteorite Bar" />Meteorite Bar</td><td>20</td></tr><tr><td>Amethyst</td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Meteorite_Bar.png" alt="Meteorite Bar" />Meteorite Bar</td><td>20</td></tr><tr><td><img src="img/Amethyst.png" alt="Amethyst" />Amethyst</td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Muramasa" data-role='page'>
 <div data-role='header'><h1>Muramasa</h1></div>
@@ -1964,7 +2045,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>22</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>18</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -1980,7 +2061,7 @@
 <div id="Blade_of_Grass" data-role='page'>
 <div data-role='header'><h1>Blade of Grass</h1></div>
 <div data-role='content'>
-<img src="img/Muramasa.png" alt="Blade of Grass" class='item_image'/>
+<img src="img/Blade_of_Grass.png" alt="Blade of Grass" class='item_image'/>
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
@@ -2004,7 +2085,7 @@
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>34</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>36</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>6.5</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
@@ -2016,6 +2097,57 @@
 <tr><td style='font-weight: bold;'>Sell</td><td>54{{sc</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>35</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Nights_Edge" data-role='page'>
+<div data-role='header'><h1>Night's Edge</h1></div>
+<div data-role='content'>
+<img src="img/Night's_Edge.png" alt="Night's Edge" class='item_image'/>
+<p>The Night's Edge is a high-end melee weapon, crafted at a Demon Altar. It requires four of the currently most powerful sword-class weapons to craft: a Light's Bane, a Muramasa, a Blade of Grass, and a Fiery Greatsword. Although the damage in the tooltip is 40, the actual damage against monsters seems to be 45.</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Attack speed</td><td>Very slow</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>false</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>54{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Demon_Altar.png" alt="Demon Altar" />Demon Altar</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Muramasa.png" alt="Muramasa" />Muramasa</td><td>1</td></tr><tr><td><img src="img/Blade_of_Grass.png" alt="Blade of Grass" />Blade of Grass</td><td>1</td></tr><tr><td><img src="img/Fiery_Greatsword.png" alt="Fiery Greatsword" />Fiery Greatsword</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Sandgun" data-role='page'>
+<div data-role='header'><h1>Sandgun</h1></div>
+<div data-role='content'>
+<img src="img/Sandgun.png" alt="Sandgun" class='item_image'/>
+<p>Uses sand as a projectile which is affected by gravity. When the sand projectile hits any object it will turn into a clump that will gather on the ground. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>10</td></tr>
+<tr><td style='font-weight: bold;'>Knockback</td><td>95</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Shoot</td><td>42</td></tr>
+<tr><td style='font-weight: bold;'>Use Time</td><td>335</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>2</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Illegal_Gun_Parts.png" alt="Illegal Gun Parts" />Illegal Gun Parts</td><td>1</td></tr><tr><td><img src="img/Antlion_Mandible.png" alt="Antlion Mandible" />Antlion Mandible</td><td>10</td></tr><tr><td><img src="img/Topaz.png" alt="Topaz" />Topaz</td><td>5</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Throwing_Knife" data-role='page'>
+<div data-role='header'><h1>Throwing Knife</h1></div>
+<div data-role='content'>
+<img src="img/Throwing_Knife.png" alt="Throwing Knife" class='item_image'/>
+<p>They are sold by the Merchant during Blood Moons, and may also be found in generated chests. They are thrown Nonexplosive Consumables category weapons that can damage a up to two enemies before either falling or breaking.
+
+Throwing knives are affected by gravity - they will arc similarly to Shurikens when thrown. When they hit a wall, there is a chance that they will break. If they do not break, they can be picked up again.
+
+Throwing knives are considered a compromise between the Shuriken (which can hit many enemies with one weapon) and Bones (which can only hit one). </p>
+</div>
+</div>
+<div id="Poisoned_Knife" data-role='page'>
+<div data-role='header'><h1>Poisoned Knife</h1></div>
+<div data-role='content'>
+<img src="img/Poisoned_Knife.png" alt="Poisoned Knife" class='item_image'/>
+<p></p>
+</div>
 </div>
 <div id="Alchemy_Station" data-role='page'>
 <div data-role='header'><h1>Alchemy Station</h1></div>
@@ -2122,7 +2254,7 @@
 <div data-role='header'><h1>Torch</h1></div>
 <div data-role='content'>
 <img src="img/Torch.png" alt="Torch" class='item_image'/>
-<p></p>
+<p>Can be places on blocks but will not work underwater</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Furniture</td></tr>
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
@@ -2715,13 +2847,11 @@ Added in patch 1.0.3.</p>
 <p>Dropped by Eater of Wolrds</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>1{{sc</td></tr>
 </table>
@@ -2958,7 +3088,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Ammunition</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>5</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
@@ -2979,7 +3109,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Ammunition</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>7</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>6</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
@@ -2991,7 +3121,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>3{{cc</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Wooden_Arrow.png" alt="Wooden Arrow" />Wooden Arrow</td><td>5</td></tr><tr><td><img src="img/Torch.png" alt="Torch" />Torch</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x5</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Wooden_Arrow.png" alt="Wooden Arrow" />Wooden Arrow</td><td>4</td></tr><tr><td><img src="img/Torch.png" alt="Torch" />Torch</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x5</td></tr></table></div>
 </div>
 <div id="Unholy_Arrow" data-role='page'>
 <div data-role='header'><h1>Unholy Arrow</h1></div>
@@ -3013,7 +3143,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>8{{cc</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Wooden_Arrow.png" alt="Wooden Arrow" />Wooden Arrow</td><td>2</td></tr><tr><td><img src="img/Worm_Tooth.png" alt="Worm Tooth" />Worm Tooth</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Wooden_Arrow.png" alt="Wooden Arrow" />Wooden Arrow</td><td>3</td></tr><tr><td><img src="img/Worm_Tooth.png" alt="Worm Tooth" />Worm Tooth</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
 </div>
 <div id="Jesters_Arrow" data-role='page'>
 <div data-role='header'><h1>Jester's Arrow</h1></div>
@@ -3076,7 +3206,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>1.6{{cc</td></tr>
 </table>
-</div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Musket_Ball.png" alt="Musket Ball" />Musket Ball</td><td>25</td></tr><tr><td><img src="img/Meteorite_Bar.png" alt="Meteorite Bar" />Meteorite Bar</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table></div>
 </div>
 <div id="Mushroom" data-role='page'>
 <div data-role='header'><h1>Mushroom</h1></div>
@@ -3112,42 +3242,6 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <tr><td style='font-weight: bold;'>Sell</td><td>10{{cc</td></tr>
 </table>
 </div>
-</div>
-<div id="Lesser_Healing_Potion" data-role='page'>
-<div data-role='header'><h1>Lesser Healing Potion</h1></div>
-<div data-role='content'>
-<img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" class='item_image'/>
-<p></p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 100 life</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>2{{sc</td></tr>
-</table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Mushroom.png" alt="Mushroom" />Mushroom</td><td>1</td></tr><tr><td><img src="img/Gel.png" alt="Gel" />Gel</td><td>2</td></tr><tr><td><img src="img/Bottle.png" alt="Bottle" />Bottle</td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
-</div>
-<div id="Healing_Potion" data-role='page'>
-<div data-role='header'><h1>Healing Potion</h1></div>
-<div data-role='content'>
-<img src="img/Healing_Potion.png" alt="Healing Potion" class='item_image'/>
-<p></p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>2{{sc</td></tr>
-</table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" />Lesser Healing Potion</td><td>2</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Life_Crystal" data-role='page'>
 <div data-role='header'><h1>Life Crystal</h1></div>
@@ -3187,43 +3281,6 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 </table>
 </div>
 </div>
-<div id="Lesser_Mana_Potion" data-role='page'>
-<div data-role='header'><h1>Lesser Mana Potion</h1></div>
-<div data-role='content'>
-<img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" class='item_image'/>
-<p></p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 100 mana</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>2{{sc</td></tr>
-</table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>1</td></tr><tr><td><img src="img/Gel.png" alt="Gel" />Gel</td><td>2</td></tr><tr><td><img src="img/Bottle.png" alt="Bottle" />Bottle</td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
-</div>
-<div id="Mana_Potion" data-role='page'>
-<div data-role='header'><h1>Mana Potion</h1></div>
-<div data-role='content'>
-<img src="img/Mana_Potion.png" alt="Mana Potion" class='item_image'/>
-<p></p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>200</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>2{{sc</td></tr>
-</table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" />Lesser Mana Potion</td><td>2</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
-</div>
 <div id="Mana_Crystal" data-role='page'>
 <div data-role='header'><h1>Mana Crystal</h1></div>
 <div data-role='content'>
@@ -3243,42 +3300,6 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
-<div id="Lesser_Restoration_Potion" data-role='page'>
-<div data-role='header'><h1>Lesser Restoration Potion</h1></div>
-<div data-role='content'>
-<img src="img/Lesser_Restoration_Potion.png" alt="Lesser Restoration Potion" class='item_image'/>
-<p>Restores 100 points of mana and health.</p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>4{{sc</td></tr>
-</table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" />Lesser Healing Potion</td><td>1</td></tr><tr><td><img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" />Lesser Mana Potion</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
-</div>
-<div id="Restoration_Potion" data-role='page'>
-<div data-role='header'><h1>Restoration Potion</h1></div>
-<div data-role='content'>
-<img src="img/Restoration_Potion.png" alt="Restoration Potion" class='item_image'/>
-<p>Restores 200 points of mana and health</p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>200</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>8{{sc</td></tr>
-</table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Healing_Potion.png" alt="Healing Potion" />Healing Potion</td><td>1</td></tr><tr><td><img src="img/Mana_Potion.png" alt="Mana Potion" />Mana Potion</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
-</div>
 <div id="Suspicious_Looking_Eye" data-role='page'>
 <div data-role='header'><h1>Suspicious Looking Eye</h1></div>
 <div data-role='content'>
@@ -3292,7 +3313,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <tr><td style='font-weight: bold;'>Use</td><td>45</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>May cause terrible things to happen</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lens.png" alt="Lens" />Lens</td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lens.png" alt="Lens" />Lens</td><td>6</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table></div>
 </div>
 <div id="Worm_Food" data-role='page'>
 <div data-role='header'><h1>Worm Food</h1></div>
@@ -3318,12 +3339,10 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <p>Useless and sells for only 1 copper</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Miscellaneous</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>0.2{{cc</td></tr>
 </table>
@@ -3402,6 +3421,168 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <div data-role='content'>
 <img src="img/Goldfish.png" alt="Goldfish" class='item_image'/>
 <p>Random drop from a Goldfish (NPC)</p>
+</div>
+</div>
+<div id="Shark_Fin" data-role='page'>
+<div data-role='header'><h1>Shark Fin</h1></div>
+<div data-role='content'>
+<img src="img/Shark_Fin.png" alt="Shark Fin" class='item_image'/>
+<p>Drop from Sharks.
+
+Used to create Water Walking Potions and Hunter Potions</p>
+</div>
+</div>
+<div id="Waterleaf" data-role='page'>
+<div data-role='header'><h1>Waterleaf</h1></div>
+<div data-role='content'>
+<img src="img/Waterleaf.png" alt="Waterleaf" class='item_image'/>
+<p>It is used to make Water Walking Potions and Obsidian Skin Potions</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+</table>
+</div>
+</div>
+<div id="Deathweed" data-role='page'>
+<div data-role='header'><h1>Deathweed</h1></div>
+<div data-role='content'>
+<img src="img/Deathweed.png" alt="Deathweed" class='item_image'/>
+<p>Grows in The Corruption. It can be used to craft 4 potions. The potions that can be crafted are: Magic Power Potions, Battle Potions, Thorns Potions, and also Gravitation Potions. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+</table>
+</div>
+</div>
+<div id="Coral" data-role='page'>
+<div data-role='header'><h1>Coral</h1></div>
+<div data-role='content'>
+<img src="img/Coral.png" alt="Coral" class='item_image'/>
+<p>Grows in the ocean</p>
+</div>
+</div>
+<div id="Bottled_Water" data-role='page'>
+<div data-role='header'><h1>Bottled Water</h1></div>
+<div data-role='content'>
+<img src="img/Bottled_Water.png" alt="Bottled Water" class='item_image'/>
+<p>Bottled Water is crafted from Bottle while standing near a body of water. It heals you for 20 hp instantly when used, but does not give you the empty Bottle back. It also used as material to make Buff Potions. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Type2</td><td>Crafting Material</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
+<tr><td style='font-weight: bold;'>Heal</td><td>20</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>4 {{cc</td></tr>
+</table>
+</div>
+</div>
+<div id="Cactus" data-role='page'>
+<div data-role='header'><h1>Cactus</h1></div>
+<div data-role='content'>
+<img src="img/Cactus.png" alt="Cactus" class='item_image'/>
+<p>Cactus is a plant that only grows on sand. It can be chopped down for varying amounts of Cactus - the material - based on its size.
+
+A cactus deals 10 damage to you if you touch one. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>10</td></tr>
+<tr><td style='font-weight: bold;'>Placeable</td><td>No</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+</table>
+</div>
+</div>
+<div id="Feather" data-role='page'>
+<div data-role='header'><h1>Feather</h1></div>
+<div data-role='content'>
+<img src="img/Feather.png" alt="Feather" class='item_image'/>
+<p>The Featherare usually dropped from Harpies. Harpies can be found in the Sky consisting of the Floating Island layer. It is used to make Gravity altering Potions. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>10{{cc</td></tr>
+</table>
+</div>
+</div>
+<div id="Fireblossom" data-role='page'>
+<div data-role='header'><h1>Fireblossom</h1></div>
+<div data-role='content'>
+<img src="img/Fireblossom.png" alt="Fireblossom" class='item_image'/>
+<p>It is a plant used in alchemical recipes. It grows on Ash in The Underworld. </p>
+</div>
+</div>
+<div id="Moonglow" data-role='page'>
+<div data-role='header'><h1>Moonglow</h1></div>
+<div data-role='content'>
+<img src="img/Moonglow.png" alt="Moonglow" class='item_image'/>
+<p></p>
+</div>
+</div>
+<div id="Illegal_Gun_Parts" data-role='page'>
+<div data-role='header'><h1>Illegal Gun Parts</h1></div>
+<div data-role='content'>
+<img src="img/Illegal_Gun_Parts.png" alt="Illegal Gun Parts" class='item_image'/>
+<p>Used to create Sandgun. Sold from the Arms Dealer for 1 platinum.</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>1{{pc</td></tr>
+</table>
+</div>
+</div>
+<div id="Antlion_Mandible" data-role='page'>
+<div data-role='header'><h1>Antlion Mandible</h1></div>
+<div data-role='content'>
+<img src="img/Antlion_Mandible.png" alt="Antlion Mandible" class='item_image'/>
+<p>Dropped by the Antlion</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>10{{cc</td></tr>
+</table>
+</div>
+</div>
+<div id="Amethyst" data-role='page'>
+<div data-role='header'><h1>Amethyst</h1></div>
+<div data-role='content'>
+<img src="img/Amethyst.png" alt="Amethyst" class='item_image'/>
+<p>Sells for 3 Silver and 75 Copper</p>
+</div>
+</div>
+<div id="Topaz" data-role='page'>
+<div data-role='header'><h1>Topaz</h1></div>
+<div data-role='content'>
+<img src="img/Topaz.png" alt="Topaz" class='item_image'/>
+<p>Sells for 7 Silver 50 Copper</p>
+</div>
+</div>
+<div id="Sapphire" data-role='page'>
+<div data-role='header'><h1>Sapphire</h1></div>
+<div data-role='content'>
+<img src="img/Sapphire.png" alt="Sapphire" class='item_image'/>
+<p>Sells for 10 Silver 50 Copper</p>
+</div>
+</div>
+<div id="Emerald" data-role='page'>
+<div data-role='header'><h1>Emerald</h1></div>
+<div data-role='content'>
+<img src="img/Emerald.png" alt="Emerald" class='item_image'/>
+<p>Sells for 22 Silver 50 Copper</p>
+</div>
+</div>
+<div id="Ruby" data-role='page'>
+<div data-role='header'><h1>Ruby</h1></div>
+<div data-role='content'>
+<img src="img/Ruby.png" alt="Ruby" class='item_image'/>
+<p>Sells for 30 Silver</p>
+</div>
+</div>
+<div id="Diamond" data-role='page'>
+<div data-role='header'><h1>Diamond</h1></div>
+<div data-role='content'>
+<img src="img/Diamond.png" alt="Diamond" class='item_image'/>
+<p>Sells for 60 Silver</p>
 </div>
 </div>
 <div id="Anklet_of_the_Wind" data-role='page'>
@@ -3510,8 +3691,8 @@ Negates fall damage</p>
 <div data-role='header'><h1>Rocket Boots</h1></div>
 <div data-role='content'>
 <img src="img/Rocket_Boots.png" alt="Rocket Boots" class='item_image'/>
-<p>Found in chests and a rare drop from Goblins
-Allows the player to fly while using mana.</p>
+<p>Found in chests and also a rare drop from Goblins
+Allows the player to fly for a second.</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Accessory</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
@@ -3630,7 +3811,6 @@ Increases the player jump height</p>
 Regenerates 0.5 health every second.</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Accessory</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Lregen</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>Slowly regenerates life.</td></tr>
@@ -3638,7 +3818,6 @@ Regenerates 0.5 health every second.</p>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>1{{gc</td></tr>
 </table>
@@ -3950,7 +4129,9 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Demonite Ore</h1></div>
 <div data-role='content'>
 <img src="img/Demonite_Ore.png" alt="Demonite Ore" class='item_image'/>
-<p>Dropped by the Eye of Cthulhu and the Eater of Worlds</p>
+<p>Dropped by the Eye of Cthulhu and the Eater of Worlds
+
+As of patch 1.0.5 the world can be generated with small veins of Demonite Ore and it has a slight glow to it. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Ore</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
@@ -4145,7 +4326,7 @@ When you die you will spawn with full mana and health</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>10</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone.png" alt="Hellstone" />Hellstone</td><td>1</td></tr><tr><td><img src="img/Iron_Pickaxe.png" alt="Iron Pickaxe" />Iron Pickaxe</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone.png" alt="Hellstone" />Hellstone</td><td>1</td></tr><tr><td><img src="img/Stone_Block.png" alt="Stone Block" />Stone Block</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Dungeon_Brick" data-role='page'>
 <div data-role='header'><h1>Dungeon Brick</h1></div>
@@ -4354,26 +4535,6 @@ When you die you will spawn with full mana and health</p>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lens.png" alt="Lens" />Lens</td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
-<div id="Mining_Helmet" data-role='page'>
-<div data-role='header'><h1>Mining Helmet</h1></div>
-<div data-role='content'>
-<img src="img/Mining_Helmet.png" alt="Mining Helmet" class='item_image'/>
-<p>Purchased from the Merchant for 8 Gold Coins</p>
-<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
-<tr><td style='font-weight: bold;'>Defense</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>Provides light when worn</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>Helmet</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>8{{gc</td></tr>
-</table>
-</div>
-</div>
 <div id="Wizard_Hat" data-role='page'>
 <div data-role='header'><h1>Wizard Hat</h1></div>
 <div data-role='content'>
@@ -4398,7 +4559,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Copper Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Copper_Helmet.png" alt="Copper Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 4 defense plus a set bonus of 2 defense, which equals a total of 6 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>1</td></tr>
@@ -4411,7 +4572,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Copper Chainmail</h1></div>
 <div data-role='content'>
 <img src="img/Copper_Chainmail.png" alt="Copper Chainmail" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 4 defense plus a set bonus of 2 defense, which equals a total of 6 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
@@ -4424,7 +4585,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Copper Greaves</h1></div>
 <div data-role='content'>
 <img src="img/Copper_Greaves.png" alt="Copper Greaves" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 4 defense plus a set bonus of 2 defense, which equals a total of 6 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>1</td></tr>
@@ -4437,7 +4598,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Iron Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Iron_Helmet.png" alt="Iron Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 7 defense plus a set bonus of 2 defense, which equals a total of 9 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr>
@@ -4450,7 +4611,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Iron Chainmail</h1></div>
 <div data-role='content'>
 <img src="img/Iron_Chainmail.png" alt="Iron Chainmail" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 7 defense plus a set bonus of 2 defense, which equals a total of 9 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>3</td></tr>
@@ -4463,7 +4624,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Iron Greaves</h1></div>
 <div data-role='content'>
 <img src="img/Iron_Greaves.png" alt="Iron Greaves" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 7 defense plus a set bonus of 2 defense, which equals a total of 9 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr>
@@ -4476,7 +4637,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Silver Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Silver_Helmet.png" alt="Silver Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 7 defense plus a set bonus of 2 defense, which equals a total of 9 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>3</td></tr>
@@ -4489,7 +4650,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Silver Chainmail</h1></div>
 <div data-role='content'>
 <img src="img/Silver_Chainmail.png" alt="Silver Chainmail" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 7 defense plus a set bonus of 2 defense, which equals a total of 9 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr>
@@ -4502,7 +4663,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Silver Greaves </h1></div>
 <div data-role='content'>
 <img src="img/Silver_Greaves.png " alt="Silver Greaves " class='item_image'/>
-<p></p>
+<p>A full set grants a basic 7 defense plus a set bonus of 2 defense, which equals a total of 9 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>3</td></tr>
@@ -4515,7 +4676,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Gold Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Gold_Helmet.png" alt="Gold Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 13 defense plus a set bonus of 3 defense, which equals a total of 16 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr>
@@ -4528,7 +4689,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Gold Chainmail</h1></div>
 <div data-role='content'>
 <img src="img/Gold_Chainmail.png" alt="Gold Chainmail" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 13 defense plus a set bonus of 3 defense, which equals a total of 16 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>5</td></tr>
@@ -4541,7 +4702,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Gold Greaves</h1></div>
 <div data-role='content'>
 <img src="img/Gold_Greaves.png" alt="Gold Greaves" class='item_image'/>
-<p></p>
+<p>A full set grants a basic 13 defense plus a set bonus of 3 defense, which equals a total of 16 defense. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr>
@@ -4554,7 +4715,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Meteor Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Meteor_Helmet.png" alt="Meteor Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants 13 defense and reduces the mana cost of the Space Gun to zero. Also, light is emitted when the player moves wearing the full set. Each piece of the armor worn slowly regenerates mana. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr>
@@ -4569,7 +4730,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Meteor Suit</h1></div>
 <div data-role='content'>
 <img src="img/Meteor_Suit.png" alt="Meteor Suit" class='item_image'/>
-<p></p>
+<p>A full set grants 13 defense and reduces the mana cost of the Space Gun to zero. Also, light is emitted when the player moves wearing the full set. Each piece of the armor worn slowly regenerates mana. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>5</td></tr>
@@ -4584,7 +4745,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Meteor Leggings</h1></div>
 <div data-role='content'>
 <img src="img/Meteor_Leggings.png" alt="Meteor Leggings" class='item_image'/>
-<p></p>
+<p>A full set grants 13 defense and reduces the mana cost of the Space Gun to zero. Also, light is emitted when the player moves wearing the full set. Each piece of the armor worn slowly regenerates mana. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr>
@@ -4599,7 +4760,10 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Shadow Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Shadow_Helmet.png" alt="Shadow Helmet" class='item_image'/>
-<p>Has a small chance to be dropped by the Eater of Worlds</p>
+<p>Has a small chance to be dropped by the Eater of Worlds
+A full set grants a basic 19 defense, and a 15% increase in melee attack speed.
+
+</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr>
@@ -4614,7 +4778,10 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Shadow Scalemail</h1></div>
 <div data-role='content'>
 <img src="img/Shadow_Scalemail.png" alt="Shadow Scalemail" class='item_image'/>
-<p>Has a small chance to be dropped by the Eater of Worlds</p>
+<p>Has a small chance to be dropped by the Eater of Worlds
+A full set grants a basic 19 defense, and a 15% increase in melee attack speed.
+
+</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>7</td></tr>
@@ -4629,7 +4796,10 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Shadow Greaves</h1></div>
 <div data-role='content'>
 <img src="img/Shadow_Greaves.png" alt="Shadow Greaves" class='item_image'/>
-<p>Has a small chance to be dropped by the Eater of Worlds</p>
+<p>Has a small chance to be dropped by the Eater of Worlds
+A full set grants a basic 19 defense, and a 15% increase in melee attack speed.
+
+</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr>
@@ -4644,7 +4814,9 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Jungle Hat</h1></div>
 <div data-role='content'>
 <img src="img/Jungle_Hat.png" alt="Jungle Hat" class='item_image'/>
-<p>Dropped by Hornets and Man Eater's in the Underground Jungle</p>
+<p>Dropped by Hornets and Man Eater's in the Underground Jungle
+
+When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 10% melee attack speed, as well as a grass particle effect</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr>
@@ -4655,13 +4827,15 @@ When you die you will spawn with full mana and health</p>
 <tr><td style='font-weight: bold;'>Use Time</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Tooltop</td><td>Slowly regenerates mana</td></tr>
 </table>
-</div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silver_Helmet.png" alt="Silver Helmet" />Silver Helmet</td><td>1</td></tr><tr><td><img src="img/Emerald.png" alt="Emerald" />Emerald</td><td>10</td></tr><tr><td><img src="img/Sapphire.png" alt="Sapphire" />Sapphire</td><td>10</td></tr><tr><td><img src="img/Jungle_Rose.png" alt="Jungle Rose" />Jungle Rose</td><td>20</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Jungle_Shirt_" data-role='page'>
 <div data-role='header'><h1>Jungle Shirt </h1></div>
 <div data-role='content'>
 <img src="img/Jungle_Shirt.png" alt="Jungle Shirt " class='item_image'/>
-<p>Dropped by Hornets and Man Eater's in the Underground Jungle</p>
+<p>Dropped by Hornets and Man Eater's in the Underground Jungle
+
+When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 10% melee attack speed, as well as a grass particle effect</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>7</td></tr>
@@ -4672,13 +4846,15 @@ When you die you will spawn with full mana and health</p>
 <tr><td style='font-weight: bold;'>Use Time</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Tooltop</td><td>Slowly regenerates mana</td></tr>
 </table>
-</div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silver_Chainmail.png" alt="Silver Chainmail" />Silver Chainmail</td><td>1</td></tr><tr><td><img src="img/Ruby.png" alt="Ruby" />Ruby</td><td>6</td></tr><tr><td><img src="img/Diamond.png" alt="Diamond" />Diamond</td><td>6</td></tr><tr><td><img src="img/Jungle_Rose.png" alt="Jungle Rose" />Jungle Rose</td><td>40</td></tr><tr><td><img src="img/Stinger.png" alt="Stinger" />Stinger</td><td>12</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Jungle_Pants" data-role='page'>
 <div data-role='header'><h1>Jungle Pants</h1></div>
 <div data-role='content'>
 <img src="img/Jungle_Pants.png" alt="Jungle Pants" class='item_image'/>
-<p>Dropped by Hornets and Man Eater's in the Underground Jungle</p>
+<p>Dropped by Hornets and Man Eater's in the Underground Jungle
+
+When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 10% melee attack speed, as well as a grass particle effect</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr>
@@ -4688,13 +4864,13 @@ When you die you will spawn with full mana and health</p>
 <tr><td style='font-weight: bold;'>Body Slot</td><td>Pants</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>Slowly regenerates mana</td></tr>
 </table>
-</div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silver_Greaves.png " alt="Silver Greaves" />Silver Greaves</td><td>1</td></tr><tr><td><img src="img/Amethyst.png" alt="Amethyst" />Amethyst</td><td>8</td></tr><tr><td><img src="img/Topaz.png" alt="Topaz" />Topaz</td><td>8</td></tr><tr><td><img src="img/Jungle_Rose.png" alt="Jungle Rose" />Jungle Rose</td><td>30</td></tr><tr><td><img src="img/Vine.png" alt="Vine" />Vine</td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Necro_Helmet" data-role='page'>
 <div data-role='header'><h1>Necro Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Necro_Helmet.png" alt="Necro Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants 19 defense and a constant 30% speed boost</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr>
@@ -4709,7 +4885,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Necro Breastplate </h1></div>
 <div data-role='content'>
 <img src="img/Necro_Breastplate.png" alt="Necro Breastplate " class='item_image'/>
-<p></p>
+<p>A full set grants 19 defense and a constant 30% speed boost</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>7</td></tr>
@@ -4724,7 +4900,7 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Necro Greaves</h1></div>
 <div data-role='content'>
 <img src="img/Necro_Greaves.png" alt="Necro Greaves" class='item_image'/>
-<p></p>
+<p>A full set grants 19 defense and a constant 30% speed boost</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
 <tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr>
@@ -4739,46 +4915,49 @@ When you die you will spawn with full mana and health</p>
 <div data-role='header'><h1>Molten Helmet</h1></div>
 <div data-role='content'>
 <img src="img/Molten_Helmet.png" alt="Molten Helmet" class='item_image'/>
-<p></p>
+<p>A full set grants 25 base defense, plus a 15% melee damage bonus, and emits light while moving</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
-<tr><td style='font-weight: bold;'>Defense</td><td>7</td></tr>
+<tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Rarity</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Body Slot</td><td>Helmet</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>90 Silver Coins</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>30</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>30</td></tr><tr><td><img src="img/Gold_Helmet.png" alt="Gold Helmet" />Gold Helmet</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Molten_Breastplate_" data-role='page'>
 <div data-role='header'><h1>Molten Breastplate </h1></div>
 <div data-role='content'>
 <img src="img/Molten_Breastplate.png" alt="Molten Breastplate " class='item_image'/>
-<p></p>
+<p>A full set grants 25 base defense, plus a 15% melee damage bonus, and emits light while moving</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
-<tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr>
+<tr><td style='font-weight: bold;'>Defense</td><td>9</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack </td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Rarity</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Body Slot</td><td>Shirt</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>60 Silver Coins</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>40</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>40</td></tr><tr><td><img src="img/Gold_Chainmail.png" alt="Gold Chainmail" />Gold Chainmail</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Molten_Greaves" data-role='page'>
 <div data-role='header'><h1>Molten Greaves</h1></div>
 <div data-role='content'>
 <img src="img/Molten_Greaves.png" alt="Molten Greaves" class='item_image'/>
-<p></p>
+<p>A full set grants 25 base defense, plus a 15% melee damage bonus, and emits light while moving</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Armor</td></tr>
-<tr><td style='font-weight: bold;'>Defense</td><td>7</td></tr>
+<tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Rarity</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Body Slot</td><td>Pants</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>60 Silver Coins</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>35</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Hellstone_Bar.png" alt="Hellstone Bar" />Hellstone Bar</td><td>35</td></tr><tr><td><img src="img/Gold_Greaves.png" alt="Gold Greaves" />Gold Greaves</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Archaeologists_Hat" data-role='page'>
 <div data-role='header'><h1>Archaeologist's Hat</h1></div>
@@ -4864,7 +5043,7 @@ When you die you will spawn with full mana and health</p>
 <tr><td style='font-weight: bold;'>Body slot</td><td>Social Helmet</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>20{{sc</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Gold_Bar.png" alt="Gold Bar" />Gold Bar</td><td>30</td></tr><tr><td>Ruby</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Gold_Bar.png" alt="Gold Bar" />Gold Bar</td><td>30</td></tr><tr><td><img src="img/Ruby.png" alt="Ruby" />Ruby</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Heros_Hat" data-role='page'>
 <div data-role='header'><h1>Hero's Hat</h1></div>
@@ -5027,7 +5206,7 @@ When you die you will spawn with full mana and health</p>
 <tr><td style='font-weight: bold;'>Body slot</td><td>Social Shirt</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>4{{sc</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silk.png" alt="Silk" />Silk</td><td>30</td></tr><tr><td>Ruby</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silk.png" alt="Silk" />Silk</td><td>30</td></tr><tr><td><img src="img/Ruby.png" alt="Ruby" />Ruby</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Robot_Hat" data-role='page'>
 <div data-role='header'><h1>Robot Hat</h1></div>
@@ -5111,6 +5290,362 @@ When you die you will spawn with full mana and health</p>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Silk.png" alt="Silk" />Silk</td><td>20</td></tr><tr><td><img src="img/Black_Dye.png" alt="Black Dye" />Black Dye</td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
+<div id="Lesser_Healing_Potion" data-role='page'>
+<div data-role='header'><h1>Lesser Healing Potion</h1></div>
+<div data-role='content'>
+<img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" class='item_image'/>
+<p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 100 life</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>2{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Mushroom.png" alt="Mushroom" />Mushroom</td><td>1</td></tr><tr><td><img src="img/Gel.png" alt="Gel" />Gel</td><td>2</td></tr><tr><td><img src="img/Bottle.png" alt="Bottle" />Bottle</td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
+</div>
+<div id="Healing_Potion" data-role='page'>
+<div data-role='header'><h1>Healing Potion</h1></div>
+<div data-role='content'>
+<img src="img/Healing_Potion.png" alt="Healing Potion" class='item_image'/>
+<p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>2{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" />Lesser Healing Potion</td><td>2</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Lesser_Mana_Potion" data-role='page'>
+<div data-role='header'><h1>Lesser Mana Potion</h1></div>
+<div data-role='content'>
+<img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" class='item_image'/>
+<p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 100 mana</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>2{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>1</td></tr><tr><td><img src="img/Gel.png" alt="Gel" />Gel</td><td>2</td></tr><tr><td><img src="img/Bottle.png" alt="Bottle" />Bottle</td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
+</div>
+<div id="Mana_Potion" data-role='page'>
+<div data-role='header'><h1>Mana Potion</h1></div>
+<div data-role='content'>
+<img src="img/Mana_Potion.png" alt="Mana Potion" class='item_image'/>
+<p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>200</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>2{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" />Lesser Mana Potion</td><td>2</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Lesser_Restoration_Potion" data-role='page'>
+<div data-role='header'><h1>Lesser Restoration Potion</h1></div>
+<div data-role='content'>
+<img src="img/Lesser_Restoration_Potion.png" alt="Lesser Restoration Potion" class='item_image'/>
+<p>Restores 100 points of mana and health.</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>4{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Lesser_Healing_Potion.png" alt="Lesser Healing Potion" />Lesser Healing Potion</td><td>1</td></tr><tr><td><img src="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" />Lesser Mana Potion</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Restoration_Potion" data-role='page'>
+<div data-role='header'><h1>Restoration Potion</h1></div>
+<div data-role='content'>
+<img src="img/Restoration_Potion.png" alt="Restoration Potion" class='item_image'/>
+<p>Restores 200 points of mana and health</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>200</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>8{{sc</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Healing_Potion.png" alt="Healing Potion" />Healing Potion</td><td>1</td></tr><tr><td><img src="img/Mana_Potion.png" alt="Mana Potion" />Mana Potion</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Gills_Potion" data-role='page'>
+<div data-role='header'><h1>Gills Potion</h1></div>
+<div data-role='content'>
+<img src="img/Gills_Potion.png" alt="Gills Potion" class='item_image'/>
+<p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Breathe water instead of air</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Waterleaf.png" alt="Waterleaf" />Waterleaf</td><td>1</td></tr><tr><td><img src="img/Coral.png" alt="Coral" />Coral</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Battle_Potion" data-role='page'>
+<div data-role='header'><h1>Battle Potion</h1></div>
+<div data-role='content'>
+<img src="img/Battle_Potion.png" alt="Battle Potion" class='item_image'/>
+<p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Increase enemy spawn rate</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Deathweed.png" alt="Deathweed" />Deathweed</td><td>1</td></tr><tr><td><img src="img/Rotten_Chunk.png" alt="Rotten Chunk" />Rotten Chunk</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Thorns_Potion" data-role='page'>
+<div data-role='header'><h1>Thorns Potion</h1></div>
+<div data-role='content'>
+<img src="img/Thorns_Potion.png" alt="Thorns Potion" class='item_image'/>
+<p>Makes attackers take damage for two minutes</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Attackers also take damage</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Deathweed.png" alt="Deathweed" />Deathweed</td><td>1</td></tr><tr><td><img src="img/Cactus.png" alt="Cactus" />Cactus</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Featherfall_Potion" data-role='page'>
+<div data-role='header'><h1>Featherfall Potion</h1></div>
+<div data-role='content'>
+<img src="img/Featherfall_Potion.png" alt="Featherfall Potion" class='item_image'/>
+<p>Slows the players fall speed for 5 minutes</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Slows falling speed</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Feather.png" alt="Feather" />Feather</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Gravitation_Potion" data-role='page'>
+<div data-role='header'><h1>Gravitation Potion</h1></div>
+<div data-role='content'>
+<img src="img/Gravitation_Potion.png" alt="Gravitation Potion" class='item_image'/>
+<p>Allows the player to control gravity for 3 minutes</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Allows the control of gravity</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Fireblossom.png" alt="Fireblossom" />Fireblossom</td><td>1</td></tr><tr><td><img src="img/Deathweed.png" alt="Deathweed" />Deathweed</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Feather.png" alt="Feather" />Feather</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Invisibility_Potion" data-role='page'>
+<div data-role='header'><h1>Invisibility Potion</h1></div>
+<div data-role='content'>
+<img src="img/Invisibility_Potion.png" alt="Invisibility Potion" class='item_image'/>
+<p>It turns the player invisible for 1 minute, though equipped armor seems to remain visible.
+</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Grants invisibility</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Ironskin_Potion" data-role='page'>
+<div data-role='header'><h1>Ironskin Potion</h1></div>
+<div data-role='content'>
+<img src="img/Ironskin_Potion.png" alt="Ironskin Potion" class='item_image'/>
+<p>It Increases defense by 8 for 5 minutes. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Increase defense by 8</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Iron_Ore.png" alt="Iron Ore" />Iron Ore</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Mana_Regeneration_Potion" data-role='page'>
+<div data-role='header'><h1>Mana Regeneration Potion</h1></div>
+<div data-role='content'>
+<img src="img/Mana_Regeneration_Potion.png" alt="Mana Regeneration Potion" class='item_image'/>
+<p>They can be crafted using 1 Bottled Water, 1 Moonglow, 1 Daybloom, and 1 Fallen Star. They give a buff that increases Mana regeneration, similar to wearing a Band of Starpower. This effect lasts 2 minutes. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Increased Mana regeneration</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Obsidian_Skin_Potion" data-role='page'>
+<div data-role='header'><h1>Obsidian Skin Potion</h1></div>
+<div data-role='content'>
+<img src="img/Obsidian_Skin_Potion.png" alt="Obsidian Skin Potion" class='item_image'/>
+<p>The potion lasts for three minutes and provides immunity to lava.
+Obsidian Skin Potion </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Provides immunity to lava</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Fireblossom.png" alt="Fireblossom" />Fireblossom</td><td>1</td></tr><tr><td><img src="img/Waterleaf.png" alt="Waterleaf" />Waterleaf</td><td>1</td></tr><tr><td><img src="img/Obsidian.png" alt="Obsidian" />Obsidian</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Shine_Potion" data-role='page'>
+<div data-role='header'><h1>Shine Potion</h1></div>
+<div data-role='content'>
+<img src="img/Shine_Potion.png" alt="Shine Potion" class='item_image'/>
+<p>It makes your current character glow, which is useful for exploring caves. It loses some of it's usefulness when you obtain the Orb of Light, as the materials needed to make the potion could be used for more useful potions. It, however unlike the Orb of Light, follows the player without it falling behind.
+
+
+</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Emits an aura of light</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />Glowing Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Spelunker_Potion" data-role='page'>
+<div data-role='header'><h1>Spelunker Potion</h1></div>
+<div data-role='content'>
+<img src="img/Spelunker_Potion.png" alt="Spelunker Potion" class='item_image'/>
+<p>When used, you receive a "Spelunker" buff that has a duration of 5 minutes. This buff gives a slight purple glow to all nearby ore, chests, and pots. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Shows the location of treasure and ore</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td><img src="img/Gold_Ore.png" alt="Gold Ore" />Gold Ore</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Water_Walking_Potion" data-role='page'>
+<div data-role='header'><h1>Water Walking Potion</h1></div>
+<div data-role='content'>
+<img src="img/Water_Walking_Potion.png" alt="Water Walking Potion" class='item_image'/>
+<p>Allows players to walk on water (and lava!) for 5 minutes. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Allows the ability to walk on water</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Waterleaf.png" alt="Waterleaf" />Waterleaf</td><td>1</td></tr><tr><td><img src="img/Shark_Fin.png" alt="Shark Fin" />Shark Fin</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Archery_Potion" data-role='page'>
+<div data-role='header'><h1>Archery Potion</h1></div>
+<div data-role='content'>
+<img src="img/Archery_Potion.png" alt="Archery Potion" class='item_image'/>
+<p>It increases arrow speed and damage by 15%, and it lasts for 4 minutes.
+Archery Potion </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>%15 increase arrow speed and damage</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Lens.png" alt="Lens" />Lens</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Hunter_Potion" data-role='page'>
+<div data-role='header'><h1>Hunter Potion</h1></div>
+<div data-role='content'>
+<img src="img/Hunter_Potion.png" alt="Hunter Potion" class='item_image'/>
+<p>It shows the location of enemies on your screen by highlighting them and making them glow. They do not give off light, however. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Shows the location of enemies</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Shark_Fin.png" alt="Shark Fin" />Shark Fin</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Magic_Power_Potion" data-role='page'>
+<div data-role='header'><h1>Magic Power Potion</h1></div>
+<div data-role='content'>
+<img src="img/Magic_Power_Potion.png" alt="Magic Power Potion" class='item_image'/>
+<p>It increases magic damage by 20% for 2 minutes.
+Magic Power Potion </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>20% increased magic damage</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td><img src="img/Moonglow.png" alt="Moonglow" />Moonglow</td><td>1</td></tr><tr><td><img src="img/Deathweed.png" alt="Deathweed" />Deathweed</td><td>1</td></tr><tr><td><img src="img/Fallen_Star.png" alt="Fallen Star" />Fallen Star</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Night_Owl_Potion" data-role='page'>
+<div data-role='header'><h1>Night Owl Potion</h1></div>
+<div data-role='content'>
+<img src="img/Night_Owl_Potion.png" alt="Night Owl Potion" class='item_image'/>
+<p>It improves the player's night vision for 10 minutes. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Bonus</td><td>Increased night vision</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Regeneration_Potion" data-role='page'>
+<div data-role='header'><h1>Regeneration Potion</h1></div>
+<div data-role='content'>
+<img src="img/Regeneration_Potion.png" alt="Regeneration Potion" class='item_image'/>
+<p>It provides health regeneration for a total of 240HP and its effect is stackable with the Band of Regeneration.
+</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Provides life regeneration</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>true</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>true</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Alcehmy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Daybloom</td><td>1</td></tr><tr><td><img src="img/Mushroom.png" alt="Mushroom" />Mushroom</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
+<div id="Swiftness_Potion" data-role='page'>
+<div data-role='header'><h1>Swiftness Potion</h1></div>
+<div data-role='content'>
+<img src="img/Swiftness_Potion.png" alt="Swiftness Potion" class='item_image'/>
+<p>The potion's effects last for 4 minutes and makes your movement speed 25% faster.
+</p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>%15 increase movement speed</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
+</table>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img src="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img src="img/Bottled_Water.png" alt="Bottled Water" />Bottled Water</td><td>1</td></tr><tr><td>Blinkroot</td><td>1</td></tr><tr><td><img src="img/Cactus.png" alt="Cactus" />Cactus</td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
 
         <!--End Items-->
         <div id='common' data-role='page'>
@@ -5120,7 +5655,7 @@ When you die you will spawn with full mana and health</p>
 <li><a href="#Angry_Bones"><img src="img/Angry_Bones.png" alt="Angry Bones" width='20' height='20' class='ui-li-icon' />Angry Bones</a></li>
 <li><a href="#Bone_Serpent"><img src="img/Bone_Serpent.png" alt="Bone Serpent" width='20' height='20' class='ui-li-icon' />Bone Serpent</a></li>
 <li><a href="#Bunny"><img src="img/Bunny.gif" alt="Bunny" width='20' height='20' class='ui-li-icon' />Bunny</a></li>
-<li><a href="#Burning_Skull"><img src="img/Burning_Skull.png" alt="Burning Skull" width='20' height='20' class='ui-li-icon' />Burning Skull</a></li>
+<li><a href="#Cursed_Skull"><img src="img/Burning_Skull.png" alt="Cursed Skull" width='20' height='20' class='ui-li-icon' />Cursed Skull</a></li>
 <li><a href="#Cave_Bat"><img src="img/Cave_Bat.png" alt="Cave Bat" width='20' height='20' class='ui-li-icon' />Cave Bat</a></li>
 <li><a href="#Corrupt_Bunny"><img src="img/Corrupt_Bunny.png" alt="Corrupt Bunny" width='20' height='20' class='ui-li-icon' />Corrupt Bunny</a></li>
 <li><a href="#Corrupt_Goldfish"><img src="img/Corrupt_Goldfish.png" alt="Corrupt Goldfish" width='20' height='20' class='ui-li-icon' />Corrupt Goldfish</a></li>
@@ -5155,6 +5690,11 @@ When you die you will spawn with full mana and health</p>
 <li><a href="#Jungle_Slime"><img src="img/Jungle_Slime.png" alt="Jungle Slime" width='20' height='20' class='ui-li-icon' />Jungle Slime</a></li>
 <li><a href="#Snatcher"><img src="img/Snatcher.png" alt="Snatcher" width='20' height='20' class='ui-li-icon' />Snatcher</a></li>
 <li><a href="#Zombie"><img src="img/Zombie.png" alt="Zombie" width='20' height='20' class='ui-li-icon' />Zombie</a></li>
+<li><a href="#Vulture"><img src="img/Vulture.png" alt="Vulture" width='20' height='20' class='ui-li-icon' />Vulture</a></li>
+<li><a href="#Antlion"><img src="img/Antlion.png" alt="Antlion" width='20' height='20' class='ui-li-icon' />Antlion</a></li>
+<li><a href="#Shark"><img src="img/Shark.png" alt="Shark" width='20' height='20' class='ui-li-icon' />Shark</a></li>
+<li><a href="#Blue_Jellyfish"><img src="img/Blue_Jellyfish.png" alt="Blue Jellyfish" width='20' height='20' class='ui-li-icon' />Blue Jellyfish</a></li>
+<li><a href="#Pink_Jellyfish"><img src="img/Pink_Jellyfish.png" alt="Pink Jellyfish" width='20' height='20' class='ui-li-icon' />Pink Jellyfish</a></li>
 </ul>
 </div>
 </div>
@@ -5228,13 +5768,13 @@ Copper Coins: ~1,040</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
 <tr><td style='font-weight: bold;'>Life</td><td>5</td></tr></table></div>
 </div>
-<div id="Burning_Skull" data-role='page'>
-<div data-role='header'><h1>Burning Skull</h1></div>
+<div id="Cursed_Skull" data-role='page'>
+<div data-role='header'><h1>Cursed Skull</h1></div>
 <div data-role='content'>
 <img src="img/Burning_Skull.png" alt="]" class='item_image'/>
-<p>Flying mob found only in Dungeons</p>
+<p>Flying mob found only in Dungeons. They are able to travel through walls. Before patch 1.0.5 they were called Burning Skulls.</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Undead Enemy</td></tr><tr><td style='font-weight: bold;'>Type2</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Dungeon</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>30</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>30</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Undead Enemy</td></tr><tr><td style='font-weight: bold;'>Type2</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Dungeon</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr><tr><td style='font-weight: bold;'>Life</td><td>30</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>30</td></tr></table></div>
 </div>
 <div id="Cave_Bat" data-role='page'>
 <div data-role='header'><h1>Cave Bat</h1></div>
@@ -5242,7 +5782,7 @@ Copper Coins: ~1,040</p>
 <img src="img/Cave_Bat.png" alt="]" class='item_image'/>
 <p>Only found underground</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>45</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Underground</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Bat</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>15</td></tr><tr><td style='font-weight: bold;'>Life</td><td>25</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
 </div>
 <div id="Corrupt_Bunny" data-role='page'>
 <div data-role='header'><h1>Corrupt Bunny</h1></div>
@@ -5319,7 +5859,7 @@ Copper Coins: ~350</p>
 Rotten Chunk: 33.33%<br />
 Copper Coin: ~100</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Corrupted Enemy</td></tr><tr><td style='font-weight: bold;'>Type2</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>The Corruption</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>15</td></tr><tr><td style='font-weight: bold;'>Life</td><td>40</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Corrupted Enemy</td></tr><tr><td style='font-weight: bold;'>Type2</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>The Corruption</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>23</td></tr><tr><td style='font-weight: bold;'>Life</td><td>40</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr></table></div>
 </div>
 <div id="Fire_Imp" data-role='page'>
 <div data-role='header'><h1>Fire Imp</h1></div>
@@ -5428,7 +5968,7 @@ Goldfish: 100%</p>
 Drops: <br />
 Copper Coin: ~600</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>100</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Bat</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>100</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>8</td></tr></table></div>
 </div>
 <div id="Hornet" data-role='page'>
 <div data-role='header'><h1>Hornet</h1></div>
@@ -5454,7 +5994,7 @@ Copper Coin: ~775</p>
 Drops:<br />
 Copper Coin: ~100</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Environment</td><td>Jungle</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>20</td></tr><tr><td style='font-weight: bold;'>Life</td><td>70</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Jungle</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Bat</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>20</td></tr><tr><td style='font-weight: bold;'>Life</td><td>70</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr></table></div>
 </div>
 <div id="Man_Eater" data-role='page'>
 <div data-role='header'><h1>Man Eater</h1></div>
@@ -5523,7 +6063,7 @@ Drops:<br />
 Gel<br />
 Copper Coin: ~3</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Slime</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Forest</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Slime</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>8</td></tr><tr><td style='font-weight: bold;'>Life</td><td>15</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Slime</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Forest</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Slime</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>6</td></tr><tr><td style='font-weight: bold;'>Life</td><td>14</td></tr></table></div>
 </div>
 <div id="Blue_Slime" data-role='page'>
 <div data-role='header'><h1>Blue Slime</h1></div>
@@ -5649,6 +6189,59 @@ Shackle: 2%<br />
 Copper Coin: ~60</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Undead Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Surface</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Fighter</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>14</td></tr><tr><td style='font-weight: bold;'>Life</td><td>45</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr></table></div>
+</div>
+<div id="Vulture" data-role='page'>
+<div data-role='header'><h1>Vulture</h1></div>
+<div data-role='content'>
+<img src="img/Vulture.png" alt="]" class='item_image'/>
+<p>Found in the Desert</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Desert</td></tr><tr><td style='font-weight: bold;'>AI</td><td>Vulture</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>14</td></tr><tr><td style='font-weight: bold;'>Life</td><td>40</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>4</td></tr></table></div>
+</div>
+<div id="Antlion" data-role='page'>
+<div data-role='header'><h1>Antlion</h1></div>
+<div data-role='content'>
+<img src="img/Antlion.png" alt="]" class='item_image'/>
+<p>Found in the Desert<br />
+<br />
+They're one of the first mobs to shoot ranged projectiles at the player. They remain stationary, and will shoot rocks at you. They have a dead zone where they cannot shoot at you.</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Desert</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>20 (Ranged attack)<br />10 (Melee)</td></tr><tr><td style='font-weight: bold;'>Life</td><td>45</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr></table></div>
+</div>
+<div id="Shark" data-role='page'>
+<div data-role='header'><h1>Shark</h1></div>
+<div data-role='content'>
+<img src="img/Shark.png" alt="]" class='item_image'/>
+<p>Sharks can be found in the oceans on either side of the world. They do a decent amount of damage making them dangerous.<br />
+<br />
+Drop:<br />
+Shark Fin<br />
+Diving Helmet<br />
+</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Ocean</td></tr><tr><td style='font-weight: bold;'>AI</td><td>Fighter</td></tr><tr><td style='font-weight: bold;'>Life</td><td>300</td></tr></table></div>
+</div>
+<div id="Blue_Jellyfish" data-role='page'>
+<div data-role='header'><h1>Blue Jellyfish</h1></div>
+<div data-role='content'>
+<img src="img/Blue_Jellyfish.png" alt="]" class='item_image'/>
+<p>Blue Jellyfish are found in the Ocean and underground pools of water. They are weaker than Pink Jellyfish. <br />
+<br />
+Drop:<br />
+Glowstick: 1-5 100%</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Water</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Jellyfish</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>20</td></tr><tr><td style='font-weight: bold;'>Life</td><td>30</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>Amount of defense the NPC has.</td></tr></table></div>
+</div>
+<div id="Pink_Jellyfish" data-role='page'>
+<div data-role='header'><h1>Pink Jellyfish</h1></div>
+<div data-role='content'>
+<img src="img/Pink_Jellyfish.png" alt="]" class='item_image'/>
+<p>Pink Jellyfish are found in the Ocean and underground water. They are stronger than Blue Jellyfish. <br />
+<br />
+Drops:<br />
+Glowsticks: 1-5 100%</p>
+<table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Water</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Jellyfish</td></tr><tr><td style='font-weight: bold;'>Life</td><td>70</td></tr></table></div>
 </div>
 <div id="Dead_Miner" data-role='page'>
 <div data-role='header'><h1>Dead Miner</h1></div>
@@ -5781,7 +6374,7 @@ Drops:<br />
 5-15 Lesser Healing Potions<br />
 </p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Name</td><td>Skeletron Head</td></tr><tr><td style='font-weight: bold;'>Type</td><td>Boss</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>35</td></tr><tr><td style='font-weight: bold;'>Life</td><td>6000</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>12</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Name</td><td>Skeletron Head</td></tr><tr><td style='font-weight: bold;'>Type</td><td>Boss</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>35</td></tr><tr><td style='font-weight: bold;'>Life</td><td>5000</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>12</td></tr></table></div>
 </div>
 
         <!--End Monsters-->
@@ -5802,13 +6395,19 @@ Drops:<br />
     <li>Hook</li>
 </ul>
 
-</div></div><div id='Deserts' data-role='page'><div data-role='header'><h1>Deserts</h1></div><div data-role='content'><p>Deserts contain are full of sand and spawn the same monsters as the Forest</p>
+</div></div><div id='Deserts' data-role='page'><div data-role='header'><h1>Deserts</h1></div><div data-role='content'><p>Deserts are areas that contain mostly sand</p>
 <h3>Monsters in Deserts</h3>
 <hr>
 <ul>
     <li><b>During the day</b>
         <ul>
-            <li>Slimes - Green, Blue, Red, Purple, and Pinky (rare spawn)</li>
+            <li>Green Slime</li>
+            <li>Blue Slime</li>
+            <li>Red Slime</li>
+            <li>Purple</li>
+            <li>Pinky (rare spawn)</li>
+            <li>Antlion</li>
+            <li>Vulture</li>
         </ul>
     </li>
     <li><b>During the night:</b>
@@ -5824,7 +6423,7 @@ Drops:<br />
 <hr>
 <ul>
 	<li>Angry Bones</li>
-	<li>Burning Skull</li>
+	<li>Cursed Skull</li>
 	<li>Dark Caster</li>
 </ul>
 <h3>Items</h3>
@@ -5920,7 +6519,18 @@ Drops:<br />
 <ul>
 	<li>Meteor Head</li>
 </ul>
-	 </div></div><div id='TheCorruption' data-role='page'><div data-role='header'><h1>The Corruption</h1></div><div data-role='content'><p>
+	 </div></div><div id='Ocean' data-role='page'><div data-role='header'><h1>Ocean</h1></div><div data-role='content'><p>The Ocean is an area found on the surface of each map. It buffers the very ends of the map.
+
+It is simply a barren body of water which gets very deep before hitting the invisible wall at the edge of the map. If players without proper accessories try to swim to the side of the map, there is a serious risk of drowning. It is recommended to bring a Breathing Reed, a Magic Mirror and/or Flippers, but not quite necessary. At the very least have a Grappling Hook and a few Healing Potions.
+
+Oceans will commonly contain chests with loot pertaining to water.</p>
+
+<h3>Monsters</h3>
+<ul>
+    <li>Shark</li>
+    <li>Jellyfish</li>
+    <li>Crab</li>
+</ul></div></div><div id='TheCorruption' data-role='page'><div data-role='header'><h1>The Corruption</h1></div><div data-role='content'><p>
 	The Corruption is a dark area where corruption has spread over dirt blocks and trees. This area will have thorns which will hurt the player as well and dangerous chasms that can kill you if you blindly enter them. The chasms tend to contain Shadow Orbs and are made of Ebonstone Blocks. These blocks can only be destroyed by the Nightmare Pickaxe, Molten Pickaxe or Dynamite. 
 </p>
 <h3>Monsters</h3>
