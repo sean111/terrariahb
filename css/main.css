@@ -52,3 +52,14 @@
 #monster_stats td {
     padding: 5px;
 }
+.npcInv {
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid #000;
+	border-radius: 10px;
+	font-size: 12px;
+}
+
+.npcInv td {
+	padding: 5px;
+}

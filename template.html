@@ -19,7 +19,7 @@
                     <li><a href="#catList">Items</a></li>
                     <li><a href="#mcatList">Monsters</a></li>
                     <li><a href="#ecatList">Environments</a></li>
-                    <li>NPCs</li>  
+                    <li><a href="#ncatList">NPCs</a></li>  
                     <li><a href="#about">About</a></li>
                 </ul>        
             </div>            
@@ -65,6 +65,15 @@
             </div>
         </div>
         <!--End ecatList-->
+        <div id='ncatList' data-role='page'>
+            <div data-role="header"><h1>NPCs</h1></div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="false">
+                    {NPCLIST}
+                </ul>
+            </div>
+        </div>
+        <!--End ncatList-->
         {ITEMLIST}
         <!--End itemList-->
         {ITEMS}
@@ -75,6 +84,8 @@
         <!--End Monsters-->
         {ENVS}
         <!--End envs-->
+        {NPCS}
+        <!--End NPCs-->
     </body>
 </html>
 
