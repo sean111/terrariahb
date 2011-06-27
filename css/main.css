@@ -1,3 +1,50 @@
+/* SYSTEM CSS */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+div[data-role=page] {
+    background-color: #eee;
+    height: 100%;
+}
+
+div[data-role=header] {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul[data-role=listview] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul[data-role=listview] li {
+    background-color: #ccc;
+    border: thin solid #000;
+    margin-bottom: 1px;
+    font-size: 22px;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+ul[data-role=listview] a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+/* END SYSTEM CSS*/
+
 #item_stats {
     margin-left: auto;
     margin-right: auto;
