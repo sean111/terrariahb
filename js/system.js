@@ -1,31 +1,37 @@
 var currentDiv='';
-x$(window).on('load', function(e) {
-    x$('[data-role="page"]').each(function (e, i, x) { 
+$(window).bind('load', function(e) {
+    $('[data-role="page"]').each(function () { 
         //if(x$(e).attr('data-role')=='page') {
-            x$(e).css({visibility: 'hidden', display: 'none'});
+            $(this).css({display: 'none'});
         //}
     });
-    x$('#mainMenu').css({visibility: 'visible', display: 'block'});
-    currentDiv='#mainMenu';
+    show('#mainMenu');
+    currentDiv='#mainMenu';    
 })
 
 function hide(div) {
-    x$(div).css({visibility: 'hidden', display: 'none'});
+    $(div).css({display: 'none'});
 }
 
 function show(div) {
-    x$(div).css({visibility: 'visible', display: 'block'});
+    $(div).css({display: 'block'});
+    $(div).css('height',window.innerHeight+'px');
 }
 
-window.onpopstate=function(event) {
+$(window).bind('orientationchange', function() {
+    (currentDiv).css('height',window.innerHeight+'px');
+});
+
+window.onhashchange=function(event) {
     hash=location.hash;
-    console.log(hash);
+    //console.log(hash);
     if(empty(hash)) {
         hash='#mainMenu';
     }
     hide(currentDiv);
     show(hash);
     currentDiv=hash;
+    
 }
 
 empty=function(cvar) {

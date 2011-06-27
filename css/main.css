@@ -7,7 +7,7 @@ body {
 
 div[data-role=page] {
     background-color: #eee;
-    height: 100%;
+    font-size: 18px;
 }
 
 div[data-role=header] {
@@ -29,12 +29,12 @@ ul[data-role=listview] {
 }
 ul[data-role=listview] li {
     background-color: #ccc;
-    border: thin solid #000;
+    border: thin solid #999;
     margin-bottom: 1px;
     font-size: 22px;
     padding-left: 10px;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
 }
 
 ul[data-role=listview] a {
