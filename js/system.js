@@ -1,12 +1,20 @@
-var currentDiv='';
+var currentPage='';
+if("onhashchange" in window) {
+    window.onhashchange=function(event) {
+        changePage();
+    }
+}
+else {
+    window.setInterval(function () {
+        if(location.hash != currentPage) {
+            changePage();
+        }
+    }, 100);
+    
+}
 $(window).bind('load', function(e) {
-    /*$('[data-role="page"]').each(function () { 
-        //if(x$(e).attr('data-role')=='page') {
-            $(this).css({display: 'none'});
-        //}
-    });*/
     show('#mainMenu');
-    currentDiv='#mainMenu';    
+    currentPage='#mainMenu';        
 })
 
 function hide(div) {
@@ -19,20 +27,8 @@ function show(div) {
 }
 
 $(window).bind('orientationchange', function() {
-    (currentDiv).css('height',window.innerHeight+'px');
+    (currentPage).css('height',window.innerHeight+'px');
 });
-
-window.onhashchange=function(event) {
-    hash=location.hash;
-    //console.log(hash);
-    if(empty(hash)) {
-        hash='#mainMenu';
-    }
-    hide(currentDiv);
-    show(hash);
-    currentDiv=hash;
-    
-}
 
 empty=function(cvar) {
     if(cvar=="" || cvar==null || cvar=="undefined") {
@@ -41,4 +37,13 @@ empty=function(cvar) {
     return false;
 }
 
+changePage=function() {
+    hash=location.hash;
+    if(empty(hash)) {
+        hash='#mainMenu';
+    }
+    hide(currentPage);
+    show(hash);
+    currentPage=hash;
+}
 
