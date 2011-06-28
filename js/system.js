@@ -1,10 +1,10 @@
 var currentDiv='';
 $(window).bind('load', function(e) {
-    $('[data-role="page"]').each(function () { 
+    /*$('[data-role="page"]').each(function () { 
         //if(x$(e).attr('data-role')=='page') {
             $(this).css({display: 'none'});
         //}
-    });
+    });*/
     show('#mainMenu');
     currentDiv='#mainMenu';    
 })
