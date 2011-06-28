@@ -23,11 +23,15 @@ function hide(div) {
 
 function show(div) {
     $(div).css({display: 'block'});
-    $(div).css('height',window.innerHeight+'px');
+    if($(div).height()<window.innerHeight) {
+        $(div).css('height',window.innerHeight+'px');
+    }
 }
 
 $(window).bind('orientationchange', function() {
-    (currentPage).css('height',window.innerHeight+'px');
+    if($(div).height()<window.innerHeight) {
+        $(currentPage).css('height',window.innerHeight+'px');
+    }
 });
 
 empty=function(cvar) {
