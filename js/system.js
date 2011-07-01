@@ -46,8 +46,13 @@ changePage=function() {
     if(empty(hash)) {
         hash='#mainMenu';
     }
-    hide(currentPage);
-    show(hash);
-    currentPage=hash;
+    if($(hash).html()==null) {
+        alert("Can't find that page!");
+    }
+    else {
+        hide(currentPage);
+        show(hash);
+        currentPage=hash;
+    }
 }
 
