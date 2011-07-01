@@ -64,7 +64,7 @@ ul[data-role=listview] a {
     margin-right: auto;
     border: thin solid #000;
 	border-radius: 10px;
-	font-size: 12px;
+	font-size: 16px;
 }
 .item_image {
     display: block;
@@ -111,7 +111,7 @@ ul[data-role=listview] a {
     margin-right: auto;
     border: thin solid #000;
 	border-radius: 10px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .npcInv td {
