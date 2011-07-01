@@ -10,7 +10,7 @@ version = "0.1.0">
 Terraria information on your phone!
 </description>
 
-<author href="https://www.github.com/sean111/terrariahb/"
+<author href="http://www.seansspace.com/site/?cat=5"
 email="sean111@gmail.com">
 Sean Burke
 </author>
@@ -23,7 +23,7 @@ Sean Burke
 </gap:platforms>
 
 <icon src="icon.png" gap:role="default" />
-<gap:splash src="splash.png" />
+<gap:splash src="splash.png" width="300" height="300"/>
 <feature name="http://api.phonegap.com/1.0/network"/>
 
 <!-- sample preference specification -->
