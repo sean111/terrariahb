@@ -48,7 +48,7 @@ changePage=function() {
     }
     if($(hash).html()==null) {
         alert("Can't find that page!");
-        location.hash=currentPage; //Reset the hash to avoid any errors
+        window.history.back() //Reset the hash to avoid any errors
     }
     else {
         hide(currentPage);
