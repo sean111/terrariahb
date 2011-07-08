@@ -51,6 +51,12 @@ changePage=function() {
         window.history.back() //Reset the hash to avoid any errors
     }
     else {
+        $(hash+' img').each(function() {
+           var name=$(this).attr('name');
+           if(!empty(name)) {
+               $(this).attr('src', name);               
+           } 
+        });
         hide(currentPage);
         show(hash);
         currentPage=hash;
