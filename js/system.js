@@ -1,4 +1,5 @@
 var currentPage='';
+
 if("onhashchange" in window) {
     window.onhashchange=function(event) {
         changePage();
@@ -12,9 +13,19 @@ else {
     }, 100);
     
 }
+
+$(document).bind('menuKeyDown', function(e) {
+   alert('Menu!!!'); 
+});
+
 $(window).bind('load', function(e) {
-    show('#mainMenu');
-    currentPage='#mainMenu';        
+    document.addEventListener("deviceready", function() {
+        document.addEventListener("menubutton", function() {
+            location.hash="#mainMenu";
+        }, false);
+        show('#mainMenu');
+        currentPage='#mainMenu';
+    }, false);                         
 })
 
 function hide(div) {
