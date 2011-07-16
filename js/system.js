@@ -18,10 +18,10 @@ $(window).bind('load', function(e) {
     document.addEventListener("deviceready", function() {
         document.addEventListener("menubutton", function() {
             location.hash="#mainMenu";
-        }, false);
-        show('#mainMenu');
-        currentPage='#mainMenu';
-    }, false);                         
+        }, false);        
+    }, false);    
+    show('#mainMenu');
+    currentPage='#mainMenu';                     
 })
 
 function hide(div) {
