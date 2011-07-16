@@ -14,10 +14,6 @@ else {
     
 }
 
-$(document).bind('menuKeyDown', function(e) {
-   alert('Menu!!!'); 
-});
-
 $(window).bind('load', function(e) {
     document.addEventListener("deviceready", function() {
         document.addEventListener("menubutton", function() {
