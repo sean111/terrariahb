@@ -19,9 +19,9 @@ $(window).bind('load', function(e) {
         document.addEventListener("menubutton", function() {
             location.hash="#mainMenu";
         }, false);        
-    }, false);    
-    show('#mainMenu');
-    currentPage='#mainMenu';                     
+        show('#mainMenu');
+        currentPage='#mainMenu'; 
+    }, false);                            
 })
 
 function hide(div) {
