@@ -14,15 +14,11 @@ else {
     
 }
 
-document.addEventListener("deviceready", function() {
-        console.log('Device Loaded');
-        document.addEventListener("menubutton", function() {
-            console.log('Menu Key');
-            location.hash="#mainMenu";            
-        }, false);                
-    }, false); 
-
 $(window).bind('load', function(e) {
+    document.addEventListener("menubutton", function() {
+        console.log('Menu!');
+        location.hash="#mainMenu";
+    }, false);
     show('#mainMenu');
     currentPage='#mainMenu';                                
 })
