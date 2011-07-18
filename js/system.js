@@ -16,7 +16,6 @@ else {
 
 $(window).bind('load', function(e) {
     document.addEventListener("menubutton", function() {
-        console.log('Menu!');
         location.hash="#mainMenu";
     }, false);
     show('#mainMenu');
