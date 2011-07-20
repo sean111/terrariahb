@@ -20,6 +20,32 @@ $(window).bind('load', function(e) {
     }, false);
     show('#mainMenu');
     currentPage='#mainMenu';                                
+    $('#searchBox').bind('click', function() {
+        $('#searchBox').val('');
+    });
+    $('#searchButton').bind('click', function() {
+        console.log('Searching...');
+        $('#searchResults').empty();
+        $('#searchResults').hide();
+        var s=cleanString($('#searchBox').val());
+        f=false;
+        $('.object').each(function() {
+            var n=cleanString($(this).attr('name'));
+            console.log({'n': n, 's': s});
+            if(n.indexOf(s)!=-1) {
+                console.log(this);
+                f=true;
+                $('#searchResults').append(this);
+            }
+        });
+        if(f) {
+            loadImages('#search');
+        }
+        else {
+            $('#searchResults').append('<li>No results found...</li>');
+        }
+        $('#searchResults').show();
+    });
 })
 
 function hide(div) {
@@ -56,15 +82,26 @@ changePage=function() {
         window.history.back() //Reset the hash to avoid any errors
     }
     else {
-        $(hash+' img').each(function() {
-           var name=$(this).attr('name');
-           if(!empty(name)) {
-               $(this).attr('src', name);               
-           } 
-        });
+        loadImages(hash);
         hide(currentPage);
         show(hash);
         currentPage=hash;
     }
 }
 
+loadImages=function(hash) {
+   $(hash+' img').each(function() {
+        var name=$(this).attr('name');
+        if(!empty(name)) {
+            $(this).attr('src', name);
+        }
+    }); 
+}
+
+cleanString=function(string) {
+    string=string.toLowerCase();
+    string=string.replace(" ",'');
+    string=string.replace("'",'');
+    string=string.replace("`",'');
+    return string;
+}

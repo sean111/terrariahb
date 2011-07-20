@@ -18,7 +18,8 @@
                     <li><a href="#catList">Items</a></li>
                     <li><a href="#mcatList">Monsters</a></li>
                     <li><a href="#ecatList">Environments</a></li>
-                    <li><a href="#ncatList">NPCs</a></li>  
+                    <li><a href="#ncatList">NPCs</a></li> 
+                    <li><a href="#search">Search</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>        
             </div>            
@@ -35,6 +36,15 @@
             <div data-role="content">
                 {VERSIONNOTES}
             </div>            
+        </div>
+        <div id="search" data-role="page">
+            <div data-role="header"><h1>Search</h1></div>
+            <div data-role="content">
+                <input type='text' id='searchBox'><br />
+                <button id='searchButton'>Search</button>
+                <ul id='searchResults' data-role='listview' data-inset='false'>
+                </ul>
+            </div>
         </div>
         <!--End versionNotes-->
         <div id="catList" data-role="page">

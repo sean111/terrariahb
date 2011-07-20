@@ -130,3 +130,13 @@ a {
     background-color: #ccc;
     cursor: pointer;
 }
+
+#searchButton {
+    width: 100%;    
+    font-size: 22px;
+}
+
+#searchBox {
+    width: 100%;
+    font-size: 22px;
+}
