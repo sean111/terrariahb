@@ -18,6 +18,9 @@ $(window).bind('load', function(e) {
     document.addEventListener("menubutton", function() {
         location.hash="#mainMenu";
     }, false);
+    document.addEventListener("searchbutton", function() {
+        location.hash="#search"; 
+    }, false);
     show('#mainMenu');
     currentPage='#mainMenu';                                
     $('#searchBox').bind('click', function() {
