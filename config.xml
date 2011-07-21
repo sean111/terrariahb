@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
 id = "com.phonegap.terrariahb"
-version = "0.2.3">
+version = "0.3.0">
 
 <name>TerrariaHB</name>
 
@@ -10,7 +10,7 @@ version = "0.2.3">
 Terraria information on your phone!
 </description>
 
-<author href="http://www.seansspace.com/site/?cat=5"
+<author href="http://code215.tumblr.com/"
 email="sean111@gmail.com">
 Sean Burke
 </author>
