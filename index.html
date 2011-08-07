@@ -19,6 +19,7 @@
                     <li><a href="#mcatList">Monsters</a></li>
                     <li><a href="#ecatList">Environments</a></li>
                     <li><a href="#ncatList">NPCs</a></li> 
+                    <li><a href="#mechanics">Mechanics</a></li>
                     <li><a href="#search">Search</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>        
@@ -143,6 +144,7 @@ Traces of demonite are created during world gen. (Requires new world.)<br />
 Surface jungles have been enlarged, and will override deserts. (Requires new world.)
             </div>            
         </div>
+        <!--End versionNotes-->
         <div id="search" data-role="page">
             <div data-role="header"><h1>Search</h1></div>
             <div data-role="content">
@@ -152,7 +154,139 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
                 </ul>
             </div>
         </div>
-        <!--End versionNotes-->
+        <div id="mechanics" data-role="page">
+            <div data-role="header"><h1>Mechanics</h1></div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="false">
+                    <li><a href="#attack_speed">Attack Speed</a></li>
+                    <li><a href="#defense">Defense</a></li>
+                    <li><a href="#fall_dmg">Fall Damage</a></li>
+                    <li><a href="#buffs">Buffs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="attack_speed" data-role="page">
+            <div data-role="header"><h1>Attack Speed</h1></div>
+            <div data-role="content">
+                Attack speed in Terraria is handled in a somewhat unusual fashion compared to the accepted "norms" of other games featuring this combat model. While attack speed items do stack together, the actual bonus derived is different than a player would expect based on the in-game description.<br>
+
+                The descriptions presented on items themselves are inaccurate. A description could say "10% melee attack speed" when the actual bonus is closer to 11.1%. This is because the bonus actually reduces the time to attack to 0.9 of base and ((1 / 0.9) - 1) * 100 = 11.11%.<br>
+
+                Bonuses are multiplicative so to find your total bonus you must multiply the reductions together. For instance if you have three Feral Claws equipped the total bonus would be 0.9 * 0.9 * 0.9 = 0.729 or a 37.17% increase.<br>
+
+                Furthermore, the attack speed bonus through gear is capped at 42.86% or 0.7 of base. You can reach this a cap using a combination of: 
+                <ul>
+                    <li>Shadow Armor and two Feral Claws ~ (0.85 * 0.9 * 0.9 = 0.6885)</li>
+                    <li>Any other armor and four Feral Claws ~ (0.9 * 0.9 * 0.9 * 0.9 = 0.6561)</li>
+                </ul>
+            </div>
+        </div>
+        <div id="defense" data-role="page">
+            <div data-role="header"><h1>Defense</h1></div>
+            <div data-role="content">
+                Defense (or Defense Rating) gives an arithmetic reduction in damage: i.e. reduces damage by a fixed amount per hit (as opposed to a geometric damage reduction, which reduces damage percentage based). Because of this, ironically, high Defense is particularly important against low damage attacks, which can be reduced almost completely, but not as important against high damage attacks, where the reduction won't be as effective. 
+                <h3>Formula</h3>
+                Damage Reduction = ROUND_UP(Defense/2)<br>
+                For example, with 10 Defense, a 20 Damage attack is reduced by 5 to 15 Damage.<br>
+                <h3>Monsters</h3>
+                Monsters have exactly the same Defense mechanics as you. High defense monsters will take virtually no damage from low damage weapons (Fire Imps take 3 damage from the Minishark with Musket Balls). When fighting high defense monsters, favor weapons that have high damage. 
+                <h3>Armor and Accessory Defense</h3>
+                ere is a list of armors, accessories, and their respective defense bonuses, including any applicable set bonuses. The highest possible defense bonus (45) is obtainable by equipping full molten armor, as well as five cobalt shields or obsidian skulls or some combination thereof, and drinking an Ironskin Potion
+            </div>
+        </div>
+        <div id="fall_dmg" data-role="page">
+            <div data-role="header"><h1>Fall Damamge</h1></div>
+            <div data-role="content">
+                Fall damage is one of the basic mechanics of the game where a character sustains damage from falling too far. The Player only takes damage after falling past a certain threshold, at which point the damage taken is linear with the distance traveled past said threshold (and not related to speed).
+                <h3>Negation</h3>
+                <h4>Stopping the fall</h4>
+                The first and most obvious is to "break" the fall before hitting the ground. The Fall Damage taken is literally calculated by the fall distance (and not speed). Using items such as Cloud in a Bottle, Rocket Boots, Grappling Hook or Ivy Whip will cause the "fall distance" counter to reset upon use, negating the damage. 
+                <h4>Preparing the terrain</h4>
+                An other alternative is to prepare the terrain in such a way as to not take Fall Damage at all: Placing wooden platforms inside shafts guarantee the player cannot not fall more than 25 blocks. Other alternatives include cushioning the ground: Cobwebs or just Water will stop the player's fall, without damage. 
+                <h4>Lucky Horseshoe</h4>
+                The Lucky Horseshoe is an accessory that negates fall damage. It can be found in Floating Island chests. They can be very handy when exploring chasms. The Lucky Horseshoe is always useful for the less careful players that fall down pits.<br>
+                Once the player has found a Grappling Hook and/or a Cloud in a Bottle, the Lucky Horseshoe loses some of its usefulness, and can potentially be swapped out, although having one equipped is always a good safeguard. 
+                <h4>Featherfall Potion</h4>
+                The Featherfall Potion makes players fall more slowly and negates fall damage, even when its slowing effect is temporarily canceled out by the player holding the down key. 
+                <h3>Calculations</h3>
+                You will not receive fall damage until you drop beyond 25 blocks (50 feet). At 26 blocks (52 feet) you receive 10 damage with no equipment. Every block above that is an additional 10 damage, or 5 damage every foot. Example: You drop down 50 blocks that is 250 damage.<br>
+                You can create an equation from this:<br>
+                &nbsp;&nbsp;dmg = 10 * (h - 25)<br>
+                Where:<br>
+                <b>h</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Blocks above ground level (where you land)<br>
+                <b>dmg</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Fall damage<br>
+                Again, you have to be ABOVE 25 blocks to receive any fall damage at all. Also, defense plays a roll in how much damage you take.<br>
+                Defense's equation is very simple. You take the defense of your armor/accessories and divide it by two then round up (at least in the case of fall damage). Example: You have 19 defense, you'll divide this by two (9.5) and round up (10). So if you fall 50 blocks you'll take 240 damage instead of 250 damage.<br>
+                This makes the Fall Damage equation:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;dmg = 10 * (h - 25) - ceil(d / 2)<br>
+                Where:<br>
+                <b>h</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Blocks above ground level (where you land) <br>
+                <b>d</b><br>
+                &nbsp;&nbsp;Total Defense<br>
+                <b>dmg</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Fall damage<br>
+                <b>ceil</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Round up
+                <h3>Maximum Fall Damage</h3>
+                Although there is no maximum cap on fall damage, there is a limit to how big your map is.<br>
+                On a large world you can take up to 23270 damage if falling from the top of the map to the bottom. This would mean falling down 2352 blocks (after 25 blocks). So from the bottom of the map to the top of the map (that a player can have access to) is 2352 blocks + 25 + 2 (because you land on your feet, you have to account for your body and head too) which makes a large world 2379 blocks in height, or 4758 feet (again, that a player has access too. There is space outside of the boundaries for monsters to spawn). 
+            </div>
+        </div>
+        <div id="buffs" data-role="page">
+            <div data-role="header"><h1>Buffs</h1></div>
+            <div data-role="content">
+                Buffs are added when certain potions are used. You can right click the buff icon to cancel it.<br>
+                If you die with any active buffs, they will be canceled out and need to be re-applied on respawn.<br>
+                At the moment, you can only have 10 Buffs active at once. When you try to activate another buff it cancels out the first buff in the bar.
+                <table>
+                    <tr>
+                        <th>Icons</th>
+                        <th>Potion</th>
+                        <th>tooltip</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Obsidian Skin Potion</td>
+                        <td>Provies immunity to lava</td>
+                        <td>3 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Regeneration Potion</td>
+                        <td>Provides life regeneration</td>
+                        <td>2 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Swiftness Potion</td>
+                        <td>25% increased movement speed</td>
+                        <td>4 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Gills Potion</td>
+                        <td>Breat water instead of air</td>
+                        <td>1 Minute</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ironskin Potion</td>
+                        <td>Increase defense by 8</td>
+                        <td>5 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mana Regeneration Potion</td>
+                        <td>Increased mana regeneration </td>
+                        <td>2 Minutes</td>
+                    </tr>                                            
+                </table>
+            </div>
+        </div>
         <div id="catList" data-role="page">
             <div data-role="header"><h1>Items</h1></div>
             <div data-role="content">
@@ -635,7 +769,6 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>13</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>4 Silver Coin(s)</td></tr>
 </table>
@@ -651,11 +784,7 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <tr><td style='font-weight: bold;'>Damage</td><td>6</td></tr>
 <tr><td style='font-weight: bold;'>Pick</td><td>45%</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>false</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>false</td></tr>
-<tr><td style='font-weight: bold;'>Shoot</td><td>false</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>false</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>10 Silver Coin(s)</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Silver_Bar.png" alt="Silver Bar" />&nbsp;&nbsp;<div class='link'><a href='#SilverBar'>Silver Bar</a></div></td><td>12</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<div class='link'><a href='#Wood'>Wood</a></div></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -669,7 +798,6 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>6</td></tr>
 <tr><td style='font-weight: bold;'>Pick</td><td>55%</td></tr>
-<tr><td style='font-weight: bold;'>Use Time</td><td>Fast</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>20 Silver Coin(s)</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Gold_Bar.png" alt="Gold Bar" />&nbsp;&nbsp;<div class='link'><a href='#GoldBar'>Gold Bar</a></div></td><td>12</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<div class='link'><a href='#Wood'>Wood</a></div></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -682,14 +810,13 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>65</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>65%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>15</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>36 Silver Coin(s)</td></tr>
 </table>
@@ -703,14 +830,13 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Tool</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>12</td></tr>
-<tr><td style='font-weight: bold;'>Pick</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Pick</td><td>100%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>25</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>54 Silver Coin(s)</td></tr>
 </table>
@@ -1115,7 +1241,7 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Body slot</td><td>Helmet</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>8 Gold Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td> Gold Coin(s)8</td></tr>
 </table>
 </div>
 </div>
@@ -1420,7 +1546,7 @@ Surface jungles have been enlarged, and will override deserts. (Requires new wor
 <tr><td style='font-weight: bold;'>Use</td><td>28</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<div class='link'><a href='#IronBar'>Iron Bar</a></div></td><td>8</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<div class='link'><a href='#IronBar'>Iron Bar</a></div></td><td>7</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="SilverBow" data-role='page'>
 <div data-role='header'><h1>Silver Bow</h1></div>
@@ -2237,7 +2363,7 @@ Throwing knives are considered a compromise between the Shuriken (which can hit 
 <tr><td style='font-weight: bold;'>Shoot</td><td>46</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>5</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>3</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>54  Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)54</td></tr>
 </table>
 </div>
 </div>
@@ -2411,7 +2537,7 @@ The demon scythe is similar to flails in the sense that they are extremely power
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Right-Click</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>50 Copper Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td> Copper Coin(s)50</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Gel.png" alt="Gel" />&nbsp;&nbsp;<div class='link'><a href='#Gel'>Gel</a></div></td><td>1</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<div class='link'><a href='#Wood'>Wood</a></div></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x3</td></tr></table></div>
 </div>
@@ -3142,14 +3268,12 @@ Added in patch 1.0.3.</p>
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>Hot to the touch</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>2</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>40 Silver Coin(s)</td></tr>
 </table>
@@ -3175,12 +3299,9 @@ Added in patch 1.0.3.</p>
 <p>Use to craft Suspicious Looking Eye and Worm Food</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Workbench</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>1/2</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Body slot</td><td>-1</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>10</td></tr>
 </table>
 </div>
 </div>
@@ -3390,7 +3511,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)1</td></tr>
 </table>
 </div>
 </div>
@@ -3543,6 +3664,7 @@ On destroying a third orb, the dreaded Eater of Worlds is spawned and the destro
 Used to create Water Walking Potions and Hunter Potions</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>40  Copper Coin(s)</td></tr>
 </table>
 </div>
 </div>
@@ -3633,6 +3755,7 @@ A cactus deals 10 damage to you if you touch one. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)20</td></tr>
 </table>
 </div>
 </div>
@@ -3855,7 +3978,7 @@ Keep in mind as of 1.0.5 you can no longer harvest flowers or herbs out of Clay 
 Keep in mind as of 1.0.5 you can no longer harvest flowers or herbs out of Clay Pots with a standard bladed weapon; instead, use your Pickaxe and left-click on the flower or herb above the Clay Pot you wish to harvest out of. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Seed</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>16</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>16 Copper Coin(s)</td></tr>
 </table>
 </div>
 </div>
@@ -4000,7 +4123,7 @@ Allows the player to fly for a second.</p>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>1 Gold Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Gold Coin(s)1</td></tr>
 </table>
 </div>
 </div>
@@ -4034,7 +4157,6 @@ Increases the player jump height</p>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>20 Silver Coin(s)</td></tr>
 </table>
 </div>
@@ -4050,7 +4172,6 @@ Increases the player jump height</p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
 </table>
 </div>
@@ -4081,7 +4202,6 @@ Increases the player jump height</p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>20 Silver Coin(s)</td></tr>
 </table>
 </div>
@@ -4095,7 +4215,6 @@ Regenerates 0.5 health every second.</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Accessory</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Lregen</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>Slowly regenerates life.</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
@@ -4114,7 +4233,6 @@ Regenerates mana every second</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Accessory</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Mregen</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>Slowly regenerates mana.</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
@@ -4247,7 +4365,6 @@ When equipped in accessories, the player can now attack the guide.
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Body slot</td><td>Accessory</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
@@ -5505,7 +5622,7 @@ When the whole set is worn it reduces mana usage by 25%, and grants an unlisted 
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Body slot</td><td>Social Helmet</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>20 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)20</td></tr>
 </table>
 </div>
 </div>
@@ -5641,7 +5758,7 @@ I didn't add images for these items since they change based on your character. <
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>2 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td>3 Silver Coin(s)</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Mushroom.png" alt="Mushroom" />&nbsp;&nbsp;<div class='link'><a href='#Mushroom'>Mushroom</a></div></td><td>1</td></tr><tr><td><img name="img/Gel.png" alt="Gel" />&nbsp;&nbsp;<div class='link'><a href='#Gel'>Gel</a></div></td><td>2</td></tr><tr><td><img name="img/Bottle.png" alt="Bottle" />&nbsp;&nbsp;<div class='link'><a href='#Bottle'>Bottle</a></div></td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
 </div>
@@ -5758,11 +5875,13 @@ I didn't add images for these items since they change based on your character. <
 <img name="img/Battle_Potion.png" alt="Battle Potion" class='item_image'/>
 <p></p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Array</td><td>minute duration</td></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
 <tr><td style='font-weight: bold;'>Bonus</td><td>Increase enemy spawn rate</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Bottled_Water.png" alt="Bottled Water" />&nbsp;&nbsp;<div class='link'><a href='#BottledWater'>Bottled Water</a></div></td><td>1</td></tr><tr><td><img name="img/Deathweed.png" alt="Deathweed" />&nbsp;&nbsp;<div class='link'><a href='#Deathweed'>Deathweed</a></div></td><td>1</td></tr><tr><td><img name="img/Rotten_Chunk.png" alt="Rotten Chunk" />&nbsp;&nbsp;<div class='link'><a href='#RottenChunk'>Rotten Chunk</a></div></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -5879,7 +5998,7 @@ Obsidian Skin Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>2  Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)2</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Bottled_Water.png" alt="Bottled Water" />&nbsp;&nbsp;<div class='link'><a href='#BottledWater'>Bottled Water</a></div></td><td>1</td></tr><tr><td><img name="img/Fireblossom.png" alt="Fireblossom" />&nbsp;&nbsp;<div class='link'><a href='#Fireblossom'>Fireblossom</a></div></td><td>1</td></tr><tr><td><img name="img/Waterleaf.png" alt="Waterleaf" />&nbsp;&nbsp;<div class='link'><a href='#Waterleaf'>Waterleaf</a></div></td><td>1</td></tr><tr><td><img name="img/Obsidian.png" alt="Obsidian" />&nbsp;&nbsp;<div class='link'><a href='#Obsidian'>Obsidian</a></div></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -5898,7 +6017,7 @@ Obsidian Skin Potion </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)2</td></tr>
 </table>
 <br /><table id='item_ingredients'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Bottled_Water.png" alt="Bottled Water" />&nbsp;&nbsp;<div class='link'><a href='#BottledWater'>Bottled Water</a></div></td><td>1</td></tr><tr><td><img name="img/Daybloom.png" alt="Daybloom" />&nbsp;&nbsp;<div class='link'><a href='#Daybloom'>Daybloom</a></div></td><td>1</td></tr><tr><td><img name="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />&nbsp;&nbsp;<div class='link'><a href='#GlowingMushroom'>Glowing Mushroom</a></div></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -6215,7 +6334,7 @@ Drops:<br />
 <div class='link'><a href=#BlackLense>Black Lense</a></div>: 0.67%<br />
 <div class='link'><a href=#CopperCoins>Copper Coins</a></div>: ~75</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Surface</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>18</td></tr><tr><td style='font-weight: bold;'>Life</td><td>60</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Surface</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Demon Eye</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>18</td></tr><tr><td style='font-weight: bold;'>Life</td><td>60</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
 </div>
 <div id="Devourer" data-role='page'>
 <div data-role='header'><h1>Devourer</h1></div>
@@ -6279,7 +6398,7 @@ Drops:<br />
 <div class='link'><a href=#WhoopieCushion>Whoopie Cushion</a></div>: 0.2%<br />
 <div class='link'><a href=#CopperCoins>Copper Coins</a></div>: >300</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Name</td><td>Giant Worm</td></tr><tr><td style='font-weight: bold;'>Type</td><td>Burrowing Enemy</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Name</td><td>Giant Worm</td></tr><tr><td style='font-weight: bold;'>Type</td><td>Burrowing Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Underground</td></tr><tr><td style='font-weight: bold;'>Environment2</td><td>Cavern</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Worm</td></tr></table></div>
 </div>
 <div id="GoblinPeon" data-role='page'>
 <div data-role='header'><h1>Goblin Peon</h1></div>
@@ -6397,7 +6516,7 @@ Drops: <br />
 <div class='link'><a href=#JunglePants>Jungle Pants</a></div>: 0.22%<br />
 <div class='link'><a href=#CopperCoin>Copper Coin</a></div>: ~800</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Underground Jungle</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>60</td></tr><tr><td style='font-weight: bold;'>Life</td><td>200</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>18</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Underground Jungle</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Plant</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>60</td></tr><tr><td style='font-weight: bold;'>Life</td><td>200</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>18</td></tr></table></div>
 </div>
 <div id="MeteorHead" data-role='page'>
 <div data-role='header'><h1>Meteor Head</h1></div>
@@ -6408,7 +6527,7 @@ Drops: <br />
 Drops:<br />
 <div class='link'><a href=#Meteorite>Meteorite</a></div>: 2%</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Meteorite</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr><tr><td style='font-weight: bold;'>Life</td><td>26</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr><tr><td style='font-weight: bold;'>Coins</td><td>3 to 10 silver, 10 to 70 copper</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Flying Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Meteorite</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Flying</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr><tr><td style='font-weight: bold;'>Life</td><td>26</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>6</td></tr></table></div>
 </div>
 <div id="Piranha" data-role='page'>
 <div data-role='header'><h1>Piranha</h1></div>
@@ -6420,7 +6539,7 @@ Drops:<br />
 <div class='link'><a href=#Hook>Hook</a></div>: 2.5%<br />
 <div class='link'><a href=#RobotHat>Robot Hat</a></div>: 0.2%</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Water</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>30</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Water</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Swimming</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>30</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
 </div>
 <div id="ServentofCthulhu" data-role='page'>
 <div data-role='header'><h1>Servent of Cthulhu</h1></div>
@@ -6564,7 +6683,7 @@ Drops:<br />
 Drops:<br />
 <div class='link'><a href=#CopperCoin>Copper Coin</a></div>: ~510</p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Jungle</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Life</td><td>100</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>10</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Jungle</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>25</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Plant</td></tr><tr><td style='font-weight: bold;'>Life</td><td>100</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>10</td></tr></table></div>
 </div>
 <div id="Zombie" data-role='page'>
 <div data-role='header'><h1>Zombie</h1></div>
@@ -6607,7 +6726,7 @@ Drop:<br />
 <div class='link'><a href=#DivingHelmet>Diving Helmet</a></div><br />
 </p>
 <table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Ocean</td></tr><tr><td style='font-weight: bold;'>AI</td><td>Fighter</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr><tr><td style='font-weight: bold;'>Life</td><td>300</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Type</td><td>Fish Enemy</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Ocean</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Swimming</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>40</td></tr><tr><td style='font-weight: bold;'>Life</td><td>300</td></tr><tr><td style='font-weight: bold;'>Defense</td><td>2</td></tr></table></div>
 </div>
 <div id="BlueJellyfish" data-role='page'>
 <div data-role='header'><h1>Blue Jellyfish</h1></div>
