@@ -98,6 +98,24 @@ ul[data-role=listview] a {
     font-size: 12px;
 }
 
+.object_table {
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid #000;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.object_table td {
+    padding: 5px;
+}
+
+.object_table th {
+    background-color: #033251;
+    color: #fff;
+}
+}
+
 #monster_stats th {
     background-color: #033251;
     color: #fff;
@@ -123,8 +141,7 @@ a {
     color: #000;
 }
 
-.link {
-    display: inline;
+.link {    
     border: thin solid #000;
     border-radius: 5px;
     background-color: #ccc;
