@@ -12,7 +12,7 @@
         <div id="mainMenu" data-role="page">
             <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
             <div data-role="content">        
-                Terraria Version: 1.0.6<br>
+                Terraria Version: 1.0.6.1<br>
                 <ul data-role="listview" data-inset="true">
                     <li><a href="#versionNotes">Version Notes</a></li>
                     <li><a href="#catList">Items</a></li>
@@ -35,200 +35,29 @@
         <div id="versionNotes" data-role="page">
             <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>
             <div data-role="content">
-                <h3>---NPC---</h3>
-NPC Additions
-<ul>
-<li>New Enemy : Spike Ball (An Immortal Enemy.)</li>
-<li>New Enemy : Blazing Wheel (An Immortal Enemy.)</li>
-<li>New Enemy : Dungeon Slime (Contains Golden Keys)</li>
-<li>New Enemy : Goblin Scout</li>
-</ul>
+                <h3>Bug Fixes</h3>
+&nbsp;&nbsp;Fixed a bug that would cause chests to contain stacks of empty items.<br/>
+&nbsp;&nbsp;The crafting list now correctly updates after using the container loot buttons.<br/>
+&nbsp;&nbsp;The direction bathtubs face when placed is now correctly sent to the server. This prevents bathtub duplication issues.<br/>
+&nbsp;&nbsp;Smashing Obsidian Walls no longer gives Obsidian Ore.<br/>
+&nbsp;&nbsp;Walls that are automatically placed to fill small gaps are now correctly taken from the player’s inventory.<br/>
+&nbsp;&nbsp;Fixed a bug that causes Green Slimes to get stuck in the ground and start sinking.<br/>
+&nbsp;&nbsp;Player ghosts no longer move when typing.<br/>
+&nbsp;&nbsp;Fixed a bug that would cause mana to sometimes not regenerate when the player has 0 mana.<br/>
+&nbsp;&nbsp;Slimes no longer chase the player in water when they are not in aggressive mode.<br/>
+&nbsp;&nbsp;Lesser Restoration Potions and Restoration Potions now only heal for 50/100 life and 50/100 mana.<br/>
+&nbsp;&nbsp;Lesser Mana Potions and Mana Potions now only restore 50/100 mana.<br/>
+&nbsp;&nbsp;Changed the way the value of stacked items is rounded to fix selling/buyback inconsistencies.<br/>
+&nbsp;&nbsp;Some items can now be placed in lava, this includes clay pots and fire blossom seeds.<br/>
+&nbsp;&nbsp;Fixed a bug that would cause shadow orbs to me smashed during world generation. This was causing meteors to start spawning before the player is at the appropriate gear level.<br/>
+&nbsp;&nbsp;Generated dirt walls now correctly blend with player placed dirt walls. Player placed dirt walls now have new graphics to differ from generated walls.<br/>
+&nbsp;&nbsp;Boomerangs now reset correctly when you use your magic mirror if they are still flying.<br/>
+&nbsp;&nbsp;Mediumcore characters now correctly drop ammo on death.<br/>
+&nbsp;&nbsp;"Misc" has been reworded to say "Shoes" on the shoes color settings screen.<br/>
 
-NPC Changes
-<ul>
-<li>Hornets in the Underground Jungle now shoot stingers. These stingers have a 1 in 3 chance of poisoning their target for 10 seconds.</li>
-<li>Cursed Skulls now now have a chance to apply the Cursed debuff.</li>
-<li>Bats, Harpy and Demon AI has been improved to prevent wall hugging.</li>
-<li>Slimes when in water will now turn around when they have no where to go.</li>
-<li>Man Eaters and Snatchers now have less HP, and are drawn above tiles rather than behind.</li>
-<li>Lava Slimes no longer spawn lava when killed.</li>
-<li>Meteor Heads now move much slower but do a lot more damage.</li>
-<li>Bone Serpents now have a new death sound, and their hit-box has been re-calibrated.</li>
-<li>NPC's furniture requirements have changed to work with new items.NPCs now requires one "comfort object" (Chair, Throne, Bench, Bed, Toilet) and one "flat surface furniture" (Table, Dresser, Workbench, Tub, Bookcase) for a room to be complete before they will make it their home.</li>
-<li>Thorns are now destroyed after you touch them and receive damage.</li>
-</ul>
+<h3>Item Addition</h3>
+&nbsp;&nbsp;Added the Sawmill which replaces the Workbench for "advanced" wood crafting. The Workbench is now designated for "basic" wood crafting.
 
-NPC Bug Fixes
-<ul>
-<li>EoW is no longer "defeated" when he flees.</li>
-<li>Npcs that are far from home and try to turn to return home will no longer twitch left and right when stuck.</li>
-<li>Hornets are correctly now unable to enter water.
-<li>Vultures should no longer 'float' if the sand they are perched on falls from beneath them.</li>
-</ul>
-
-<h3>---Items---</h3>
-Item Additions
-<ul>
-<li>New Item : Shadow Key</li>
-<li>New Item : Golden Key</li>
-<li>New Item : Shadow Chest (These require the Shadow Key)</li>
-<li>New Item : Obsidian Background Walls</li>
-<li>New item : Mud Background Walls</li>
-<li>New Item : Jungle Spore (Replaces Jungle Rose in former crafting uses.)</li>
-<li>New Item : Tattered Cloth</li>
-<li>New Item : Battle Standard (Allows for manual starting of the Goblin Invasion)</li>
-<li>New Item : Piano</li>
-<li>New Item : Loom (Crafting Station, Now required for crafting most clothes from silk.)</li>
-<li>New Item : Bench</li>
-<li>New item : Dresser</li>
-<li>New Item : Bathtub</li>
-<li>New Item : Red Banner</li>
-<li>New Item : Green Banner</li>
-<li>New Item : Blue Banner</li>
-<li>New Item : Yellow Banner</li>
-<li>New Item : Lamp Post</li>
-<li>New Item : Tiki Torch</li>
-<li>New Item : Barrel</li>
-<li>New Item : Chinese Lantern</li>
-<li>New Item : Cooking Pot</li>
-<li>New Item : Safe (A separate private storage from the Piggy Bank.)</li>
-<li>New Item : Skull Lantern</li>
-<li>New Item : Trash Can</li>
-<li>New Item : Candelabra</li>
-<li>New Item : Pink Jar</li>
-<li>New Item : Mug</li>
-<li>New Item : Keg</li>
-<li>New Item : Ale</li>
-<li>New Item : Bookcase</li>
-<li>New Item : Throne</li>
-<li>New Item : Bowl</li>
-<li>New Item : Bowl of Soup</li>
-<li>New Item : Toilet</li>
-<li>New Item : Grandfather Clock</li>
-<li>New Item : Statue</li>
-</ul>
-
-Item Changes
-<ul>
-<li>Wooden Tables, Doors and Workbenches now have improved looking graphics.</li>
-<li>Glow sticks price reduced. And are now a bit brighter.</li>
-<li>Coins now leave a sparkle trail while moving.</li>
-<li>Jungle Rose is now a rarer drop and no longer used to craft.</li>
-<li>Grappling Hooks can no longer be spam shot, you must now wait until your previous shot lands or returns before you can throw another.</li>
-<li>Suspicious Looking Eyes will now sometimes be found in chests.</li>
-<li>Flamelash, Sunfury, and Flower of Fire are no longer dropped, they are now found in shadow chests in the underworld.</li>
-<li>Ash and Mud no longer fall due to gravity.</li>
-<li>Hellstone no longer produces light and is more rare.</li>
-<li>Hellstone now spawns lava when it is mined, but only in the underworld.</li>
-<li>Cacti no longer cause knock-back making running through a desert less of a hassle.</li>
-<li>Potions now offer less HP on use, and their cool-down is now a minute.</li>
-<li>Placing background walls is more simple, as 1 block holes are automatically filled in.</li>
-<li>Flails now have a different mechanic. You can ‘spin’ them by pressing left and right fast over and over after they have been thrown while holding down the mouse button.</li>
-<li>ALL placed background walls are now considered ‘house walls’. (Yes even Dirt and Dungeon walls.)</li>
-<li>Two of the same type of accessories may no longer be equipped at once.</li>
-<li>Fish Bowl’s recipe has been changed to require Bottled Water, rather than just an empty Bottle.</li>
-<li>Armors are now more ‘Class Type’ specific and their stats have been set accordingly.</li>
-<li>Meteor Armor - Buffs Magic Damage and Set Bonus : Space Gun 0 Mana Cost.</li>
-<li>Molten Armor - Set Bonus : Melee Damage</li>
-<li>Shadow Armor - Buffs Melee Attack Speed and Set Bonus : Movement Speed.</li>
-<li>Necro Armor - Buffs ranged damage and Set Bonus : Reduces Ammo Consumption.</li>
-<li>Jungle Armor - Buffs Max Mana, Magic Crit Chance and Set Bonus : Reduced Mana Usage.</li>
-<li>Several Magic Items and Weapons have been rebalanced. Including but not limited to...</li>
-<li>Flower of Fire now does more damage, and costs more mana.</li>
-<li>Band of Star Power now adds 20 mana to your maximum, and no longer adds mana regeneration.</li>
-<li>Orb of Light now moves slower and is now listed as a buff that you can remove if you so desire and also know its remaining duration.</li>
-<li>Magic missile is now quicker and is 'launched' when you release the mouse button, rather than disappearing.</li>
-<li>Flamelash is 'launched' when you release the mouse button, rather than disappearing.</li>
-<li>Meteor Armor and Molten Armors no longer glow.</li>
-<li>Starfury now does a bit more damage, requires more mana, and now works underground. If a star is spawned inside a wall, it will be able to travel until it reaches open space and then becomes 'solid' colliding with the next wall it hits.</li>
-<li>The Mini-shark now has a 33% chance that shooting the weapon will not take ammo. So it does not consume as much ammo to use.</li>
-<li>Flintlock Pistols and Muskets are now a bit stronger.</li>
-</ul>
-
-Item Bug Fixes
-<ul>
-<li>Bottled water can no longer be crafted by standing near lava.</li>
-<li>Night Owl Potion now works correctly.</li>
-<li>Piggy Banks should no longer float when the ground beneath the table it is on is removed from beneath them.</li>
-<li>Melee speed increase items are now calculated correctly.</li>
-<li>Cacti no longer destroy blocks as they grow.</li>
-</ul>
-
-<h3>---Game Interface---</h3>
-<ul>
-<li>There is now an option to disable pickup text.</li>
-<li>New Hot-key for grappling hooks. (Defaults to E)</li>
-<li>Hot-bar Slots now show their Hot-key number.</li>
-<li>The Mana Bar is now Blue, and text for gaining health is now green.</li>
-<li>Interface Boxes are now colored differently. Inventory is Blue, Equip is Green, Craft is Purple, Shops are Brown, Piggy Banks and Safes are Pink.</li>
-<li>Hot-keys for Mana and Healing Potions now work correctly with Rejuvenation potions.</li>
-<li>Right clicking on an accessory or a piece of armor in your inventory will auto-equip it.</li>
-<li>Newly obtained items will now be placed starting in the bottom right of your inventory rather than the previous top left.</li>
-<li>There is now a Trash Can slot in the inventory. Placing an item here will destroy it. However the item will be saved in memory until another item is destroyed, allowing you to retrieve it if you wish. Holding Shift and Clicking and Item will move it to your trashcan.</li>
-<li>When at a chest or piggy bank, there is now an option to loot all. This will take all items inside the chest/bank if there is room, If not it will take all items starting from top left. There is also a Quick Stack option for the reverse effect. If the chest you are viewing has items stored in it that you are also carrying, this option will stack those items into the chest combining stored and carried stacks.</li>
-<li>When at a chest or piggy bank, there is now an option to Deposit all. This will take all items not in your hot bars and starting from the bottom right slot, place each item that will fit into the chest or bank. It will stop when space runs out.</li>
-<li>It is no longer possible to drop items through the spaces between boxes in the inventory</li>
-<li>Some Tools now give you an idea in their tool-tip of what they can mine. Example - "Can mine Meteorite".</li>
-<li>There are now four ammo slots. Ammo may be placed here to de-clutter your inventory. Weapons will take ammo from these slots first, and will then take from any in the inventory after they are empty.</li>
-<li>Hot-Bar slots that have a ranged weapon on them will show the current used ammo count on them.</li>
-<li>There is now a toggle in your inventory, that when clicked, will LOCK your hot-bar and not allow you to change your currently used hot-bar item by clicking it with the mouse, only the 1 - 9 hot -keys and mouse-wheel will scroll them at that point.</li>
-<li>Hotkeys can now be used to change selected item when the inventory is open.</li>
-<li>Shops now sell items back to you. Holding Shift and Clicking and Item while at a shop will quick-sell it.</li>
-<li>You can now quickly clear and cancel your chat message by hitting escape.</li>
-</ul>
-
-<h3>---Misc---</h3>
-Gameplay
-<ul>
-<li>New Feature : Critical Hits. There is now a small chance you will do more damage to an enemy</li>
-<li>New Feature : Damage Types. Damage is now separated into Melee, Ranged and Magic damages. These will be used going forward for a few different systems, such as buffs, de-buffs. Items will list what kind of damage they do in their tool-tip so you know what will be effected by what buff.</li>
-<li>Players now heal automatically when 'not in combat'. You are flagged as in combat when you are damaged by anything. The longer you have spent after getting hurt will increase your hp regen speed slightly.</li>
-<li>Mana now recharges on its own when you are not casting. Slowly if you are moving, and fast if you stand still.</li>
-</ul>
-
-Character Creation
-<ul>
-<li>Added 19 new hairstyles.</li>
-<li>There is now an option for 'Male/Female', this is used to change the characters voice. This way, any hairstyle can be used for either gender.</li>
-<li>When choosing your hairstyle, you may now right click to cycle through the hair selections backwards.</li>
-<li>There are now 3 difficulty modes that are set when creating a character.</li>
-<li>Softcore - Drop coins on death, keep max hp and mana values.</li>
-<li>Mediumcore - Drop all items on death, keep max hp and mana values.</li>
-<li>Hardcore - Drops all Items and deletes your character on death, requiring you to start a new character. On death you will become a ghost that can not interact with the world until you log out.</li>
-</ul>
-Game Text
-<ul>
-<li>Corrected some spelling errors and also the placement of '%' in some potion tool-tips.</li>
-<li>Added several new randomized game 'subtitle captions'.</li>
-<li>'Misc' in Character Creation color selection, has been renamed "Shoes".</li>
-</ul>
-
-Music and Sound
-<ul>
-New Music : Corruption.
-<li>There are new sounds for the following actions/events</li>
-<li>Talking to an NPC</li>
-<li>Mana Becoming Full (also shows a purple sparkle on player)</li>
-<li>Using Water Bolt, Flamelash, and Flower of Fire</li>
-<li>Starting to Drown</li>
-<li>Some sounds have a randomizing pitch change (like sword swinging), to make them have more variance.</li>
-</ul>
-Performance
-<ul>
-<li>Optimized "Finding Tile Frames", so worlds should load faster</li>
-</ul>
-
-<h3>---World Gen---</h3>
-<ul>
-<li>More Gems spawn in the jungle.</li>
-<li>Hell Houses now spawn differently. A worlds Hell Houses can rarely spawn as all obsidian, and they can now get really tall.</li>
-<li>Underground Jungles now have a Mud Background</li>
-<li>Dungeons should no longer spawn in the ocean.</li>
-<li>Deserts now spawn slightly further away from spawn.</li>
-<li>Dungeons now spawn with more spikes and less lighting.</li>
-<li>Underworld Ash is now filled with more lava pockets, making mining Hellstone more of a challenge.</li>
-<li>Some items no longer spawn in Dungeon, these were meant for non-dungeon areas.</li>
-</ul>
             </div>            
         </div>
         <!--End versionNotes-->
@@ -522,6 +351,8 @@ Performance
 <li class='object' name="Trident"><a href="#Trident"><img name="img/Trident.png" alt="Trident" width='20' height='20' class='ui-li-icon' />Trident</a></li>
 <li class='object' name="Spear"><a href="#Spear"><img name="img/Spear.png" alt="Spear" width='20' height='20' class='ui-li-icon' />Spear</a></li>
 <li class='object' name="DemonScythe"><a href="#DemonScythe"><img name="img/Demon_Scythe.png" alt="Demon Scythe" width='20' height='20' class='ui-li-icon' />Demon Scythe</a></li>
+<li class='object' name="CopperBox"><a href="#CopperBox"><img name="img/Copper_Bow.png" alt="Copper Box" width='20' height='20' class='ui-li-icon' />Copper Box</a></li>
+<li class='object' name="Blowpipe"><a href="#Blowpipe"><img name="img/Blowpipe.png" alt="Blowpipe" width='20' height='20' class='ui-li-icon' />Blowpipe</a></li>
 </ul>
 </div>
 </div>
@@ -576,6 +407,7 @@ Performance
 <li class='object' name="Toilet"><a href="#Toilet"><img name="img/Toilet.png" alt="Toilet" width='20' height='20' class='ui-li-icon' />Toilet</a></li>
 <li class='object' name="TrashCan"><a href="#TrashCan"><img name="img/Trash_Can.png" alt="Trash Can" width='20' height='20' class='ui-li-icon' />Trash Can</a></li>
 <li class='object' name="ChineseLantern"><a href="#ChineseLantern"><img name="img/Chinese_Lantern.png" alt="Chinese Lantern" width='20' height='20' class='ui-li-icon' />Chinese Lantern</a></li>
+<li class='object' name="Sawmill"><a href="#Sawmill"><img name="img/Sawmill.png" alt="Sawmill" width='20' height='20' class='ui-li-icon' />Sawmill</a></li>
 </ul>
 </div>
 </div>
@@ -893,7 +725,7 @@ Performance
 <tr><td style='font-weight: bold;'>Use</td><td>13</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>4 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>12</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>12</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="SilverPickaxe" data-role='page'>
 <div data-role='header'><h1>Silver Pickaxe</h1></div>
@@ -935,12 +767,10 @@ Performance
 <tr><td style='font-weight: bold;'>Pick</td><td>65%</td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Able to mine Hellstone</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>15</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>36 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)36</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Demonite_Bar.png" alt="Demonite Bar" />&nbsp;&nbsp;<span class='link'><a href='#DemoniteBar'>Demonite Bar</a></span></td><td>12</td></tr><tr><td><img name="img/Shadow_Scale.png" alt="Shadow Scale" />&nbsp;&nbsp;<span class='link'><a href='#ShadowScale'>Shadow Scale</a></span></td><td>6</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -1323,7 +1153,7 @@ Performance
 <tr><td style='font-weight: bold;'>Use</td><td>20</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>40 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Chain.png" alt="Iron Chain" />&nbsp;&nbsp;<span class='link'><a href='#IronChain'>Iron Chain</a></span></td><td>3</td></tr><tr><td><img name="img/Hook.png" alt="Hook" />&nbsp;&nbsp;<span class='link'><a href='#Hook'>Hook</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#IvyWhip'>Ivy Whip</a></td></tr><tr><td><span class='link'><a href='#JungleRose'>Jungle Rose</a></td></tr><tr><td><span class='link'><a href='#Vine'>Vine</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Chain.png" alt="Iron Chain" />&nbsp;&nbsp;<span class='link'><a href='#IronChain'>Iron Chain</a></span></td><td>3</td></tr><tr><td><img name="img/Hook.png" alt="Hook" />&nbsp;&nbsp;<span class='link'><a href='#Hook'>Hook</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#JungleRose'>Jungle Rose</a></td></tr><tr><td><span class='link'><a href='#Vine'>Vine</a></td></tr><tr><td><span class='link'><a href='#IvyWhip'>Ivy Whip</a></td></tr></table></div>
 </div>
 <div id="IvyWhip" data-role='page'>
 <div data-role='header'><h1>Ivy Whip</h1></div>
@@ -1472,12 +1302,9 @@ Performance
 <tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>A small explosion that will not destroy tiles.</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Shoot</td><td>30</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>5.5</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>60</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>4 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td> Silver Coin(s)4</td></tr>
 </table>
 </div>
 </div>
@@ -1490,10 +1317,10 @@ Performance
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
 <tr><td style='font-weight: bold;'>Damage</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>Tossing may be difficult</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Use Time</td><td>5</td></tr>
+<tr><td style='font-weight: bold;'>Use</td><td>25</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)1</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Bomb.png" alt="Bomb" />&nbsp;&nbsp;<span class='link'><a href='#Bomb'>Bomb</a></span></td><td>1</td></tr><tr><td><img name="img/Gel.png" alt="Gel" />&nbsp;&nbsp;<span class='link'><a href='#Gel'>Gel</a></span></td><td>5</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -1509,12 +1336,9 @@ Performance
 <tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
 <tr><td style='font-weight: bold;'>Tooltip</td><td>A small explosion that will destroy some tiles.</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Shoot</td><td>28</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>5</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>25</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>5 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td> Silver Coin(s)5</td></tr>
 </table>
 <br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#StickyBomb'>Sticky Bomb</a></td></tr></table></div>
 </div>
@@ -1528,13 +1352,10 @@ Performance
 <tr><td style='font-weight: bold;'>Damage</td><td>250</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>3</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Shoot</td><td>29</td></tr>
 <tr><td style='font-weight: bold;'>Use Time</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>40</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>50 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td> Silver Coin(s)50</td></tr>
 </table>
 </div>
 </div>
@@ -2331,7 +2152,7 @@ Performance
 <p>The Night's Edge is a high-end melee weapon, crafted at a Demon Altar. It requires four of the currently most powerful sword-class weapons to craft: a Light's Bane, a Muramasa, a Blade of Grass, and a Fiery Greatsword. Although the damage in the tooltip is 40, the actual damage against monsters seems to be 45.</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
-<tr><td style='font-weight: bold;'>Damage</td><td>42</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>42 <!--W/o molten armor--></td></tr>
 <tr><td style='font-weight: bold;'>Knockback</td><td>4</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>1</td></tr>
 <tr><td style='font-weight: bold;'>Attack speed</td><td>average</td></tr>
@@ -2492,6 +2313,34 @@ The demon scythe is similar to flails in the sense that they are extremely power
 </table>
 </div>
 </div>
+<div id="CopperBox" data-role='page'>
+<div data-role='header'><h1>Copper Box</h1></div>
+<div data-role='content'>
+<img name="img/Copper_Bow.png" alt="Copper Box" class='item_image'/>
+<p>Copper Bows are the second tier of bows. They are used to fire arrows from a distance to deal damage to enemies. It is a useful upgrade from the Wooden Bow, dealing 6 damage as opposed to the Wooden Bow's 4. </p>
+</div>
+</div>
+<div id="Blowpipe" data-role='page'>
+<div data-role='header'><h1>Blowpipe</h1></div>
+<div data-role='content'>
+<img name="img/Blowpipe.png" alt="Blowpipe" class='item_image'/>
+<p><p>The Blowpipe is a weapon that fires Seeds as ammunition. Seeds do not add to the damage that the Blowpipe deals. In addition, Seeds are context-sensitive items that will not begin appearing until you have a Blowpipe in your Inventory.</p>
+
+<p>If you have a Blowpipe with you, there is a chance that any standard flower - and even the long grasses - you cut down will yield some Seeds. Flowers growing in grass and in Clay Pots both can yield Seeds, and you typically get 4 per "drop". Seeds dropped from long grasses typically drop singly or in pairs.</p>
+
+<p>The Blowpipe tends to only appear in chests within close distance to the surface.</p></p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Weapon</td></tr>
+<tr><td style='font-weight: bold;'>Damage</td><td>9</td></tr>
+<tr><td style='font-weight: bold;'>Knockback</td><td>4</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Allows the collection of seeds for ammo</td></tr>
+<tr><td style='font-weight: bold;'>Shoot</td><td>10</td></tr>
+<tr><td style='font-weight: bold;'>Use Time</td><td>Extremely slow</td></tr>
+<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td>20  Silver Coin(s)</td></tr>
+</table>
+</div>
+</div>
 <div id="AlchemyStation" data-role='page'>
 <div data-role='header'><h1>Alchemy Station</h1></div>
 <div data-role='content'>
@@ -2544,9 +2393,10 @@ The demon scythe is similar to flails in the sense that they are extremely power
 <tr><td style='font-weight: bold;'>Type</td><td>Furniture</td></tr>
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Used for basic crafting</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>30 Copper Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)30</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -2808,12 +2658,10 @@ The demon scythe is similar to flails in the sense that they are extremely power
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>4 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)4</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>15</td></tr><tr><td><img name="img/Silk.png" alt="Silk" />&nbsp;&nbsp;<span class='link'><a href='#Silk'>Silk</a></span></td><td>5</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>15</td></tr><tr><td><img name="img/Silk.png" alt="Silk" />&nbsp;&nbsp;<span class='link'><a href='#Silk'>Silk</a></span></td><td>5</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Bottle" data-role='page'>
 <div data-role='header'><h1>Bottle</h1></div>
@@ -2863,10 +2711,11 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Id</td><td>21</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)1</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>1</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>9</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>1</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>9</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Bathtub" data-role='page'>
 <div data-role='header'><h1>Bathtub</h1></div>
@@ -2894,9 +2743,9 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>60 Copper Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)60</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>8</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>8</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Banner" data-role='page'>
 <div data-role='header'><h1>Banner</h1></div>
@@ -2926,7 +2775,7 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Sell</td><td>N/A</td></tr>
 <tr><td style='font-weight: bold;'>Id</td><td>101</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>20</td></tr><tr><td><img name="img/Book.png" alt="Book" />&nbsp;&nbsp;<span class='link'><a href='#Book'>Book</a></span></td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>20</td></tr><tr><td><img name="img/Book.png" alt="Book" />&nbsp;&nbsp;<span class='link'><a href='#Book'>Book</a></span></td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Candelabra" data-role='page'>
 <div data-role='header'><h1>Candelabra</h1></div>
@@ -2962,10 +2811,12 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Furniture</td></tr>
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>60 Copper Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)60</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>16</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>16</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="GrandfatherClock" data-role='page'>
 <div data-role='header'><h1>Grandfather Clock</h1></div>
@@ -2979,7 +2830,7 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>N/A</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)60</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Gold_Bar.png" alt="Gold Bar" />&nbsp;&nbsp;<span class='link'><a href='#GoldBar'>Gold Bar</a></span></td><td>3</td></tr><tr><td><img name="img/Glass.png" alt="Glass" />&nbsp;&nbsp;<span class='link'><a href='#Glass'>Glass</a></span></td><td>6</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
@@ -2994,9 +2845,9 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)1</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>14</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>14</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="LampPost" data-role='page'>
 <div data-role='header'><h1>Lamp Post</h1></div>
@@ -3024,12 +2875,12 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Type</td><td>Furniture</td></tr>
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>Used for crafting cloth</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>60 Copper Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Used for crafting cloth</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)60</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Work Bencg</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>12</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>12</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
 <div id="Piano" data-role='page'>
 <div data-role='header'><h1>Piano</h1></div>
@@ -3039,12 +2890,12 @@ Barrels can only be harvested with a Hammer when empty. </p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Furniture</td></tr>
 <tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
-<tr><td style='font-weight: bold;'>Consumable</td><td>No</td></tr>
-<tr><td style='font-weight: bold;'>Potion</td><td>No</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>60  Copper Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)60</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Bone.png" alt="Bone" />&nbsp;&nbsp;<span class='link'><a href='#Bone'>Bone</a></span></td><td>4</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>15</td></tr><tr><td><img name="img/Book.png" alt="Book" />&nbsp;&nbsp;<span class='link'><a href='#Book'>Book</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Sawmill.png" alt="Sawmill" />Sawmill</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Bone.png" alt="Bone" />&nbsp;&nbsp;<span class='link'><a href='#Bone'>Bone</a></span></td><td>4</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>15</td></tr><tr><td><img name="img/Book.png" alt="Book" />&nbsp;&nbsp;<span class='link'><a href='#Book'>Book</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table></div>
 </div>
 <div id="PinkVase" data-role='page'>
 <div data-role='header'><h1>Pink Vase</h1></div>
@@ -3213,6 +3064,22 @@ Trash Cans can only be harvested with a hammer when empty. </p>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Silk.png" alt="Silk" />&nbsp;&nbsp;<span class='link'><a href='#Silk'>Silk</a></span></td><td>5</td></tr><tr><td><img name="img/Torch.png" alt="Torch" />&nbsp;&nbsp;<span class='link'><a href='#Torch'>Torch</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
 </div>
+<div id="Sawmill" data-role='page'>
+<div data-role='header'><h1>Sawmill</h1></div>
+<div data-role='content'>
+<img name="img/Sawmill.png" alt="Sawmill" class='item_image'/>
+<p>A Sawmill is a piece of Furniture for advanced Wood crafting. Basic wood crafting is done at a Work Bench. </p>
+<table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Furniture</td></tr>
+<tr><td style='font-weight: bold;'>Placeable</td><td>Yes</td></tr>
+<tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Used for advanced wood crafting</td></tr>
+<tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
+<tr><td style='font-weight: bold;'>Tool</td><td>Hammer</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Copper Coin(s)60</td></tr>
+</table>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>10</td></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>2</td></tr><tr><td><img name="img/Iron_Chain.png" alt="Iron Chain" />&nbsp;&nbsp;<span class='link'><a href='#IronChain'>Iron Chain</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
+</div>
 <div id="CopperCoin" data-role='page'>
 <div data-role='header'><h1>Copper Coin</h1></div>
 <div data-role='content'>
@@ -3378,7 +3245,7 @@ Trash Cans can only be harvested with a hammer when empty. </p>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>10</td></tr>
 </table>
-<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#Silk'>Silk</a></td></tr><tr><td><span class='link'><a href='#NecroHelmet'>Necro Helmet</a></td></tr><tr><td><span class='link'><a href='#NecroBreastplate'>Necro Breastplate </a></td></tr><tr><td><span class='link'><a href='#NecroGreaves'>Necro Greaves</a></td></tr></table></div>
+<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#NecroHelmet'>Necro Helmet</a></td></tr><tr><td><span class='link'><a href='#NecroBreastplate'>Necro Breastplate </a></td></tr><tr><td><span class='link'><a href='#NecroGreaves'>Necro Greaves</a></td></tr><tr><td><span class='link'><a href='#Silk'>Silk</a></td></tr></table></div>
 </div>
 <div id="Gel" data-role='page'>
 <div data-role='header'><h1>Gel</h1></div>
@@ -3442,7 +3309,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#GrapplingHook'>Grappling Hook</a></td></tr><tr><td><span class='link'><a href='#CopperChandelier'>Copper Chandelier</a></td></tr><tr><td><span class='link'><a href='#SilverChandelier'>Silver Chandelier</a></td></tr><tr><td><span class='link'><a href='#GoldChandelier'>Gold Chandelier</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Iron_Anvil.png" alt="Iron Anvil" />Iron Anvil</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Bar.png" alt="Iron Bar" />&nbsp;&nbsp;<span class='link'><a href='#IronBar'>Iron Bar</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#GrapplingHook'>Grappling Hook</a></td></tr><tr><td><span class='link'><a href='#CopperChandelier'>Copper Chandelier</a></td></tr><tr><td><span class='link'><a href='#SilverChandelier'>Silver Chandelier</a></td></tr><tr><td><span class='link'><a href='#GoldChandelier'>Gold Chandelier</a></td></tr><tr><td><span class='link'><a href='#Sawmill'>Sawmill</a></td></tr></table></div>
 </div>
 <div id="Hook" data-role='page'>
 <div data-role='header'><h1>Hook</h1></div>
@@ -3474,7 +3341,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Cobweb.png" alt="Cobweb" />&nbsp;&nbsp;<span class='link'><a href='#Cobweb'>Cobweb</a></span></td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#Bed'>Bed</a></td></tr><tr><td><span class='link'><a href='#HerosHat'>Hero's Hat</a></td></tr><tr><td><span class='link'><a href='#HerosShirt'>Hero's Shirt</a></td></tr><tr><td><span class='link'><a href='#HerosPants'>Hero's Pants</a></td></tr><tr><td><span class='link'><a href='#Robe'>Robe</a></td></tr><tr><td><span class='link'><a href='#TuxedoPants'>Tuxedo Pants</a></td></tr><tr><td><span class='link'><a href='#TuxedoShirt'>Tuxedo Shirt</a></td></tr><tr><td><span class='link'><a href='#Banner'>Banner</a></td></tr><tr><td><span class='link'><a href='#Throne'>Throne</a></td></tr><tr><td><span class='link'><a href='#ChineseLantern'>Chinese Lantern</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Work_Bench.png" alt="Work Bench" />Work Bench</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Cobweb.png" alt="Cobweb" />&nbsp;&nbsp;<span class='link'><a href='#Cobweb'>Cobweb</a></span></td><td>10</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#TuxedoPants'>Tuxedo Pants</a></td></tr><tr><td><span class='link'><a href='#TuxedoShirt'>Tuxedo Shirt</a></td></tr><tr><td><span class='link'><a href='#HerosHat'>Hero's Hat</a></td></tr><tr><td><span class='link'><a href='#HerosShirt'>Hero's Shirt</a></td></tr><tr><td><span class='link'><a href='#HerosPants'>Hero's Pants</a></td></tr><tr><td><span class='link'><a href='#Bed'>Bed</a></td></tr><tr><td><span class='link'><a href='#Robe'>Robe</a></td></tr><tr><td><span class='link'><a href='#Banner'>Banner</a></td></tr><tr><td><span class='link'><a href='#Throne'>Throne</a></td></tr><tr><td><span class='link'><a href='#ChineseLantern'>Chinese Lantern</a></td></tr></table></div>
 </div>
 <div id="VileMushroom" data-role='page'>
 <div data-role='header'><h1>Vile Mushroom</h1></div>
@@ -3539,7 +3406,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)</td></tr>
 </table>
-<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#NightmarePickaxe'>Nightmare Pickaxe</a></td></tr><tr><td><span class='link'><a href='#TheBreaker'>The Breaker</a></td></tr><tr><td><span class='link'><a href='#ShadowHelmet'>Shadow Helmet</a></td></tr><tr><td><span class='link'><a href='#ShadowScalemail'>Shadow Scalemail</a></td></tr><tr><td><span class='link'><a href='#ShadowGreaves'>Shadow Greaves</a></td></tr></table></div>
+<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#ShadowHelmet'>Shadow Helmet</a></td></tr><tr><td><span class='link'><a href='#ShadowScalemail'>Shadow Scalemail</a></td></tr><tr><td><span class='link'><a href='#ShadowGreaves'>Shadow Greaves</a></td></tr><tr><td><span class='link'><a href='#NightmarePickaxe'>Nightmare Pickaxe</a></td></tr><tr><td><span class='link'><a href='#TheBreaker'>The Breaker</a></td></tr></table></div>
 </div>
 <div id="JungleRose" data-role='page'>
 <div data-role='header'><h1>Jungle Rose</h1></div>
@@ -3554,7 +3421,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>20 Copper Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Grappling_Hook.png" alt="Grappling Hook" />&nbsp;&nbsp;<span class='link'><a href='#GrapplingHook'>Grappling Hook</a></span></td><td>1</td></tr><tr><td><img name="img/Vine.png" alt="Vine" />&nbsp;&nbsp;<span class='link'><a href='#Vine'>Vine</a></span></td><td>3</td></tr><tr><td><img name="img/Jungle_Rose.png" alt="Jungle Rose" />&nbsp;&nbsp;<span class='link'><a href='#JungleRose'>Jungle Rose</a></span></td><td>30</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#ThornChakrum'>Thorn Chakrum</a></td></tr><tr><td><span class='link'><a href='#JungleRose'>Jungle Rose</a></td></tr><tr><td><span class='link'><a href='#Vine'>Vine</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Grappling_Hook.png" alt="Grappling Hook" />&nbsp;&nbsp;<span class='link'><a href='#GrapplingHook'>Grappling Hook</a></span></td><td>1</td></tr><tr><td><img name="img/Vine.png" alt="Vine" />&nbsp;&nbsp;<span class='link'><a href='#Vine'>Vine</a></span></td><td>3</td></tr><tr><td><img name="img/Jungle_Rose.png" alt="Jungle Rose" />&nbsp;&nbsp;<span class='link'><a href='#JungleRose'>Jungle Rose</a></span></td><td>30</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#JungleRose'>Jungle Rose</a></td></tr><tr><td><span class='link'><a href='#Vine'>Vine</a></td></tr><tr><td><span class='link'><a href='#ThornChakrum'>Thorn Chakrum</a></td></tr></table></div>
 </div>
 <div id="Stinger" data-role='page'>
 <div data-role='header'><h1>Stinger</h1></div>
@@ -3569,7 +3436,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>40 Copper Coin(s)</td></tr>
 </table>
-<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#ThornChakrum'>Thorn Chakrum</a></td></tr><tr><td><span class='link'><a href='#BladeofGrass'>Blade of Grass</a></td></tr><tr><td><span class='link'><a href='#JungleShirt'>Jungle Shirt </a></td></tr></table></div>
+<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#JungleShirt'>Jungle Shirt </a></td></tr><tr><td><span class='link'><a href='#ThornChakrum'>Thorn Chakrum</a></td></tr><tr><td><span class='link'><a href='#BladeofGrass'>Blade of Grass</a></td></tr></table></div>
 </div>
 <div id="Vine" data-role='page'>
 <div data-role='header'><h1>Vine</h1></div>
@@ -3584,7 +3451,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Grappling_Hook.png" alt="Grappling Hook" />&nbsp;&nbsp;<span class='link'><a href='#GrapplingHook'>Grappling Hook</a></span></td><td>1</td></tr><tr><td><img name="img/Vine.png" alt="Vine" />&nbsp;&nbsp;<span class='link'><a href='#Vine'>Vine</a></span></td><td>3</td></tr><tr><td><img name="img/Jungle_Rose.png" alt="Jungle Rose" />&nbsp;&nbsp;<span class='link'><a href='#JungleRose'>Jungle Rose</a></span></td><td>30</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#IvyWhip'>Ivy Whip</a></td></tr><tr><td><span class='link'><a href='#JungleRose'>Jungle Rose</a></td></tr><tr><td><span class='link'><a href='#Vine'>Vine</a></td></tr><tr><td><span class='link'><a href='#JunglePants'>Jungle Pants</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Grappling_Hook.png" alt="Grappling Hook" />&nbsp;&nbsp;<span class='link'><a href='#GrapplingHook'>Grappling Hook</a></span></td><td>1</td></tr><tr><td><img name="img/Vine.png" alt="Vine" />&nbsp;&nbsp;<span class='link'><a href='#Vine'>Vine</a></span></td><td>3</td></tr><tr><td><img name="img/Jungle_Rose.png" alt="Jungle Rose" />&nbsp;&nbsp;<span class='link'><a href='#JungleRose'>Jungle Rose</a></span></td><td>30</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x0</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#JunglePants'>Jungle Pants</a></td></tr><tr><td><span class='link'><a href='#JungleRose'>Jungle Rose</a></td></tr><tr><td><span class='link'><a href='#Vine'>Vine</a></td></tr><tr><td><span class='link'><a href='#IvyWhip'>Ivy Whip</a></td></tr></table></div>
 </div>
 <div id="CopperBar" data-role='page'>
 <div data-role='header'><h1>Copper Bar</h1></div>
@@ -3599,7 +3466,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>1 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Copper_Ore.png" alt="Copper Ore" />&nbsp;&nbsp;<span class='link'><a href='#CopperOre'>Copper Ore</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#CopperPickaxe'>Copper Pickaxe</a></td></tr><tr><td><span class='link'><a href='#CopperAxe'>Copper Axe</a></td></tr><tr><td><span class='link'><a href='#CopperHammer'>Copper Hammer</a></td></tr><tr><td><span class='link'><a href='#CopperShortsword'>Copper Shortsword</a></td></tr><tr><td><span class='link'><a href='#CopperBroadsword'>Copper Broadsword</a></td></tr><tr><td><span class='link'><a href='#CopperChandelier'>Copper Chandelier</a></td></tr><tr><td><span class='link'><a href='#CopperHelmet'>Copper Helmet</a></td></tr><tr><td><span class='link'><a href='#CopperChainmail'>Copper Chainmail</a></td></tr><tr><td><span class='link'><a href='#CopperGreaves'>Copper Greaves</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Copper_Ore.png" alt="Copper Ore" />&nbsp;&nbsp;<span class='link'><a href='#CopperOre'>Copper Ore</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#CopperHelmet'>Copper Helmet</a></td></tr><tr><td><span class='link'><a href='#CopperChainmail'>Copper Chainmail</a></td></tr><tr><td><span class='link'><a href='#CopperGreaves'>Copper Greaves</a></td></tr><tr><td><span class='link'><a href='#CopperPickaxe'>Copper Pickaxe</a></td></tr><tr><td><span class='link'><a href='#CopperAxe'>Copper Axe</a></td></tr><tr><td><span class='link'><a href='#CopperHammer'>Copper Hammer</a></td></tr><tr><td><span class='link'><a href='#CopperShortsword'>Copper Shortsword</a></td></tr><tr><td><span class='link'><a href='#CopperBroadsword'>Copper Broadsword</a></td></tr><tr><td><span class='link'><a href='#CopperChandelier'>Copper Chandelier</a></td></tr></table></div>
 </div>
 <div id="IronBar" data-role='page'>
 <div data-role='header'><h1>Iron Bar</h1></div>
@@ -3614,7 +3481,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>3 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Ore.png" alt="Iron Ore" />&nbsp;&nbsp;<span class='link'><a href='#IronOre'>Iron Ore</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#IronPickaxe'>Iron Pickaxe</a></td></tr><tr><td><span class='link'><a href='#IronAxe'>Iron Axe</a></td></tr><tr><td><span class='link'><a href='#IronHammer'>Iron Hammer</a></td></tr><tr><td><span class='link'><a href='#Bucket'>Bucket</a></td></tr><tr><td><span class='link'><a href='#IronBow'>Iron Bow</a></td></tr><tr><td><span class='link'><a href='#IronShortsword'>Iron Shortsword</a></td></tr><tr><td><span class='link'><a href='#IronBroadsword'>Iron Broadsword</a></td></tr><tr><td><span class='link'><a href='#IronAnvil'>Iron Anvil</a></td></tr><tr><td><span class='link'><a href='#Chest'>Chest</a></td></tr><tr><td><span class='link'><a href='#IronChain'>Iron Chain</a></td></tr><tr><td><span class='link'><a href='#IronHelmet'>Iron Helmet</a></td></tr><tr><td><span class='link'><a href='#IronChainmail'>Iron Chainmail</a></td></tr><tr><td><span class='link'><a href='#IronGreaves'>Iron Greaves</a></td></tr><tr><td><span class='link'><a href='#Barrel'>Barrel</a></td></tr><tr><td><span class='link'><a href='#Bathtub'>Bathtub</a></td></tr><tr><td><span class='link'><a href='#CookingPot'>Cooking Pot</a></td></tr><tr><td><span class='link'><a href='#LampPost'>Lamp Post</a></td></tr><tr><td><span class='link'><a href='#Toilet'>Toilet</a></td></tr><tr><td><span class='link'><a href='#TrashCan'>Trash Can</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Iron_Ore.png" alt="Iron Ore" />&nbsp;&nbsp;<span class='link'><a href='#IronOre'>Iron Ore</a></span></td><td>3</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#IronHelmet'>Iron Helmet</a></td></tr><tr><td><span class='link'><a href='#IronChainmail'>Iron Chainmail</a></td></tr><tr><td><span class='link'><a href='#IronGreaves'>Iron Greaves</a></td></tr><tr><td><span class='link'><a href='#IronPickaxe'>Iron Pickaxe</a></td></tr><tr><td><span class='link'><a href='#IronAxe'>Iron Axe</a></td></tr><tr><td><span class='link'><a href='#IronHammer'>Iron Hammer</a></td></tr><tr><td><span class='link'><a href='#Bucket'>Bucket</a></td></tr><tr><td><span class='link'><a href='#IronBow'>Iron Bow</a></td></tr><tr><td><span class='link'><a href='#IronShortsword'>Iron Shortsword</a></td></tr><tr><td><span class='link'><a href='#IronBroadsword'>Iron Broadsword</a></td></tr><tr><td><span class='link'><a href='#IronAnvil'>Iron Anvil</a></td></tr><tr><td><span class='link'><a href='#Chest'>Chest</a></td></tr><tr><td><span class='link'><a href='#IronChain'>Iron Chain</a></td></tr><tr><td><span class='link'><a href='#Barrel'>Barrel</a></td></tr><tr><td><span class='link'><a href='#Bathtub'>Bathtub</a></td></tr><tr><td><span class='link'><a href='#CookingPot'>Cooking Pot</a></td></tr><tr><td><span class='link'><a href='#LampPost'>Lamp Post</a></td></tr><tr><td><span class='link'><a href='#Toilet'>Toilet</a></td></tr><tr><td><span class='link'><a href='#TrashCan'>Trash Can</a></td></tr><tr><td><span class='link'><a href='#Sawmill'>Sawmill</a></td></tr></table></div>
 </div>
 <div id="SilverBar" data-role='page'>
 <div data-role='header'><h1>Silver Bar</h1></div>
@@ -3629,7 +3496,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>6 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Silver_Ore.png" alt="Silver Ore" />&nbsp;&nbsp;<span class='link'><a href='#SilverOre'>Silver Ore</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#SilverPickaxe'>Silver Pickaxe</a></td></tr><tr><td><span class='link'><a href='#SilverAxe'>Silver Axe</a></td></tr><tr><td><span class='link'><a href='#SilverHammer'>Silver Hammer</a></td></tr><tr><td><span class='link'><a href='#SilverBow'>Silver Bow</a></td></tr><tr><td><span class='link'><a href='#SilverBroadsword'>Silver Broadsword</a></td></tr><tr><td><span class='link'><a href='#SilverChandelier'>Silver Chandelier</a></td></tr><tr><td><span class='link'><a href='#SilverHelmet'>Silver Helmet</a></td></tr><tr><td><span class='link'><a href='#SilverChainmail'>Silver Chainmail</a></td></tr><tr><td><span class='link'><a href='#SilverGreaves'>Silver Greaves </a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Silver_Ore.png" alt="Silver Ore" />&nbsp;&nbsp;<span class='link'><a href='#SilverOre'>Silver Ore</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#SilverHelmet'>Silver Helmet</a></td></tr><tr><td><span class='link'><a href='#SilverChainmail'>Silver Chainmail</a></td></tr><tr><td><span class='link'><a href='#SilverGreaves'>Silver Greaves </a></td></tr><tr><td><span class='link'><a href='#SilverPickaxe'>Silver Pickaxe</a></td></tr><tr><td><span class='link'><a href='#SilverAxe'>Silver Axe</a></td></tr><tr><td><span class='link'><a href='#SilverHammer'>Silver Hammer</a></td></tr><tr><td><span class='link'><a href='#SilverBow'>Silver Bow</a></td></tr><tr><td><span class='link'><a href='#SilverBroadsword'>Silver Broadsword</a></td></tr><tr><td><span class='link'><a href='#SilverChandelier'>Silver Chandelier</a></td></tr></table></div>
 </div>
 <div id="GoldBar" data-role='page'>
 <div data-role='header'><h1>Gold Bar</h1></div>
@@ -3644,7 +3511,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>12 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Gold_Ore.png" alt="Gold Ore" />&nbsp;&nbsp;<span class='link'><a href='#GoldOre'>Gold Ore</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#GoldPickaxe'>Gold Pickaxe</a></td></tr><tr><td><span class='link'><a href='#GoldAxe'>Gold Axe</a></td></tr><tr><td><span class='link'><a href='#GoldHammer'>Gold Hammer</a></td></tr><tr><td><span class='link'><a href='#GoldBow'>Gold Bow</a></td></tr><tr><td><span class='link'><a href='#GoldShortsword'>Gold Shortsword</a></td></tr><tr><td><span class='link'><a href='#GoldBroadsword'>Gold Broadsword</a></td></tr><tr><td><span class='link'><a href='#Candle'>Candle</a></td></tr><tr><td><span class='link'><a href='#GoldChandelier'>Gold Chandelier</a></td></tr><tr><td><span class='link'><a href='#GoldHelmet'>Gold Helmet</a></td></tr><tr><td><span class='link'><a href='#GoldChainmail'>Gold Chainmail</a></td></tr><tr><td><span class='link'><a href='#GoldGreaves'>Gold Greaves</a></td></tr><tr><td><span class='link'><a href='#GoldCrown'>Gold Crown</a></td></tr><tr><td><span class='link'><a href='#Candelabra'>Candelabra</a></td></tr><tr><td><span class='link'><a href='#GrandfatherClock'>Grandfather Clock</a></td></tr><tr><td><span class='link'><a href='#Throne'>Throne</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Gold_Ore.png" alt="Gold Ore" />&nbsp;&nbsp;<span class='link'><a href='#GoldOre'>Gold Ore</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#GoldHelmet'>Gold Helmet</a></td></tr><tr><td><span class='link'><a href='#GoldChainmail'>Gold Chainmail</a></td></tr><tr><td><span class='link'><a href='#GoldGreaves'>Gold Greaves</a></td></tr><tr><td><span class='link'><a href='#GoldPickaxe'>Gold Pickaxe</a></td></tr><tr><td><span class='link'><a href='#GoldAxe'>Gold Axe</a></td></tr><tr><td><span class='link'><a href='#GoldHammer'>Gold Hammer</a></td></tr><tr><td><span class='link'><a href='#GoldBow'>Gold Bow</a></td></tr><tr><td><span class='link'><a href='#GoldShortsword'>Gold Shortsword</a></td></tr><tr><td><span class='link'><a href='#GoldBroadsword'>Gold Broadsword</a></td></tr><tr><td><span class='link'><a href='#Candle'>Candle</a></td></tr><tr><td><span class='link'><a href='#GoldChandelier'>Gold Chandelier</a></td></tr><tr><td><span class='link'><a href='#GoldCrown'>Gold Crown</a></td></tr><tr><td><span class='link'><a href='#Candelabra'>Candelabra</a></td></tr><tr><td><span class='link'><a href='#GrandfatherClock'>Grandfather Clock</a></td></tr><tr><td><span class='link'><a href='#Throne'>Throne</a></td></tr></table></div>
 </div>
 <div id="DemoniteBar" data-role='page'>
 <div data-role='header'><h1>Demonite Bar</h1></div>
@@ -3661,7 +3528,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>32 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Demonite_Ore.png" alt="Demonite Ore" />&nbsp;&nbsp;<span class='link'><a href='#DemoniteOre'>Demonite Ore</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#NightmarePickaxe'>Nightmare Pickaxe</a></td></tr><tr><td><span class='link'><a href='#WarAxeoftheNight'>War Axe of the Night</a></td></tr><tr><td><span class='link'><a href='#TheBreaker'>The Breaker</a></td></tr><tr><td><span class='link'><a href='#DemonBow'>Demon Bow</a></td></tr><tr><td><span class='link'><a href='#LightsBane'>Light's Bane</a></td></tr><tr><td><span class='link'><a href='#ShadowHelmet'>Shadow Helmet</a></td></tr><tr><td><span class='link'><a href='#ShadowScalemail'>Shadow Scalemail</a></td></tr><tr><td><span class='link'><a href='#ShadowGreaves'>Shadow Greaves</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Demonite_Ore.png" alt="Demonite Ore" />&nbsp;&nbsp;<span class='link'><a href='#DemoniteOre'>Demonite Ore</a></span></td><td>4</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#ShadowHelmet'>Shadow Helmet</a></td></tr><tr><td><span class='link'><a href='#ShadowScalemail'>Shadow Scalemail</a></td></tr><tr><td><span class='link'><a href='#ShadowGreaves'>Shadow Greaves</a></td></tr><tr><td><span class='link'><a href='#NightmarePickaxe'>Nightmare Pickaxe</a></td></tr><tr><td><span class='link'><a href='#WarAxeoftheNight'>War Axe of the Night</a></td></tr><tr><td><span class='link'><a href='#TheBreaker'>The Breaker</a></td></tr><tr><td><span class='link'><a href='#DemonBow'>Demon Bow</a></td></tr><tr><td><span class='link'><a href='#LightsBane'>Light's Bane</a></td></tr></table></div>
 </div>
 <div id="MeteoriteBar" data-role='page'>
 <div data-role='header'><h1>Meteorite Bar</h1></div>
@@ -3678,7 +3545,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>14 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Meteorite.png" alt="Meteorite" />&nbsp;&nbsp;<span class='link'><a href='#Meteorite'>Meteorite</a></span></td><td>6</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#MeteorHamaxe'>Meteor Hamaxe</a></td></tr><tr><td><span class='link'><a href='#StarCannon'>Star Cannon</a></td></tr><tr><td><span class='link'><a href='#SpaceGun'>Space Gun</a></td></tr><tr><td><span class='link'><a href='#Phaseblade'>Phaseblade</a></td></tr><tr><td><span class='link'><a href='#MeteorShot'>Meteor Shot</a></td></tr><tr><td><span class='link'><a href='#MeteorHelmet'>Meteor Helmet</a></td></tr><tr><td><span class='link'><a href='#MeteorSuit'>Meteor Suit</a></td></tr><tr><td><span class='link'><a href='#MeteorLeggings'>Meteor Leggings</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Furnace.png" alt="Furnace" />Furnace</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Meteorite.png" alt="Meteorite" />&nbsp;&nbsp;<span class='link'><a href='#Meteorite'>Meteorite</a></span></td><td>6</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#MeteorHelmet'>Meteor Helmet</a></td></tr><tr><td><span class='link'><a href='#MeteorSuit'>Meteor Suit</a></td></tr><tr><td><span class='link'><a href='#MeteorLeggings'>Meteor Leggings</a></td></tr><tr><td><span class='link'><a href='#MeteorHamaxe'>Meteor Hamaxe</a></td></tr><tr><td><span class='link'><a href='#StarCannon'>Star Cannon</a></td></tr><tr><td><span class='link'><a href='#SpaceGun'>Space Gun</a></td></tr><tr><td><span class='link'><a href='#Phaseblade'>Phaseblade</a></td></tr><tr><td><span class='link'><a href='#MeteorShot'>Meteor Shot</a></td></tr></table></div>
 </div>
 <div id="HellstoneBar" data-role='page'>
 <div data-role='header'><h1>Hellstone Bar</h1></div>
@@ -3696,7 +3563,7 @@ Added in patch 1.0.3.</p>
 <tr><td style='font-weight: bold;'>Use</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>40 Silver Coin(s)</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Hellforge.png" alt="Hellforge" />Hellforge</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Hellstone.png" alt="Hellstone" />&nbsp;&nbsp;<span class='link'><a href='#Hellstone'>Hellstone</a></span></td><td>4</td></tr><tr><td><img name="img/Obsidian.png" alt="Obsidian" />&nbsp;&nbsp;<span class='link'><a href='#Obsidian'>Obsidian</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#MoltenPickaxe'>Molten Pickaxe</a></td></tr><tr><td><span class='link'><a href='#MoltenHamaxe'>Molten Hamaxe</a></td></tr><tr><td><span class='link'><a href='#MoltenFury'>Molten Fury</a></td></tr><tr><td><span class='link'><a href='#Flamarang'>Flamarang</a></td></tr><tr><td><span class='link'><a href='#PhoenixBlaster'>Phoenix Blaster</a></td></tr><tr><td><span class='link'><a href='#FieryGreatsword'>Fiery Greatsword</a></td></tr><tr><td><span class='link'><a href='#MoltenHelmet'>Molten Helmet</a></td></tr><tr><td><span class='link'><a href='#MoltenBreastplate'>Molten Breastplate </a></td></tr><tr><td><span class='link'><a href='#MoltenGreaves'>Molten Greaves</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Hellforge.png" alt="Hellforge" />Hellforge</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Hellstone.png" alt="Hellstone" />&nbsp;&nbsp;<span class='link'><a href='#Hellstone'>Hellstone</a></span></td><td>4</td></tr><tr><td><img name="img/Obsidian.png" alt="Obsidian" />&nbsp;&nbsp;<span class='link'><a href='#Obsidian'>Obsidian</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#MoltenHelmet'>Molten Helmet</a></td></tr><tr><td><span class='link'><a href='#MoltenBreastplate'>Molten Breastplate </a></td></tr><tr><td><span class='link'><a href='#MoltenGreaves'>Molten Greaves</a></td></tr><tr><td><span class='link'><a href='#MoltenPickaxe'>Molten Pickaxe</a></td></tr><tr><td><span class='link'><a href='#MoltenHamaxe'>Molten Hamaxe</a></td></tr><tr><td><span class='link'><a href='#MoltenFury'>Molten Fury</a></td></tr><tr><td><span class='link'><a href='#Flamarang'>Flamarang</a></td></tr><tr><td><span class='link'><a href='#PhoenixBlaster'>Phoenix Blaster</a></td></tr><tr><td><span class='link'><a href='#FieryGreatsword'>Fiery Greatsword</a></td></tr></table></div>
 </div>
 <div id="Pot" data-role='page'>
 <div data-role='header'><h1>Pot</h1></div>
@@ -4222,7 +4089,7 @@ A cactus deals 10 damage to you if you touch one. </p>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>3 Silver Coin(s)</td></tr>
 </table>
-<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#Phaseblade'>Phaseblade</a></td></tr><tr><td><span class='link'><a href='#JunglePants'>Jungle Pants</a></td></tr></table></div>
+<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#JunglePants'>Jungle Pants</a></td></tr><tr><td><span class='link'><a href='#Phaseblade'>Phaseblade</a></td></tr></table></div>
 </div>
 <div id="Topaz" data-role='page'>
 <div data-role='header'><h1>Topaz</h1></div>
@@ -4518,7 +4385,7 @@ They can be acquired in 4 ways:
 <tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 </table>
-<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#IvyWhip'>Ivy Whip</a></td></tr><tr><td><span class='link'><a href='#BladeofGrass'>Blade of Grass</a></td></tr><tr><td><span class='link'><a href='#JungleHat'>Jungle Hat</a></td></tr><tr><td><span class='link'><a href='#JungleShirt'>Jungle Shirt </a></td></tr><tr><td><span class='link'><a href='#JunglePants'>Jungle Pants</a></td></tr></table></div>
+<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#JungleHat'>Jungle Hat</a></td></tr><tr><td><span class='link'><a href='#JungleShirt'>Jungle Shirt </a></td></tr><tr><td><span class='link'><a href='#JunglePants'>Jungle Pants</a></td></tr><tr><td><span class='link'><a href='#IvyWhip'>Ivy Whip</a></td></tr><tr><td><span class='link'><a href='#BladeofGrass'>Blade of Grass</a></td></tr></table></div>
 </div>
 <div id="Mug" data-role='page'>
 <div data-role='header'><h1>Mug</h1></div>
@@ -4560,7 +4427,7 @@ Each Shadow Key cannot stack with another Shadow Key. However, one Shadow Key ca
 <tr><td style='font-weight: bold;'>Type</td><td>Crafting Material</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>99</td></tr>
 </table>
-<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Tattered_Cloth.png" alt="Tattered Cloth" />&nbsp;&nbsp;<span class='link'><a href='#TatteredCloth'>Tattered Cloth</a></span></td><td>10</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>5</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#GoblinBattleStandard'>Goblin Battle Standard</a></td></tr><tr><td><span class='link'><a href='#TatteredCloth'>Tattered Cloth</a></td></tr></table></div>
+<br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'>Hand</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Tattered_Cloth.png" alt="Tattered Cloth" />&nbsp;&nbsp;<span class='link'><a href='#TatteredCloth'>Tattered Cloth</a></span></td><td>10</td></tr><tr><td><img name="img/Wood.png" alt="Wood" />&nbsp;&nbsp;<span class='link'><a href='#Wood'>Wood</a></span></td><td>5</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#TatteredCloth'>Tattered Cloth</a></td></tr><tr><td><span class='link'><a href='#GoblinBattleStandard'>Goblin Battle Standard</a></td></tr></table></div>
 </div>
 <div id="HellfireArrow" data-role='page'>
 <div data-role='header'><h1>Hellfire Arrow</h1></div>
@@ -5022,7 +4889,7 @@ When equipped in accessories, the player can now attack the guide.
 <tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>10</td></tr>
 </table>
-<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#CopperPickaxe'>Copper Pickaxe</a></td></tr><tr><td><span class='link'><a href='#IronPickaxe'>Iron Pickaxe</a></td></tr><tr><td><span class='link'><a href='#SilverPickaxe'>Silver Pickaxe</a></td></tr><tr><td><span class='link'><a href='#GoldPickaxe'>Gold Pickaxe</a></td></tr><tr><td><span class='link'><a href='#CopperAxe'>Copper Axe</a></td></tr><tr><td><span class='link'><a href='#IronAxe'>Iron Axe</a></td></tr><tr><td><span class='link'><a href='#SilverAxe'>Silver Axe</a></td></tr><tr><td><span class='link'><a href='#GoldAxe'>Gold Axe</a></td></tr><tr><td><span class='link'><a href='#WoodenHammer'>Wooden Hammer</a></td></tr><tr><td><span class='link'><a href='#CopperHammer'>Copper Hammer</a></td></tr><tr><td><span class='link'><a href='#IronHammer'>Iron Hammer</a></td></tr><tr><td><span class='link'><a href='#SilverHammer'>Silver Hammer</a></td></tr><tr><td><span class='link'><a href='#GoldHammer'>Gold Hammer</a></td></tr><tr><td><span class='link'><a href='#WoodenBow'>Wooden Bow</a></td></tr><tr><td><span class='link'><a href='#WoodenSword'>Wooden Sword</a></td></tr><tr><td><span class='link'><a href='#WoodenChair'>Wooden Chair</a></td></tr><tr><td><span class='link'><a href='#WoodenTable'>Wooden Table</a></td></tr><tr><td><span class='link'><a href='#WorkBench'>Work Bench</a></td></tr><tr><td><span class='link'><a href='#Furnace'>Furnace</a></td></tr><tr><td><span class='link'><a href='#Torch'>Torch</a></td></tr><tr><td><span class='link'><a href='#Chest'>Chest</a></td></tr><tr><td><span class='link'><a href='#Sign'>Sign</a></td></tr><tr><td><span class='link'><a href='#WoodPlatform'>Wood Platform</a></td></tr><tr><td><span class='link'><a href='#WoodenDoor'>Wooden Door</a></td></tr><tr><td><span class='link'><a href='#Bed'>Bed</a></td></tr><tr><td><span class='link'><a href='#WoodenArrow'>Wooden Arrow</a></td></tr><tr><td><span class='link'><a href='#WoodWall'>Wood Wall</a></td></tr><tr><td><span class='link'><a href='#Barrel'>Barrel</a></td></tr><tr><td><span class='link'><a href='#GoblinBattleStandard'>Goblin Battle Standard</a></td></tr><tr><td><span class='link'><a href='#Bench'>Bench</a></td></tr><tr><td><span class='link'><a href='#Bookcase'>Bookcase</a></td></tr><tr><td><span class='link'><a href='#CookingPot'>Cooking Pot</a></td></tr><tr><td><span class='link'><a href='#Dresser'>Dresser</a></td></tr><tr><td><span class='link'><a href='#GrandfatherClock'>Grandfather Clock</a></td></tr><tr><td><span class='link'><a href='#Keg'>Keg</a></td></tr><tr><td><span class='link'><a href='#Loom'>Loom</a></td></tr><tr><td><span class='link'><a href='#Piano'>Piano</a></td></tr><tr><td><span class='link'><a href='#TatteredCloth'>Tattered Cloth</a></td></tr><tr><td><span class='link'><a href='#TikiTorch'>Tiki Torch</a></td></tr></table></div>
+<br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#TatteredCloth'>Tattered Cloth</a></td></tr><tr><td><span class='link'><a href='#CopperPickaxe'>Copper Pickaxe</a></td></tr><tr><td><span class='link'><a href='#IronPickaxe'>Iron Pickaxe</a></td></tr><tr><td><span class='link'><a href='#SilverPickaxe'>Silver Pickaxe</a></td></tr><tr><td><span class='link'><a href='#GoldPickaxe'>Gold Pickaxe</a></td></tr><tr><td><span class='link'><a href='#CopperAxe'>Copper Axe</a></td></tr><tr><td><span class='link'><a href='#IronAxe'>Iron Axe</a></td></tr><tr><td><span class='link'><a href='#SilverAxe'>Silver Axe</a></td></tr><tr><td><span class='link'><a href='#GoldAxe'>Gold Axe</a></td></tr><tr><td><span class='link'><a href='#WoodenHammer'>Wooden Hammer</a></td></tr><tr><td><span class='link'><a href='#CopperHammer'>Copper Hammer</a></td></tr><tr><td><span class='link'><a href='#IronHammer'>Iron Hammer</a></td></tr><tr><td><span class='link'><a href='#SilverHammer'>Silver Hammer</a></td></tr><tr><td><span class='link'><a href='#GoldHammer'>Gold Hammer</a></td></tr><tr><td><span class='link'><a href='#WoodenBow'>Wooden Bow</a></td></tr><tr><td><span class='link'><a href='#WoodenSword'>Wooden Sword</a></td></tr><tr><td><span class='link'><a href='#WoodenChair'>Wooden Chair</a></td></tr><tr><td><span class='link'><a href='#WoodenTable'>Wooden Table</a></td></tr><tr><td><span class='link'><a href='#WorkBench'>Work Bench</a></td></tr><tr><td><span class='link'><a href='#Furnace'>Furnace</a></td></tr><tr><td><span class='link'><a href='#Torch'>Torch</a></td></tr><tr><td><span class='link'><a href='#Chest'>Chest</a></td></tr><tr><td><span class='link'><a href='#Sign'>Sign</a></td></tr><tr><td><span class='link'><a href='#WoodPlatform'>Wood Platform</a></td></tr><tr><td><span class='link'><a href='#WoodenDoor'>Wooden Door</a></td></tr><tr><td><span class='link'><a href='#Bed'>Bed</a></td></tr><tr><td><span class='link'><a href='#WoodenArrow'>Wooden Arrow</a></td></tr><tr><td><span class='link'><a href='#WoodWall'>Wood Wall</a></td></tr><tr><td><span class='link'><a href='#Barrel'>Barrel</a></td></tr><tr><td><span class='link'><a href='#GoblinBattleStandard'>Goblin Battle Standard</a></td></tr><tr><td><span class='link'><a href='#Bench'>Bench</a></td></tr><tr><td><span class='link'><a href='#Bookcase'>Bookcase</a></td></tr><tr><td><span class='link'><a href='#CookingPot'>Cooking Pot</a></td></tr><tr><td><span class='link'><a href='#Dresser'>Dresser</a></td></tr><tr><td><span class='link'><a href='#GrandfatherClock'>Grandfather Clock</a></td></tr><tr><td><span class='link'><a href='#Keg'>Keg</a></td></tr><tr><td><span class='link'><a href='#Loom'>Loom</a></td></tr><tr><td><span class='link'><a href='#Piano'>Piano</a></td></tr><tr><td><span class='link'><a href='#TikiTorch'>Tiki Torch</a></td></tr><tr><td><span class='link'><a href='#Sawmill'>Sawmill</a></td></tr></table></div>
 </div>
 <div id="Glass" data-role='page'>
 <div data-role='header'><h1>Glass</h1></div>
@@ -5130,6 +4997,7 @@ As of patch 1.0.5 the world can be generated with small veins of Demonite Ore an
 <img name="img/Ebonstone_Block.png" alt="Ebonstone Block" class='item_image'/>
 <p>Can be turned into a Stone Block using Purification Powder</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Type</td><td>Block</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>250</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>False</td></tr>
@@ -6361,12 +6229,12 @@ I didn't add images for these items since they change based on your character. <
 <tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
 <tr><td style='font-weight: bold;'>Type2</td><td>Crafting Material</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
-<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 100 mana</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>50</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 50 mana</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Buy</td><td>10 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Buy</td><td> Silver Coin(s)10</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Fallen_Star.png" alt="Fallen Star" />&nbsp;&nbsp;<span class='link'><a href='#FallenStar'>Fallen Star</a></span></td><td>1</td></tr><tr><td><img name="img/Gel.png" alt="Gel" />&nbsp;&nbsp;<span class='link'><a href='#Gel'>Gel</a></span></td><td>2</td></tr><tr><td><img name="img/Bottle.png" alt="Bottle" />&nbsp;&nbsp;<span class='link'><a href='#Bottle'>Bottle</a></span></td><td>2</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x2</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#ManaPotion'>Mana Potion</a></td></tr><tr><td><span class='link'><a href='#LesserRestorationPotion'>Lesser Restoration Potion</a></td></tr></table></div>
 </div>
@@ -6379,13 +6247,12 @@ I didn't add images for these items since they change based on your character. <
 <tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
 <tr><td style='font-weight: bold;'>Type2</td><td>Crafting Material</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>30</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>200</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Rare</td><td>1</td></tr>
-<tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
-<tr><td style='font-weight: bold;'>Sell</td><td>2 Silver Coin(s)</td></tr>
+<tr><td style='font-weight: bold;'>Sell</td><td> Silver Coin(s)2</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Lesser_Mana_Potion.png" alt="Lesser Mana Potion" />&nbsp;&nbsp;<span class='link'><a href='#LesserManaPotion'>Lesser Mana Potion</a></span></td><td>2</td></tr><tr><td><img name="img/Glowing_Mushroom.png" alt="Glowing Mushroom" />&nbsp;&nbsp;<span class='link'><a href='#GlowingMushroom'>Glowing Mushroom</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table><br /><table class='object_table'><tr><th>Used in</th></tr><tr><td><span class='link'><a href='#RestorationPotion'>Restoration Potion</a></td></tr></table></div>
 </div>
@@ -6397,7 +6264,7 @@ I didn't add images for these items since they change based on your character. <
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>50</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
@@ -6412,13 +6279,16 @@ I didn't add images for these items since they change based on your character. <
 <img name="img/Restoration_Potion.png" alt="Restoration Potion" class='item_image'/>
 <p>Restores 200 points of mana and health</p>
 <table id='item_stats'><tr><th colspan='2'>Tool Stats</th></tr>
+<tr><td style='font-weight: bold;'>Array</td><td>estores 100 mana</td></tr>
 <tr><td style='font-weight: bold;'>Type</td><td>Potion</td></tr>
 <tr><td style='font-weight: bold;'>Max Stack</td><td>20</td></tr>
-<tr><td style='font-weight: bold;'>Mheal</td><td>200</td></tr>
+<tr><td style='font-weight: bold;'>Hheal</td><td>100</td></tr>
+<tr><td style='font-weight: bold;'>Mheal</td><td>100</td></tr>
 <tr><td style='font-weight: bold;'>Consumable</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Potion</td><td>True</td></tr>
 <tr><td style='font-weight: bold;'>Accessory</td><td>False</td></tr>
 <tr><td style='font-weight: bold;'>Use</td><td>17</td></tr>
+<tr><td style='font-weight: bold;'>Tooltip</td><td>Restores 100 life</td></tr>
 <tr><td style='font-weight: bold;'>Sell</td><td>8 Silver Coin(s)</td></tr>
 </table>
 <br /><table id='item_ingredients' class='object_table'><tr><th colspan='2'>Crafting</th></tr><tr><th colspan='2'>Tool</th></tr><tr style='text-align:center;'><td colspan='2'><img name="img/Alchemy_Station.png" alt="Alchemy Station" />Alchemy Station</td></tr><tr><th>Item</th><th>Amount</th></tr><tr><td><img name="img/Healing_Potion.png" alt="Healing Potion" />&nbsp;&nbsp;<span class='link'><a href='#HealingPotion'>Healing Potion</a></span></td><td>1</td></tr><tr><td><img name="img/Mana_Potion.png" alt="Mana Potion" />&nbsp;&nbsp;<span class='link'><a href='#ManaPotion'>Mana Potion</a></span></td><td>1</td></tr><tr><td style='font-weight: bold;'>Result</td><td>x1</td></tr></table></div>
@@ -7370,7 +7240,7 @@ Drops:<br />
 <div data-role='content'>
 <img name="img/Blazing_Wheel.png" alt="]" class='item_image'/>
 <p>The Blazing Wheel is an indestructable enemy found in the Dungeon that looks like a saw on fire. The Blazing Wheel glides along the walls and floors of the dungeon. They produce light and move very quickly. </p><table id='monster_stats'><tr><th colspan='2'>Stats</th></tr>
-<tr><td style='font-weight: bold;'>Type</td><td>Dungeon Trap</td></tr><tr><td style='font-weight: bold;'>Environment</td><td>Dungeon</td></tr><tr><td style='font-weight: bold;'>Ai</td><td>Blazing Wheel</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>22</td></tr></table></div>
+<tr><td style='font-weight: bold;'>Environment</td><td>Dungeon</td></tr><tr><td style='font-weight: bold;'>Damage</td><td>22</td></tr></table></div>
 </div>
 <div id="SpikeBall" data-role='page'>
 <div data-role='header'><h1>Spike Ball</h1></div>

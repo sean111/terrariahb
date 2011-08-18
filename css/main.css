@@ -103,7 +103,7 @@ ul[data-role=listview] a {
     margin-right: auto;
     border: thin solid #000;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .object_table td {
@@ -113,7 +113,6 @@ ul[data-role=listview] a {
 .object_table th {
     background-color: #033251;
     color: #fff;
-}
 }
 
 #monster_stats th {
