@@ -35,200 +35,29 @@
         <div id="versionNotes" data-role="page">
             <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>
             <div data-role="content">
-                <h3>---NPC---</h3>
-NPC Additions
-<ul>
-<li>New Enemy : Spike Ball (An Immortal Enemy.)</li>
-<li>New Enemy : Blazing Wheel (An Immortal Enemy.)</li>
-<li>New Enemy : Dungeon Slime (Contains Golden Keys)</li>
-<li>New Enemy : Goblin Scout</li>
-</ul>
+                <h3>Bug Fixes</h3>
+&nbsp;&nbsp;Fixed a bug that would cause chests to contain stacks of empty items.<br/>
+&nbsp;&nbsp;The crafting list now correctly updates after using the container loot buttons.<br/>
+&nbsp;&nbsp;The direction bathtubs face when placed is now correctly sent to the server. This prevents bathtub duplication issues.<br/>
+&nbsp;&nbsp;Smashing Obsidian Walls no longer gives Obsidian Ore.<br/>
+&nbsp;&nbsp;Walls that are automatically placed to fill small gaps are now correctly taken from the player’s inventory.<br/>
+&nbsp;&nbsp;Fixed a bug that causes Green Slimes to get stuck in the ground and start sinking.<br/>
+&nbsp;&nbsp;Player ghosts no longer move when typing.<br/>
+&nbsp;&nbsp;Fixed a bug that would cause mana to sometimes not regenerate when the player has 0 mana.<br/>
+&nbsp;&nbsp;Slimes no longer chase the player in water when they are not in aggressive mode.<br/>
+&nbsp;&nbsp;Lesser Restoration Potions and Restoration Potions now only heal for 50/100 life and 50/100 mana.<br/>
+&nbsp;&nbsp;Lesser Mana Potions and Mana Potions now only restore 50/100 mana.<br/>
+&nbsp;&nbsp;Changed the way the value of stacked items is rounded to fix selling/buyback inconsistencies.<br/>
+&nbsp;&nbsp;Some items can now be placed in lava, this includes clay pots and fire blossom seeds.<br/>
+&nbsp;&nbsp;Fixed a bug that would cause shadow orbs to me smashed during world generation. This was causing meteors to start spawning before the player is at the appropriate gear level.<br/>
+&nbsp;&nbsp;Generated dirt walls now correctly blend with player placed dirt walls. Player placed dirt walls now have new graphics to differ from generated walls.<br/>
+&nbsp;&nbsp;Boomerangs now reset correctly when you use your magic mirror if they are still flying.<br/>
+&nbsp;&nbsp;Mediumcore characters now correctly drop ammo on death.<br/>
+&nbsp;&nbsp;"Misc" has been reworded to say "Shoes" on the shoes color settings screen.<br/>
 
-NPC Changes
-<ul>
-<li>Hornets in the Underground Jungle now shoot stingers. These stingers have a 1 in 3 chance of poisoning their target for 10 seconds.</li>
-<li>Cursed Skulls now now have a chance to apply the Cursed debuff.</li>
-<li>Bats, Harpy and Demon AI has been improved to prevent wall hugging.</li>
-<li>Slimes when in water will now turn around when they have no where to go.</li>
-<li>Man Eaters and Snatchers now have less HP, and are drawn above tiles rather than behind.</li>
-<li>Lava Slimes no longer spawn lava when killed.</li>
-<li>Meteor Heads now move much slower but do a lot more damage.</li>
-<li>Bone Serpents now have a new death sound, and their hit-box has been re-calibrated.</li>
-<li>NPC's furniture requirements have changed to work with new items.NPCs now requires one "comfort object" (Chair, Throne, Bench, Bed, Toilet) and one "flat surface furniture" (Table, Dresser, Workbench, Tub, Bookcase) for a room to be complete before they will make it their home.</li>
-<li>Thorns are now destroyed after you touch them and receive damage.</li>
-</ul>
+<h3>Item Addition</h3>
+&nbsp;&nbsp;Added the Sawmill which replaces the Workbench for "advanced" wood crafting. The Workbench is now designated for "basic" wood crafting.
 
-NPC Bug Fixes
-<ul>
-<li>EoW is no longer "defeated" when he flees.</li>
-<li>Npcs that are far from home and try to turn to return home will no longer twitch left and right when stuck.</li>
-<li>Hornets are correctly now unable to enter water.
-<li>Vultures should no longer 'float' if the sand they are perched on falls from beneath them.</li>
-</ul>
-
-<h3>---Items---</h3>
-Item Additions
-<ul>
-<li>New Item : Shadow Key</li>
-<li>New Item : Golden Key</li>
-<li>New Item : Shadow Chest (These require the Shadow Key)</li>
-<li>New Item : Obsidian Background Walls</li>
-<li>New item : Mud Background Walls</li>
-<li>New Item : Jungle Spore (Replaces Jungle Rose in former crafting uses.)</li>
-<li>New Item : Tattered Cloth</li>
-<li>New Item : Battle Standard (Allows for manual starting of the Goblin Invasion)</li>
-<li>New Item : Piano</li>
-<li>New Item : Loom (Crafting Station, Now required for crafting most clothes from silk.)</li>
-<li>New Item : Bench</li>
-<li>New item : Dresser</li>
-<li>New Item : Bathtub</li>
-<li>New Item : Red Banner</li>
-<li>New Item : Green Banner</li>
-<li>New Item : Blue Banner</li>
-<li>New Item : Yellow Banner</li>
-<li>New Item : Lamp Post</li>
-<li>New Item : Tiki Torch</li>
-<li>New Item : Barrel</li>
-<li>New Item : Chinese Lantern</li>
-<li>New Item : Cooking Pot</li>
-<li>New Item : Safe (A separate private storage from the Piggy Bank.)</li>
-<li>New Item : Skull Lantern</li>
-<li>New Item : Trash Can</li>
-<li>New Item : Candelabra</li>
-<li>New Item : Pink Jar</li>
-<li>New Item : Mug</li>
-<li>New Item : Keg</li>
-<li>New Item : Ale</li>
-<li>New Item : Bookcase</li>
-<li>New Item : Throne</li>
-<li>New Item : Bowl</li>
-<li>New Item : Bowl of Soup</li>
-<li>New Item : Toilet</li>
-<li>New Item : Grandfather Clock</li>
-<li>New Item : Statue</li>
-</ul>
-
-Item Changes
-<ul>
-<li>Wooden Tables, Doors and Workbenches now have improved looking graphics.</li>
-<li>Glow sticks price reduced. And are now a bit brighter.</li>
-<li>Coins now leave a sparkle trail while moving.</li>
-<li>Jungle Rose is now a rarer drop and no longer used to craft.</li>
-<li>Grappling Hooks can no longer be spam shot, you must now wait until your previous shot lands or returns before you can throw another.</li>
-<li>Suspicious Looking Eyes will now sometimes be found in chests.</li>
-<li>Flamelash, Sunfury, and Flower of Fire are no longer dropped, they are now found in shadow chests in the underworld.</li>
-<li>Ash and Mud no longer fall due to gravity.</li>
-<li>Hellstone no longer produces light and is more rare.</li>
-<li>Hellstone now spawns lava when it is mined, but only in the underworld.</li>
-<li>Cacti no longer cause knock-back making running through a desert less of a hassle.</li>
-<li>Potions now offer less HP on use, and their cool-down is now a minute.</li>
-<li>Placing background walls is more simple, as 1 block holes are automatically filled in.</li>
-<li>Flails now have a different mechanic. You can ‘spin’ them by pressing left and right fast over and over after they have been thrown while holding down the mouse button.</li>
-<li>ALL placed background walls are now considered ‘house walls’. (Yes even Dirt and Dungeon walls.)</li>
-<li>Two of the same type of accessories may no longer be equipped at once.</li>
-<li>Fish Bowl’s recipe has been changed to require Bottled Water, rather than just an empty Bottle.</li>
-<li>Armors are now more ‘Class Type’ specific and their stats have been set accordingly.</li>
-<li>Meteor Armor - Buffs Magic Damage and Set Bonus : Space Gun 0 Mana Cost.</li>
-<li>Molten Armor - Set Bonus : Melee Damage</li>
-<li>Shadow Armor - Buffs Melee Attack Speed and Set Bonus : Movement Speed.</li>
-<li>Necro Armor - Buffs ranged damage and Set Bonus : Reduces Ammo Consumption.</li>
-<li>Jungle Armor - Buffs Max Mana, Magic Crit Chance and Set Bonus : Reduced Mana Usage.</li>
-<li>Several Magic Items and Weapons have been rebalanced. Including but not limited to...</li>
-<li>Flower of Fire now does more damage, and costs more mana.</li>
-<li>Band of Star Power now adds 20 mana to your maximum, and no longer adds mana regeneration.</li>
-<li>Orb of Light now moves slower and is now listed as a buff that you can remove if you so desire and also know its remaining duration.</li>
-<li>Magic missile is now quicker and is 'launched' when you release the mouse button, rather than disappearing.</li>
-<li>Flamelash is 'launched' when you release the mouse button, rather than disappearing.</li>
-<li>Meteor Armor and Molten Armors no longer glow.</li>
-<li>Starfury now does a bit more damage, requires more mana, and now works underground. If a star is spawned inside a wall, it will be able to travel until it reaches open space and then becomes 'solid' colliding with the next wall it hits.</li>
-<li>The Mini-shark now has a 33% chance that shooting the weapon will not take ammo. So it does not consume as much ammo to use.</li>
-<li>Flintlock Pistols and Muskets are now a bit stronger.</li>
-</ul>
-
-Item Bug Fixes
-<ul>
-<li>Bottled water can no longer be crafted by standing near lava.</li>
-<li>Night Owl Potion now works correctly.</li>
-<li>Piggy Banks should no longer float when the ground beneath the table it is on is removed from beneath them.</li>
-<li>Melee speed increase items are now calculated correctly.</li>
-<li>Cacti no longer destroy blocks as they grow.</li>
-</ul>
-
-<h3>---Game Interface---</h3>
-<ul>
-<li>There is now an option to disable pickup text.</li>
-<li>New Hot-key for grappling hooks. (Defaults to E)</li>
-<li>Hot-bar Slots now show their Hot-key number.</li>
-<li>The Mana Bar is now Blue, and text for gaining health is now green.</li>
-<li>Interface Boxes are now colored differently. Inventory is Blue, Equip is Green, Craft is Purple, Shops are Brown, Piggy Banks and Safes are Pink.</li>
-<li>Hot-keys for Mana and Healing Potions now work correctly with Rejuvenation potions.</li>
-<li>Right clicking on an accessory or a piece of armor in your inventory will auto-equip it.</li>
-<li>Newly obtained items will now be placed starting in the bottom right of your inventory rather than the previous top left.</li>
-<li>There is now a Trash Can slot in the inventory. Placing an item here will destroy it. However the item will be saved in memory until another item is destroyed, allowing you to retrieve it if you wish. Holding Shift and Clicking and Item will move it to your trashcan.</li>
-<li>When at a chest or piggy bank, there is now an option to loot all. This will take all items inside the chest/bank if there is room, If not it will take all items starting from top left. There is also a Quick Stack option for the reverse effect. If the chest you are viewing has items stored in it that you are also carrying, this option will stack those items into the chest combining stored and carried stacks.</li>
-<li>When at a chest or piggy bank, there is now an option to Deposit all. This will take all items not in your hot bars and starting from the bottom right slot, place each item that will fit into the chest or bank. It will stop when space runs out.</li>
-<li>It is no longer possible to drop items through the spaces between boxes in the inventory</li>
-<li>Some Tools now give you an idea in their tool-tip of what they can mine. Example - "Can mine Meteorite".</li>
-<li>There are now four ammo slots. Ammo may be placed here to de-clutter your inventory. Weapons will take ammo from these slots first, and will then take from any in the inventory after they are empty.</li>
-<li>Hot-Bar slots that have a ranged weapon on them will show the current used ammo count on them.</li>
-<li>There is now a toggle in your inventory, that when clicked, will LOCK your hot-bar and not allow you to change your currently used hot-bar item by clicking it with the mouse, only the 1 - 9 hot -keys and mouse-wheel will scroll them at that point.</li>
-<li>Hotkeys can now be used to change selected item when the inventory is open.</li>
-<li>Shops now sell items back to you. Holding Shift and Clicking and Item while at a shop will quick-sell it.</li>
-<li>You can now quickly clear and cancel your chat message by hitting escape.</li>
-</ul>
-
-<h3>---Misc---</h3>
-Gameplay
-<ul>
-<li>New Feature : Critical Hits. There is now a small chance you will do more damage to an enemy</li>
-<li>New Feature : Damage Types. Damage is now separated into Melee, Ranged and Magic damages. These will be used going forward for a few different systems, such as buffs, de-buffs. Items will list what kind of damage they do in their tool-tip so you know what will be effected by what buff.</li>
-<li>Players now heal automatically when 'not in combat'. You are flagged as in combat when you are damaged by anything. The longer you have spent after getting hurt will increase your hp regen speed slightly.</li>
-<li>Mana now recharges on its own when you are not casting. Slowly if you are moving, and fast if you stand still.</li>
-</ul>
-
-Character Creation
-<ul>
-<li>Added 19 new hairstyles.</li>
-<li>There is now an option for 'Male/Female', this is used to change the characters voice. This way, any hairstyle can be used for either gender.</li>
-<li>When choosing your hairstyle, you may now right click to cycle through the hair selections backwards.</li>
-<li>There are now 3 difficulty modes that are set when creating a character.</li>
-<li>Softcore - Drop coins on death, keep max hp and mana values.</li>
-<li>Mediumcore - Drop all items on death, keep max hp and mana values.</li>
-<li>Hardcore - Drops all Items and deletes your character on death, requiring you to start a new character. On death you will become a ghost that can not interact with the world until you log out.</li>
-</ul>
-Game Text
-<ul>
-<li>Corrected some spelling errors and also the placement of '%' in some potion tool-tips.</li>
-<li>Added several new randomized game 'subtitle captions'.</li>
-<li>'Misc' in Character Creation color selection, has been renamed "Shoes".</li>
-</ul>
-
-Music and Sound
-<ul>
-New Music : Corruption.
-<li>There are new sounds for the following actions/events</li>
-<li>Talking to an NPC</li>
-<li>Mana Becoming Full (also shows a purple sparkle on player)</li>
-<li>Using Water Bolt, Flamelash, and Flower of Fire</li>
-<li>Starting to Drown</li>
-<li>Some sounds have a randomizing pitch change (like sword swinging), to make them have more variance.</li>
-</ul>
-Performance
-<ul>
-<li>Optimized "Finding Tile Frames", so worlds should load faster</li>
-</ul>
-
-<h3>---World Gen---</h3>
-<ul>
-<li>More Gems spawn in the jungle.</li>
-<li>Hell Houses now spawn differently. A worlds Hell Houses can rarely spawn as all obsidian, and they can now get really tall.</li>
-<li>Underground Jungles now have a Mud Background</li>
-<li>Dungeons should no longer spawn in the ocean.</li>
-<li>Deserts now spawn slightly further away from spawn.</li>
-<li>Dungeons now spawn with more spikes and less lighting.</li>
-<li>Underworld Ash is now filled with more lava pockets, making mining Hellstone more of a challenge.</li>
-<li>Some items no longer spawn in Dungeon, these were meant for non-dungeon areas.</li>
-</ul>
             </div>            
         </div>
         <!--End versionNotes-->
