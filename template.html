@@ -4,24 +4,18 @@
         <meta name="viewport" content="initial-scale=1.0, user-scaleable=no, width=device-width" />
         <title>TerrariaHB</title>
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/wiki.css" type="text/css" media="screen" />
 		<script src="js/phonegap.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/system.js" type="text/javascript" charset="utf-8"></script>                
+        <script src='js/zepto.min.js' type="text/javascript"></script>
+        <script src='js/system.js' type='text/javascript'></script>
     </head>
     <body>
         <div id="mainMenu" data-role="page">
             <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
             <div data-role="content">        
-                Terraria Version: 1.0.6.1<br>
+                Terraria Version: 1.1<br>
                 <ul data-role="listview" data-inset="true">
-                    <li><a href="#versionNotes">Version Notes</a></li>
-                    <li><a href="#catList">Items</a></li>
-                    <li><a href="#mcatList">Monsters</a></li>
-                    <li><a href="#ecatList">Environments</a></li>
-                    <li><a href="#ncatList">NPCs</a></li> 
-                    <li><a href="#mechanics">Mechanics</a></li>
-                    <li><a href="#search">Search</a></li>
-                    <li><a href="#about">About</a></li>
+                    {MAINMENU}
                 </ul>        
             </div>            
         </div>
@@ -32,7 +26,7 @@
                 <p>Thank you a11111 and Dymir for helping me test the application and all of the community members who keep the wiki up to date</p>
             </div>
         </div>            
-        <div id="versionNotes" data-role="page">
+        <div id="vnotes" data-role="page">
             <div data-role="header" data-position="fixed"><h1>Version Notes</h1></div>
             <div data-role="content">
                 {VERSIONNOTES}
@@ -48,187 +42,8 @@
                 </ul>
             </div>
         </div>
-        <div id="mechanics" data-role="page">
-            <div data-role="header"><h1>Mechanics</h1></div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="false">
-                    <li><a href="#attack_speed">Attack Speed</a></li>
-                    <li><a href="#defense">Defense</a></li>
-                    <li><a href="#fall_dmg">Fall Damage</a></li>
-                    <!--<li><a href="#buffs">Buffs</a></li>-->
-                </ul>
-            </div>
-        </div>
-        <div id="attack_speed" data-role="page">
-            <div data-role="header"><h1>Attack Speed</h1></div>
-            <div data-role="content">
-                Attack speed in Terraria is handled in a somewhat unusual fashion compared to the accepted "norms" of other games featuring this combat model. While attack speed items do stack together, the actual bonus derived is different than a player would expect based on the in-game description.<br>
-
-                The descriptions presented on items themselves are inaccurate. A description could say "10% melee attack speed" when the actual bonus is closer to 11.1%. This is because the bonus actually reduces the time to attack to 0.9 of base and ((1 / 0.9) - 1) * 100 = 11.11%.<br>
-
-                Bonuses are multiplicative so to find your total bonus you must multiply the reductions together. For instance if you have three Feral Claws equipped the total bonus would be 0.9 * 0.9 * 0.9 = 0.729 or a 37.17% increase.<br>
-
-                Furthermore, the attack speed bonus through gear is capped at 42.86% or 0.7 of base. You can reach this a cap using a combination of: 
-                <ul>
-                    <li>Shadow Armor and two Feral Claws ~ (0.85 * 0.9 * 0.9 = 0.6885)</li>
-                    <li>Any other armor and four Feral Claws ~ (0.9 * 0.9 * 0.9 * 0.9 = 0.6561)</li>
-                </ul>
-            </div>
-        </div>
-        <div id="defense" data-role="page">
-            <div data-role="header"><h1>Defense</h1></div>
-            <div data-role="content">
-                Defense (or Defense Rating) gives an arithmetic reduction in damage: i.e. reduces damage by a fixed amount per hit (as opposed to a geometric damage reduction, which reduces damage percentage based). Because of this, ironically, high Defense is particularly important against low damage attacks, which can be reduced almost completely, but not as important against high damage attacks, where the reduction won't be as effective. 
-                <h3>Formula</h3>
-                Damage Reduction = ROUND_UP(Defense/2)<br>
-                For example, with 10 Defense, a 20 Damage attack is reduced by 5 to 15 Damage.<br>
-                <h3>Monsters</h3>
-                Monsters have exactly the same Defense mechanics as you. High defense monsters will take virtually no damage from low damage weapons (Fire Imps take 3 damage from the Minishark with Musket Balls). When fighting high defense monsters, favor weapons that have high damage. 
-                <h3>Armor and Accessory Defense</h3>
-                ere is a list of armors, accessories, and their respective defense bonuses, including any applicable set bonuses. The highest possible defense bonus (45) is obtainable by equipping full molten armor, as well as five cobalt shields or obsidian skulls or some combination thereof, and drinking an Ironskin Potion
-            </div>
-        </div>
-        <div id="fall_dmg" data-role="page">
-            <div data-role="header"><h1>Fall Damamge</h1></div>
-            <div data-role="content">
-                Fall damage is one of the basic mechanics of the game where a character sustains damage from falling too far. The Player only takes damage after falling past a certain threshold, at which point the damage taken is linear with the distance traveled past said threshold (and not related to speed).
-                <h3>Negation</h3>
-                <h4>Stopping the fall</h4>
-                The first and most obvious is to "break" the fall before hitting the ground. The Fall Damage taken is literally calculated by the fall distance (and not speed). Using items such as Cloud in a Bottle, Rocket Boots, Grappling Hook or Ivy Whip will cause the "fall distance" counter to reset upon use, negating the damage. 
-                <h4>Preparing the terrain</h4>
-                An other alternative is to prepare the terrain in such a way as to not take Fall Damage at all: Placing wooden platforms inside shafts guarantee the player cannot not fall more than 25 blocks. Other alternatives include cushioning the ground: Cobwebs or just Water will stop the player's fall, without damage. 
-                <h4>Lucky Horseshoe</h4>
-                The Lucky Horseshoe is an accessory that negates fall damage. It can be found in Floating Island chests. They can be very handy when exploring chasms. The Lucky Horseshoe is always useful for the less careful players that fall down pits.<br>
-                Once the player has found a Grappling Hook and/or a Cloud in a Bottle, the Lucky Horseshoe loses some of its usefulness, and can potentially be swapped out, although having one equipped is always a good safeguard. 
-                <h4>Featherfall Potion</h4>
-                The Featherfall Potion makes players fall more slowly and negates fall damage, even when its slowing effect is temporarily canceled out by the player holding the down key. 
-                <h3>Calculations</h3>
-                You will not receive fall damage until you drop beyond 25 blocks (50 feet). At 26 blocks (52 feet) you receive 10 damage with no equipment. Every block above that is an additional 10 damage, or 5 damage every foot. Example: You drop down 50 blocks that is 250 damage.<br>
-                You can create an equation from this:<br>
-                &nbsp;&nbsp;dmg = 10 * (h - 25)<br>
-                Where:<br>
-                <b>h</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Blocks above ground level (where you land)<br>
-                <b>dmg</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Fall damage<br>
-                Again, you have to be ABOVE 25 blocks to receive any fall damage at all. Also, defense plays a roll in how much damage you take.<br>
-                Defense's equation is very simple. You take the defense of your armor/accessories and divide it by two then round up (at least in the case of fall damage). Example: You have 19 defense, you'll divide this by two (9.5) and round up (10). So if you fall 50 blocks you'll take 240 damage instead of 250 damage.<br>
-                This makes the Fall Damage equation:<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;dmg = 10 * (h - 25) - ceil(d / 2)<br>
-                Where:<br>
-                <b>h</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Blocks above ground level (where you land) <br>
-                <b>d</b><br>
-                &nbsp;&nbsp;Total Defense<br>
-                <b>dmg</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Fall damage<br>
-                <b>ceil</b><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Round up
-                <h3>Maximum Fall Damage</h3>
-                Although there is no maximum cap on fall damage, there is a limit to how big your map is.<br>
-                On a large world you can take up to 23270 damage if falling from the top of the map to the bottom. This would mean falling down 2352 blocks (after 25 blocks). So from the bottom of the map to the top of the map (that a player can have access to) is 2352 blocks + 25 + 2 (because you land on your feet, you have to account for your body and head too) which makes a large world 2379 blocks in height, or 4758 feet (again, that a player has access too. There is space outside of the boundaries for monsters to spawn). 
-            </div>
-        </div>
-        <div id="buffs" data-role="page">
-            <div data-role="header"><h1>Buffs</h1></div>
-            <div data-role="content">
-                Buffs are added when certain potions are used. You can right click the buff icon to cancel it.<br>
-                If you die with any active buffs, they will be canceled out and need to be re-applied on respawn.<br>
-                At the moment, you can only have 10 Buffs active at once. When you try to activate another buff it cancels out the first buff in the bar.
-                <table>
-                    <tr>
-                        <th>Icons</th>
-                        <th>Potion</th>
-                        <th>tooltip</th>
-                        <th>Duration</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Obsidian Skin Potion</td>
-                        <td>Provies immunity to lava</td>
-                        <td>3 Minutes</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Regeneration Potion</td>
-                        <td>Provides life regeneration</td>
-                        <td>2 Minutes</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Swiftness Potion</td>
-                        <td>25% increased movement speed</td>
-                        <td>4 Minutes</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Gills Potion</td>
-                        <td>Breat water instead of air</td>
-                        <td>1 Minute</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Ironskin Potion</td>
-                        <td>Increase defense by 8</td>
-                        <td>5 Minutes</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Mana Regeneration Potion</td>
-                        <td>Increased mana regeneration </td>
-                        <td>2 Minutes</td>
-                    </tr>                                            
-                </table>
-            </div>
-        </div>
-        <div id="catList" data-role="page">
-            <div data-role="header"><h1>Items</h1></div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="false" id="itemlv">
-                    {CATLIST}
-                </ul>
-            </div>
-        </div>
-        <!--End catList-->
-        <div id="mcatList" data-role="page">
-             <div data-role="header"><h1>Monsters</h1></div>
-             <div data-role="content">
-                 <ul data-role="listview" data-inset="false">
-                     {MCATLIST}
-                 </ul>
-             </div>
-         </div>         
-         <!--End mcatList-->
-         <div id='ecatList' data-role='page'>
-            <div data-role="header"><h1>Enviroments</h1></div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="false">
-                    {ECATLIST}
-                </ul>
-            </div>
-        </div>
-        <!--End ecatList-->
-        <div id='ncatList' data-role='page'>
-            <div data-role="header"><h1>NPCs</h1></div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="false">
-                    {NPCLIST}
-                </ul>
-            </div>
-        </div>
-        <!--End ncatList-->
-        {ITEMLIST}
-        <!--End itemList-->
-        {ITEMS}
-        <!--End Items-->
-        {MONSTERLIST}
-        <!--End monsterList-->
-        {MONSTERS}
-        <!--End Monsters-->
-        {ENVS}
-        <!--End envs-->
-        {NPCS}
-        <!--End NPCs-->
+        {CATS}        
+        {OBJECTS}
     </body>
 </html>
 
