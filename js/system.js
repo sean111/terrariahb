@@ -21,8 +21,19 @@ $(window).bind('load', function(e) {
     document.addEventListener("searchbutton", function() {
         location.href="index.html#search";        
     }, false);
-    show('#mainMenu');
-    currentPage='#mainMenu';                                
+    var url=window.location.pathname;
+    var fName=url.substring(url.lastIndexOf('/')+1);
+    var dName=fName.substring(0,fName.lastIndexOf('.'));
+    console.log(dName);
+    if(dName=='index' || empty(dName)) {
+        show('#mainMenu');
+        currentPage='#mainMenu';                                
+    }
+    else {
+        loadImages('#'+dName);
+        show('#'+dName);
+        currentPage='#'+dName;
+    }
     $('#searchBox').bind('click', function() {
         $('#searchBox').val('');
     });
@@ -77,12 +88,19 @@ empty=function(cvar) {
 
 changePage=function() {
     hash=location.hash;
+    console.log(hash);
     if(empty(hash)) {
         hash='#mainMenu';
     }
     if($(hash).html()===null) {
-        alert("Can't find that page!");
-        window.history.back(); //Reset the hash to avoid any errors        
+        //alert("Can't find that page!");
+        //window.history.back(); //Reset the hash to avoid any errors        
+        if(hash=='#mainMenu') {
+            location.href='index.html';
+        }
+        else {
+            location.href=hash.substring(1)+".html";
+        }
     }
     else {
         loadImages(hash);
