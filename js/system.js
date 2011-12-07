@@ -16,10 +16,10 @@ else {
 
 $(window).bind('load', function(e) {
     document.addEventListener("menubutton", function() {
-        location.hash="#mainMenu";
+        location.href="index.html";
     }, false);
     document.addEventListener("searchbutton", function() {
-        location.hash="#search"; 
+        location.href="index.html#search";        
     }, false);
     show('#mainMenu');
     currentPage='#mainMenu';                                
@@ -49,7 +49,7 @@ $(window).bind('load', function(e) {
         }
         $('#searchResults').show();
     });
-})
+});
 
 function hide(div) {
     $(div).css({display: 'none'});
@@ -69,7 +69,7 @@ $(window).bind('orientationchange', function() {
 });
 
 empty=function(cvar) {
-    if(cvar=="" || cvar==null || cvar=="undefined") {
+    if(cvar=="" || cvar===null || cvar=="undefined") {
         return true;
     }
     return false;
@@ -80,9 +80,9 @@ changePage=function() {
     if(empty(hash)) {
         hash='#mainMenu';
     }
-    if($(hash).html()==null) {
+    if($(hash).html()===null) {
         alert("Can't find that page!");
-        window.history.back() //Reset the hash to avoid any errors
+        window.history.back(); //Reset the hash to avoid any errors        
     }
     else {
         loadImages(hash);
