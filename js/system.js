@@ -7,7 +7,10 @@ if("onhashchange" in window) {
 }
 else {
     window.setInterval(function () {
-        if(location.hash != currentPage) {
+        var url=window.location.pathname;
+        var fName=url.substring(url.lastIndexOf('/')+1);
+        var dName=fName.substring(0, fName.lastIndexOf('.'));
+        if(location.hash != currentPage && (currentPage.substring(1) != dName && !empty(dName))) {
             changePage();
         }
     }, 100);
