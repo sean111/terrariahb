@@ -32,10 +32,11 @@ $(window).bind('load', function(e) {
         }
     }
     else {
+        currentPage="#"+dName;
         loadImages('#'+dName);
         show('#'+dName);
-        currentPage='#'+dName;
     }
+    console.log("Load => currentPage: "+currentPage);
     $('#searchBox').bind('click', function() {
         $('#searchBox').val('');
     });
