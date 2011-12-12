@@ -26,8 +26,10 @@ $(window).bind('load', function(e) {
     var dName=fName.substring(0,fName.lastIndexOf('.'));
     console.log(dName);
     if(dName=='index' || empty(dName)) {
-        show('#mainMenu');
-        currentPage='#mainMenu';                                
+        if(empty(location.hash)) {
+            show('#mainMenu');
+            currentPage='#mainMenu';  
+        }
     }
     else {
         loadImages('#'+dName);
