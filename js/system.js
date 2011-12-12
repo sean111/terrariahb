@@ -1,4 +1,4 @@
-var currentPage='';
+currentPage='';
 
 if("onhashchange" in window) {
     window.onhashchange=function(event) {
@@ -90,7 +90,8 @@ empty=function(cvar) {
 
 changePage=function() {
     hash=location.hash;
-    console.log(hash);
+    console.log('hash: '+hash);
+    console.log('currentPage: '+currentPage);
     if(empty(hash)) {
         hash='#mainMenu';
     }
@@ -101,7 +102,7 @@ changePage=function() {
             location.href='index.html';
         }
         else {
-            location.href=hash.substring(1)+".html";
+            location.href=hash.substring(1)+".html"+hash;            
         }
     }
     else {
