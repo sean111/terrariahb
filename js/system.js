@@ -7,14 +7,15 @@ $(document).ready(function() {
         location.href="index.html#search";        
     }, false);
     $('#searchButton').bind('click', function() {
-        console.log('Searching...');
+        //console.log('Searching...');
         $('#searchResults').empty();
         $('#searchResults').hide();
         var s=cleanString($('#searchBox').val());
+        //console.log("Search String: "+s);
         f=false;
         $('.object').each(function() {
             var n=cleanString($(this).attr('name'));
-            console.log({'n': n, 's': s});
+            //console.log({'n': n, 's': s});
             if(n.indexOf(s)!=-1) {
                 console.log(this);
                 f=true;
@@ -24,7 +25,7 @@ $(document).ready(function() {
         if(!f) {
             $('#searchResults').append('<li>No results found...</li>');
         }
-        $('searchResults').listview("refresh");
+        $('#searchResults').listview("refresh");
         $('#searchResults').show();
     });
 });
