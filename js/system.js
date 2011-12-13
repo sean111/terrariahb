@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $.mobile.defaultPageTransition='none';
    document.addEventListener("menubutton", function() {
         location.href="index.html";
     }, false);
