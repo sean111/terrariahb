@@ -15,7 +15,7 @@
         <div id="mainMenu" data-role="page">
             <div data-role="header" data-nobackbtn="true"><h1>Main Menu</h1></div>
             <div data-role="content">        
-                Terraria Version: 1.1<br>
+                Terraria Version: 1.1.1<br>
                 <ul data-role="listview" data-inset="true">
                     <li><a href='#vnotes'>Version Notes</a></li><li><a href='#Items'>Items</a></li><li><a href='#Monsters'>Monsters</a></li><li><a href='#Enviroments'>Enviroments</a></li><li><a href='#NPCs'>NPCs</a></li><li><a href='#Mechanics'>Mechanics</a></li><li><a href='#search'>Search</a></li><li><a href='#about'>About</a></li>
                 </ul>        
@@ -31,115 +31,54 @@
         <div id="vnotes" data-role="page">
             <div data-role="header"><h1>Version Notes</h1></div>
             <div data-role="content">
-                NPC's<br />
-<br />
-&bull; There are thirty-six new monsters!<br />
-&bull; The underworld has a new master, the Wall of Flesh. Defeating him will unlock new challenges for your world.<br />
-&bull; There are three harder versions of the older bosses.<br />
-&bull; There are now three new friendly NPC's that can be rescued after specific conditions are met.<br />
-&bull; The Dryad will now tell you the percentage of Corruption vs. Hallow in the world.<br />
-<br />
-    New NPCs will spawn in their homes underground, instead of on the surface.<br />
-    Worms will no longer spawn when near a friendly NPC.<br />
-    Underground towns will now reduce, and eventually stop, enemy spawning.<br />
-<br />
-&bull; Made several small changes to allow for better underground cities.<br />
+                Bug Fixes / Performance<br />
+&bull; Reduced the amount of RAM needed to run Terraria.<br />
+&bull; Added an option to turn backgrounds off.<br />
+&bull; Improved the automatic game quality adjuster.<br />
+&bull; Lighting update won't skip as much on lower quality levels.<br />
+&bull; Items dropped on death for hardcore and mediumcore characters will retain their conditions.<br />
+&bull; Space Gun now has a value.<br />
+&bull; Water Bolt can now have conditions.<br />
+&bull; Diving Helmet now works correctly.<br />
+&bull; Walls now correctly show behind Glass Blocks.<br />
+&bull; You can now untie bound NPC's with Autopause enabled.<br />
+&bull; Mediumcore and hardcore players will drop their cursor item on death.<br />
+&bull; Coins held on the cursor will correctly be dropped on death.<br />
+&bull; Dryad's Corruption and Hallow status numbers are correct.<br />
+&bull; Wyverns are less common and will be less likely to spawn near the ground.<br />
+&bull; Mana Flower's price has been increased.<br />
+&bull; Fixed the shadow glitch of trippy lighting.<br />
+&bull; Music Boxes no longer dupe when placed on platforms.<br />
+&bull; Fixed an issue that caused stacked coins to go missing from chests during multiplayer.<br />
+&bull; Cursed Torch item now emits light in water.<br />
+&bull; Harpoon can now be reforged.<br />
+&bull; Lighting will now be set to Retro instead of crashing if Terraria is unable to switch to the new lighting mode.<br />
+&bull; Keybindings will no longer sometimes be set to "None" automatically.<br />
+&bull; Bombs thrown by clowns will now show that the wall has been destroyed in multiplayer.<br />
+&bull; Crystal Shards now give off light in retro and white color mode.<br />
+&bull; Hallowed Armor only has graphical effects with the helmet.<br />
+&bull; Players now have hair under their hats.<br />
+&bull; Statues no longer turn into Armor Statues when they are smashed from the top.<br />
+&bull; Clowns only throw bombs when their target is alive.<br />
 <br />
 Items<br />
+&bull; Added Candy Cane Blocks & Walls.<br />
+&bull; Added Green Candy Cane Blocks & Walls.<br />
+&bull; Added Snow Blocks.<br />
+&bull; Added Snow Bricks & Walls.<br />
+&bull; Added Red, Green, and Blue Lights.<br />
+&bull; Added Presents that are dropped by monsters during the holiday season.<br />
+&bull; Added Snow Globe.<br />
+&bull; Added Santa's Outfit.<br />
 <br />
-&bull; Added thirty-nine statues that are scattered around the world. Some of them do special things when activated with mechanics!<br />
-&bull; Star Cannon : Shoots faster.<br />
-&bull; Sandgun : Sand shot from it does more damage, and it shoots faster.<br />
-&bull; Blowpipe : Now listed as ranged.<br />
-&bull; Goblins no longer drop rocket boots during an invasion. Instead they are sold by a new NPC that can be rescued underground after the player has defeated the Goblin Army.<br />
-&bull; Boomerang type weapons are listed as melee.<br />
-&bull; Added four new armor sets. Each set has different helms that give bonuses to melee, ranged, or magic, respectively.<br />
-&bull; There are twenty-one new accessories.<br />
-&bull; Weapons and accessories can now have random conditions that modify their stats. These conditions can be changed for a price by visiting a new NPC.<br />
-&bull; The crafting requirements for Molten and Jungle gear have been reduced.<br />
-&bull; Some accessories can now be combined at a Tinkerer's Workshop.<br />
-&bull; Colored Torches can now be crafted out of Gems and Torches.<br />
-&bull; Added Mannequins that are crafted out of wood. Place armor on them for decoration/storage.<br />
-&bull; Added the Wrench to place wires.<br />
-&bull; Added Wire Cutters to remove wires.<br />
-&bull; Added Pressure Plates, Switches, and Timers to activate devices.<br />
-&bull; Added Music Boxes that record and play in-game music.<br />
-&bull; Added Pumps to transport liquids.<br />
-&bull; Added loads of other new items and weapons waiting to be found!<br />
-&bull; Putting the Guide Voodoo Doll in lava is now a bad idea...or is it?<br />
-<br />
-Lighting / Display<br />
-<br />
-&bull; Terraria now has smooth, colored lighting! You can toggle between the four lighting modes: Color, White, &bull; Retro, and Trippy in the Options Menu or by pressing F9.<br />
-&bull; Made several lighting and display optimizations to increase game performance.<br />
-&bull; Added automatic graphic quality adjustment based on the game's frame rate. This setting can be toggled &bull; in the Options Menu.<br />
-<br />
-Multiplayer<br />
-<br />
-&bull; Fixed a problem with item syncing for newly connected players.<br />
-&bull; Fixed a bug that caused graphical issues for player's using automatic weapons.<br />
-&bull; Added a limit to how often the server can broadcast NPC update packets. This prevents NPC's from trying to update every cycle which would cause massive amounts of lag.<br />
-&bull; Reduced the amount of data needed to transmit tiles down to 25%.<br />
-&bull; The server now only broadcasts tile data to the players who need it.<br />
-&bull; The server now withholds some NPC, player, and projectile packets based on player distance from them.<br />
-&bull; Fixed a bug where water is consumed when a player cures Corruption with Purification Powder while standing in water.<br />
+NPC's<br />
+&bull; Added Snowman Gangsta.<br />
+&bull; Added Mister Stabby.<br />
+&bull; Added Snow Balla.<br />
+&bull; Added Santa Claus.<br />
 <br />
 World<br />
-<br />
-&bull; Above ground tunnels may now be created during world gen.<br />
-&bull; Smashing Demon Altars with a special item will cause new ore to appear around the world.<br />
-&bull; Defeating the hell boss will now increase the difficulty of the world. Harder monsters will spawn, and the Corruption's rate of spread will be greatly increased.<br />
-&bull; Defeating the hell boss will allow the Corruption to spread underground, over sand, stone, and Sunflowers, and through Jungles, destroying them if you let it!<br />
-&bull; There is a new biome, The Hallow, that will be created when the hell boss is defeated.<br />
-&bull; Removed obsolete lighting code, reducing both RAM usage and world save file sizes.<br />
-&bull; Added several small features to world gen.<br />
-&bull; Tweaked the way and amount of Underground Mushroom biome spawn.<br />
-&bull; Demon Torches now appear in shelters generated in the underworld.<br />
-&bull; Underground cabins may randomly spawn around chests.<br />
-&bull; Different styles of wall can now be placed next to one another without showing the background between them, allowing for more creative building.<br />
-&bull; When nearing the top of the world, the player will now leave the atmosphere and be less affected by gravity.<br />
-&bull; There are now three types of traps that are generated underground. Watch your step!<br />
-&bull; Cacti no longer damage players.<br />
-<br />
-Game Interface<br />
-<br />
-&bull; Items being held by the mouse will now be used by left clicking. This allows the player to place objects without putting them on the hotbar. Right clicking will now drop the item.<br />
-&bull; Placing objects on grass will now destroy the grass.<br />
-&bull; The crafting menu now scales to fit the size of the screen.<br />
-&bull; When the inventory is open, the number of the selected item in the hotbar will appear in green.<br />
-&bull; There is a new NPC housing interface that can be used to assign living areas to NPC's. This interface will also tell you if a room is missing any requirements.<br />
-<br />
-Misc<br />
-<br />
-&bull; There is a new music track for The Hallow biome.<br />
-&bull; Underground Corruption has its own music track.<br />
-&bull; Underground Hallow has its own music track.<br />
-&bull; There are two new boss music tracks.<br />
-&bull; Greatly reduced world save file sizes.<br />
-&bull; Decreased tile frame detection time by 15%.<br />
-&bull; Your trash can is now emptied when you die.<br />
-&bull; Added an auto select hotkey that will pick a tool from the player's inventory based on what their mouse is hovering over. This defaults to Left Shift.<br />
-&bull; All players will now leave behind tombstones when killed.<br />
-&bull; There is now a random option in the player creation menu.<br />
-&bull; Female players now have separate armor graphics.<br />
-&bull; Added a new mechanical system! Holding a mechanical item will display the wire grid to create interesting new devices.<br />
-&bull; There are new overworld backgrounds for each biome!<br />
-<br />
-Bug Fixes<br />
-<br />
-&bull; Fixed a bug that would cause the server to think a player is dead if he/she reaches 1 HP without dying.<br />
-&bull; Fixed a bug that wouldn't allow players to craft from the ammo slot.<br />
-&bull; Fixed a bug that would crash the game when player tried to draw water outside the bounds of the world.<br />
-&bull; Fixed a bug that would cause mana regen to ignore stat bonuses given by armor or accessories<br />
-&bull; Fixed a bug that would sometimes cause the game to crash when growing Underground Jungle grass.<br />
-&bull; Wooden Platforms no longer attach to non-solid objects.<br />
-&bull; Placing and removing items during the placing animation will no longer destroy the item when it is collected.<br />
-&bull; Fixed a bug that would cause graphical abnormalities when the lighting changes dramatically.<br />
-&bull; The FPS display (F10) shows the correct number.<br />
-&bull; Fixed a bug that swapped the lighting of players pants and head armor.<br />
-&bull; Fixed a problem that would cause water to settle in strange positions.<br />
-&bull; Fixed a problem that caused objects with transparency to appear darker than they should. <br />
-<br />
+&bull; Snow biomes will always be created during world gen during the holiday season. There is a 1 in 3 chance for snow biomes to be created during world gen during the rest of the year.<br />
 
             </div>            
         </div>
@@ -324,6 +263,7 @@ Bug Fixes<br />
 <li class='object' name='Bed'><a href='Bed.html'><img name="img/Bed.png" alt="Bed" width='20' height='20' class='ui-li-icon' />Bed</a></li>
 <li class='object' name='Bench'><a href='Bench.html'><img name="img/Bench.png" alt="Bench" width='20' height='20' class='ui-li-icon' />Bench</a></li>
 <li class='object' name='BirdStatue'><a href='BirdStatue.html'><img name="img/Bird_Statue.png" alt="Bird Statue" width='20' height='20' class='ui-li-icon' />Bird Statue</a></li>
+<li class='object' name='BlueLight'><a href='BlueLight.html'><img name="img/Blue_Light.png" alt="Blue Light" width='20' height='20' class='ui-li-icon' />Blue Light</a></li>
 <li class='object' name='BlueTorch'><a href='BlueTorch.html'><img name="img/Blue_Torch.png" alt="Blue Torch" width='20' height='20' class='ui-li-icon' />Blue Torch</a></li>
 <li class='object' name='BombStatue'><a href='BombStatue.html'><img name="img/Bomb_Statue.png" alt="Bomb Statue" width='20' height='20' class='ui-li-icon' />Bomb Statue</a></li>
 <li class='object' name='Book'><a href='Book.html'><img name="img/Book.png" alt="Book" width='20' height='20' class='ui-li-icon' />Book</a></li>
@@ -361,6 +301,7 @@ Bug Fixes<br />
 <li class='object' name='GoldChandelier'><a href='GoldChandelier.html'><img name="img/Gold_Chandelier.png" alt="Gold Chandelier" width='20' height='20' class='ui-li-icon' />Gold Chandelier</a></li>
 <li class='object' name='GoldChest'><a href='GoldChest.html'><img name="img/Gold_Chest.png" alt="Gold Chest" width='20' height='20' class='ui-li-icon' />Gold Chest</a></li>
 <li class='object' name='GrandfatherClock'><a href='GrandfatherClock.html'><img name="img/Grandfather_Clock.png" alt="Grandfather Clock" width='20' height='20' class='ui-li-icon' />Grandfather Clock</a></li>
+<li class='object' name='GreenLight'><a href='GreenLight.html'><img name="img/Green_Light.png" alt="Green Light" width='20' height='20' class='ui-li-icon' />Green Light</a></li>
 <li class='object' name='GreenTorch'><a href='GreenTorch.html'><img name="img/Green_Torch.png" alt="Green Torch" width='20' height='20' class='ui-li-icon' />Green Torch</a></li>
 <li class='object' name='HammerStatue'><a href='HammerStatue.html'><img name="img/Hammer_Statue.png" alt="Hammer Statue" width='20' height='20' class='ui-li-icon' />Hammer Statue</a></li>
 <li class='object' name='HeartStatue'><a href='HeartStatue.html'><img name="img/Heart_Statue.png" alt="Heart Statue" width='20' height='20' class='ui-li-icon' />Heart Statue</a></li>
@@ -390,6 +331,7 @@ Bug Fixes<br />
 <li class='object' name='PurpleTorch'><a href='PurpleTorch.html'><img name="img/Purple_Torch.png" alt="Purple Torch" width='20' height='20' class='ui-li-icon' />Purple Torch</a></li>
 <li class='object' name='QueenStatue'><a href='QueenStatue.html'><img name="img/Queen_Statue.png" alt="Queen Statue" width='20' height='20' class='ui-li-icon' />Queen Statue</a></li>
 <li class='object' name='ReaperStatue'><a href='ReaperStatue.html'><img name="img/Reaper_Statue.png" alt="Reaper Statue" width='20' height='20' class='ui-li-icon' />Reaper Statue</a></li>
+<li class='object' name='RedLight'><a href='RedLight.html'><img name="img/Red_Light.png" alt="Red Light" width='20' height='20' class='ui-li-icon' />Red Light</a></li>
 <li class='object' name='RedTorch'><a href='RedTorch.html'><img name="img/Red_Torch.png" alt="Red Torch" width='20' height='20' class='ui-li-icon' />Red Torch</a></li>
 <li class='object' name='Safe'><a href='Safe.html'><img name="img/Safe.png" alt="Safe" width='20' height='20' class='ui-li-icon' />Safe</a></li>
 <li class='object' name='Sawmill'><a href='Sawmill.html'><img name="img/Sawmill.png" alt="Sawmill" width='20' height='20' class='ui-li-icon' />Sawmill</a></li>
@@ -512,6 +454,7 @@ Bug Fixes<br />
 <li class='object' name='PixieDust'><a href='PixieDust.html'><img name="img/Pixie_Dust.png" alt="Pixie Dust" width='20' height='20' class='ui-li-icon' />Pixie Dust</a></li>
 <li class='object' name='Coins'><a href='Coins.html'><img name="img/Platinum_Coin.png" alt="Platinum Coin" width='20' height='20' class='ui-li-icon' />Platinum Coin</a></li>
 <li class='object' name='Pot'><a href='Pot.html'>Pot</a></li>
+<li class='object' name='Present'><a href='Present.html'>Present</a></li>
 <li class='object' name='RottenChunk'><a href='RottenChunk.html'><img name="img/Rotten_Chunk.png" alt="Rotten Chunk" width='20' height='20' class='ui-li-icon' />Rotten Chunk</a></li>
 <li class='object' name='Ruby'><a href='Ruby.html'><img name="img/Ruby.png" alt="Ruby" width='20' height='20' class='ui-li-icon' />Ruby</a></li>
 <li class='object' name='Sapphire'><a href='Sapphire.html'><img name="img/Sapphire.png" alt="Sapphire" width='20' height='20' class='ui-li-icon' />Sapphire</a></li>
@@ -524,6 +467,7 @@ Bug Fixes<br />
 <li class='object' name='SilverBullet'><a href='SilverBullet.html'><img name="img/Silver_Bullet.png" alt="Silver Bullet" width='20' height='20' class='ui-li-icon' />Silver Bullet</a></li>
 <li class='object' name='Coins'><a href='Coins.html'><img name="img/Silver_Coin.png" alt="Silver Coin" width='20' height='20' class='ui-li-icon' />Silver Coin</a></li>
 <li class='object' name='SlimeCrown'><a href='SlimeCrown.html'><img name="img/Slime_Crown.png" alt="Slime Crown" width='20' height='20' class='ui-li-icon' />Slime Crown</a></li>
+<li class='object' name='SnowGlobe'><a href='SnowGlobe.html'><img name="img/Snow_Globe.png" alt="Snow Globe" width='20' height='20' class='ui-li-icon' />Snow Globe</a></li>
 <li class='object' name='SoulofFlight'><a href='SoulofFlight.html'><img name="img/Soul_of_Flight.png" alt="Soul of Flight" width='20' height='20' class='ui-li-icon' />Soul of Flight</a></li>
 <li class='object' name='SoulofFright'><a href='SoulofFright.html'><img name="img/Soul_of_Fright.png" alt="Soul of Fright" width='20' height='20' class='ui-li-icon' />Soul of Fright</a></li>
 <li class='object' name='SoulofLight'><a href='SoulofLight.html'><img name="img/Soul_of_Light.png" alt="Soul of Light" width='20' height='20' class='ui-li-icon' />Soul of Light</a></li>
@@ -611,6 +555,8 @@ Bug Fixes<br />
 <li class='object' name='BlueBrick'><a href='BlueBrick.html'><img name="img/Blue_Brick.png" alt="Blue Brick" width='20' height='20' class='ui-li-icon' />Blue Brick</a></li>
 <li class='object' name='BlueBrickWall'><a href='BlueBrickWall.html'><img name="img/Blue_Brick_Wall.png" alt="Blue Brick Wall" width='20' height='20' class='ui-li-icon' />Blue Brick Wall</a></li>
 <li class='object' name='Boulder'><a href='Boulder.html'><img name="img/Boulder.png" alt="Boulder" width='20' height='20' class='ui-li-icon' />Boulder</a></li>
+<li class='object' name='CandyCaneBlock'><a href='CandyCaneBlock.html'><img name="img/Candy_Cane_Block.png" alt="Candy Cane Block" width='20' height='20' class='ui-li-icon' />Candy Cane Block</a></li>
+<li class='object' name='CandyCaneWall'><a href='CandyCaneWall.html'><img name="img/Candy_Cane_Wall.png" alt="Candy Cane Wall" width='20' height='20' class='ui-li-icon' />Candy Cane Wall</a></li>
 <li class='object' name='ClayBlock'><a href='ClayBlock.html'><img name="img/Clay_Block.png" alt="Clay Block" width='20' height='20' class='ui-li-icon' />Clay Block</a></li>
 <li class='object' name='CobaltBrick'><a href='CobaltBrick.html'><img name="img/Cobalt_Brick.png" alt="Cobalt Brick" width='20' height='20' class='ui-li-icon' />Cobalt Brick</a></li>
 <li class='object' name='CobaltBrickWall'><a href='CobaltBrickWall.html'><img name="img/Cobalt_Brick_Wall.png" alt="Cobalt Brick Wall" width='20' height='20' class='ui-li-icon' />Cobalt Brick Wall</a></li>
@@ -637,6 +583,8 @@ Bug Fixes<br />
 <li class='object' name='GrayBrickWall'><a href='GrayBrickWall.html'><img name="img/Gray_Brick_Wall.png" alt="Gray Brick Wall" width='20' height='20' class='ui-li-icon' />Gray Brick Wall</a></li>
 <li class='object' name='GreenBrick'><a href='GreenBrick.html'>Green Brick</a></li>
 <li class='object' name='GreenBrickWall'><a href='GreenBrickWall.html'><img name="img/Green_Brick_Wall.png" alt="Green Brick Wall" width='20' height='20' class='ui-li-icon' />Green Brick Wall</a></li>
+<li class='object' name='GreenCandyCaneBlock'><a href='GreenCandyCaneBlock.html'><img name="img/Green_Candy_Cane_Block.png" alt="Green Candy Cane Block" width='20' height='20' class='ui-li-icon' />Green Candy Cane Block</a></li>
+<li class='object' name='GreenCandyCaneWall'><a href='GreenCandyCaneWall.html'><img name="img/Green_Candy_Cane_Wall.png" alt="Green Candy Cane Wall" width='20' height='20' class='ui-li-icon' />Green Candy Cane Wall</a></li>
 <li class='object' name='Hellstone'><a href='Hellstone.html'><img name="img/Hellstone.png" alt="Hellstone" width='20' height='20' class='ui-li-icon' />Hellstone</a></li>
 <li class='object' name='HellstoneBrick'><a href='HellstoneBrick.html'><img name="img/Hellstone_Brick.png" alt="Hellstone Brick" width='20' height='20' class='ui-li-icon' />Hellstone Brick</a></li>
 <li class='object' name='InactiveStoneBlock'><a href='InactiveStoneBlock.html'><img name="img/Inactive_Stone_Block.png" alt="Inactive Stone Block" width='20' height='20' class='ui-li-icon' />Inactive Stone Block</a></li>
@@ -667,6 +615,9 @@ Bug Fixes<br />
 <li class='object' name='SilverBrick'><a href='SilverBrick.html'><img name="img/Silver_Brick.png" alt="Silver Brick" width='20' height='20' class='ui-li-icon' />Silver Brick</a></li>
 <li class='object' name='SilverBrickWall'><a href='SilverBrickWall.html'><img name="img/Silver_Brick_Wall.png" alt="Silver Brick Wall" width='20' height='20' class='ui-li-icon' />Silver Brick Wall</a></li>
 <li class='object' name='SilverOre'><a href='SilverOre.html'><img name="img/Silver_Ore.png" alt="Silver Ore" width='20' height='20' class='ui-li-icon' />Silver Ore</a></li>
+<li class='object' name='SnowBlock'><a href='SnowBlock.html'><img name="img/Snow_Block.png" alt="Snow Block" width='20' height='20' class='ui-li-icon' />Snow Block</a></li>
+<li class='object' name='SnowBrick'><a href='SnowBrick.html'><img name="img/Snow_Brick.png" alt="Snow Brick" width='20' height='20' class='ui-li-icon' />Snow Brick</a></li>
+<li class='object' name='SnowBrickWall'><a href='SnowBrickWall.html'><img name="img/Snow_Brick_Wall.png" alt="Snow Brick Wall" width='20' height='20' class='ui-li-icon' />Snow Brick Wall</a></li>
 <li class='object' name='Spike'><a href='Spike.html'><img name="img/Spike.png" alt="Spike" width='20' height='20' class='ui-li-icon' />Spike</a></li>
 <li class='object' name='StoneBlock'><a href='StoneBlock.html'><img name="img/Stone_Block.png" alt="Stone Block" width='20' height='20' class='ui-li-icon' />Stone Block</a></li>
 <li class='object' name='StoneWall'><a href='StoneWall.html'><img name="img/Stone_Wall.png" alt="Stone Wall" width='20' height='20' class='ui-li-icon' />Stone Wall</a></li>
@@ -703,7 +654,7 @@ Bug Fixes<br />
 <li class='object' name='IronArmor'><a href='IronArmor.html'><img name="img/Iron_armor.png" alt="Iron Armor" width='20' height='20' class='ui-li-icon' />Iron Armor</a></li>
 <li class='object' name='JungleArmor'><a href='JungleArmor.html'><img name="img/Jungle_armor.png" alt="Jungle Armor" width='20' height='20' class='ui-li-icon' />Jungle Armor</a></li>
 <li class='object' name='MeteorArmor'><a href='MeteorArmor.html'><img name="img/Meteor_armor.png" alt="Meteor Armor" width='20' height='20' class='ui-li-icon' />Meteor Armor</a></li>
-<li class='object' name='Miningarmor'><a href='Miningarmor.html'>Mining armor</a></li>
+<li class='object' name='Miningarmor'><a href='Miningarmor.html'><img name="img/Mining_armor.png" alt="Mining armor" width='20' height='20' class='ui-li-icon' />Mining armor</a></li>
 <li class='object' name='MiningHelmet'><a href='MiningHelmet.html'><img name="img/Mining_Helmet.png" alt="Mining Helmet" width='20' height='20' class='ui-li-icon' />Mining Helmet</a></li>
 <li class='object' name='MoltenArmor'><a href='MoltenArmor.html'><img name="img/Molten_armor.png" alt="Molten Armor" width='20' height='20' class='ui-li-icon' />Molten Armor</a></li>
 <li class='object' name='Mythrilarmor'><a href='Mythrilarmor.html'><img name="img/Mythril_armor.png" alt="Mythril armor" width='20' height='20' class='ui-li-icon' />Mythril armor</a></li>
@@ -732,6 +683,7 @@ Bug Fixes<br />
 <li class='object' name='RedHat'><a href='RedHat.html'><img name="img/Red_Hat.png" alt="Red Hat" width='20' height='20' class='ui-li-icon' />Red Hat</a></li>
 <li class='object' name='Robe'><a href='Robe.html'><img name="img/Robe.png" alt="Robe" width='20' height='20' class='ui-li-icon' />Robe</a></li>
 <li class='object' name='RobotHat'><a href='RobotHat.html'><img name="img/Robot_Hat.png" alt="Robot Hat" width='20' height='20' class='ui-li-icon' />Robot Hat</a></li>
+<li class='object' name='Santacostume'><a href='Santacostume.html'>Santa costume</a></li>
 <li class='object' name='SummerHat'><a href='SummerHat.html'><img name="img/Summer_Hat.png" alt="Summer Hat" width='20' height='20' class='ui-li-icon' />Summer Hat</a></li>
 <li class='object' name='Sunglasses'><a href='Sunglasses.html'><img name="img/Sunglasses.png" alt="Sunglasses" width='20' height='20' class='ui-li-icon' />Sunglasses</a></li>
 <li class='object' name='TheDoctorsClothes'><a href='TheDoctorsClothes.html'><img name="img/The_Doctor's_Clothes.png" alt="The Doctor's Clothes" width='20' height='20' class='ui-li-icon' />The Doctor's Clothes</a></li>
@@ -824,11 +776,6 @@ Bug Fixes<br />
 <li class='object' name='Gastropod'><a href='Gastropod.html'><img name="img/Gastropod.png" alt="Gastropod" width='20' height='20' class='ui-li-icon' />Gastropod</a></li>
 <li class='object' name='GiantBat'><a href='GiantBat.html'><img name="img/Giant_Bat.png" alt="Giant Bat" width='20' height='20' class='ui-li-icon' />Giant Bat</a></li>
 <li class='object' name='GiantWorm'><a href='GiantWorm.html'><img name="img/Giant_worm.png" alt="Giant Worm" width='20' height='20' class='ui-li-icon' />Giant Worm</a></li>
-<li class='object' name='GoblinPeon'><a href='GoblinPeon.html'><img name="img/Goblin_Peon.png" alt="Goblin Peon" width='20' height='20' class='ui-li-icon' />Goblin Peon</a></li>
-<li class='object' name='GoblinScout'><a href='GoblinScout.html'><img name="img/Goblin_Scout.png" alt="Goblin Scout" width='20' height='20' class='ui-li-icon' />Goblin Scout</a></li>
-<li class='object' name='GoblinSorcerer'><a href='GoblinSorcerer.html'><img name="img/Goblin_Sorcerer.png" alt="Goblin Sorcerer" width='20' height='20' class='ui-li-icon' />Goblin Sorcerer</a></li>
-<li class='object' name='GoblinThief'><a href='GoblinThief.html'><img name="img/Goblin_Thief.png" alt="Goblin Thief" width='20' height='20' class='ui-li-icon' />Goblin Thief</a></li>
-<li class='object' name='GoblinWarrior'><a href='GoblinWarrior.html'><img name="img/Goblin_Warrior.png" alt="Goblin Warrior" width='20' height='20' class='ui-li-icon' />Goblin Warrior</a></li>
 <li class='object' name='Goldfish'><a href='Goldfish.html'><img name="img/Goldfish.png" alt="Goldfish" width='20' height='20' class='ui-li-icon' />Goldfish</a></li>
 <li class='object' name='GreenJellyfish'><a href='GreenJellyfish.html'><img name="img/Green_Jellyfish.png" alt="Green Jellyfish" width='20' height='20' class='ui-li-icon' />Green Jellyfish</a></li>
 <li class='object' name='GreenSlime'><a href='GreenSlime.html'><img name="img/Green_slime.png" alt="Green Slime" width='20' height='20' class='ui-li-icon' />Green Slime</a></li>
@@ -883,10 +830,18 @@ Bug Fixes<br />
 <li class='object' name='DoctorBones'><a href='DoctorBones.html'><img name="img/Doctor_Bones.png" alt="Doctor Bones" width='20' height='20' class='ui-li-icon' />Doctor Bones</a></li>
 <li class='object' name='EnchantedSword'><a href='EnchantedSword.html'><img name="img/Enchanted_Sword.png" alt="Enchanted Sword" width='20' height='20' class='ui-li-icon' />Enchanted Sword</a></li>
 <li class='object' name='GoblinArcher'><a href='GoblinArcher.html'><img name="img/Goblin_Archer.png" alt="Goblin Archer" width='20' height='20' class='ui-li-icon' />Goblin Archer</a></li>
+<li class='object' name='GoblinPeon'><a href='GoblinPeon.html'><img name="img/Goblin_Peon.png" alt="Goblin Peon" width='20' height='20' class='ui-li-icon' />Goblin Peon</a></li>
+<li class='object' name='GoblinScout'><a href='GoblinScout.html'><img name="img/Goblin_Scout.png" alt="Goblin Scout" width='20' height='20' class='ui-li-icon' />Goblin Scout</a></li>
+<li class='object' name='GoblinSorcerer'><a href='GoblinSorcerer.html'><img name="img/Goblin_Sorcerer.png" alt="Goblin Sorcerer" width='20' height='20' class='ui-li-icon' />Goblin Sorcerer</a></li>
+<li class='object' name='GoblinThief'><a href='GoblinThief.html'><img name="img/Goblin_Thief.png" alt="Goblin Thief" width='20' height='20' class='ui-li-icon' />Goblin Thief</a></li>
+<li class='object' name='GoblinWarrior'><a href='GoblinWarrior.html'><img name="img/Goblin_Warrior.png" alt="Goblin Warrior" width='20' height='20' class='ui-li-icon' />Goblin Warrior</a></li>
+<li class='object' name='MisterStabby'><a href='MisterStabby.html'><img name="img/Mister_Stabby.png" alt="Mister Stabby" width='20' height='20' class='ui-li-icon' />Mister Stabby</a></li>
 <li class='object' name='Pinky'><a href='Pinky.html'><img name="img/Pinky.png" alt="Pinky" width='20' height='20' class='ui-li-icon' />Pinky</a></li>
+<li class='object' name='SnowBalla'><a href='SnowBalla.html'><img name="img/Snow_Balla.png" alt="Snow Balla" width='20' height='20' class='ui-li-icon' />Snow Balla</a></li>
+<li class='object' name='SnowmanGangsta'><a href='SnowmanGangsta.html'><img name="img/Snowman_Gangsta.png" alt="Snowman Gangsta" width='20' height='20' class='ui-li-icon' />Snowman Gangsta</a></li>
 <li class='object' name='TheGroom'><a href='TheGroom.html'><img name="img/The_Groom.png" alt="The Groom" width='20' height='20' class='ui-li-icon' />The Groom</a></li>
 <li class='object' name='Tim'><a href='Tim.html'><img name="img/Tim.png" alt="Tim" width='20' height='20' class='ui-li-icon' />Tim</a></li>
-<li class='object' name='UndeadMiner'><a href='UndeadMiner.html'>Undead Miner</a></li>
+<li class='object' name='UndeadMiner'><a href='UndeadMiner.html'><img name="img/Undead_Miner.png" alt="Undead Miner" width='20' height='20' class='ui-li-icon' />Undead Miner</a></li>
 <li class='object' name='Werewolf'><a href='Werewolf.html'><img name="img/Werewolf.png" alt="Werewolf" width='20' height='20' class='ui-li-icon' />Werewolf</a></li>
 </ul>
 </div>
@@ -949,6 +904,7 @@ Bug Fixes<br />
 <li class='object' name='Merchant'><a href='Merchant.html'><img name="img/Merchant.png" alt="Merchant" width='20' height='20' class='ui-li-icon' />Merchant</a></li>
 <li class='object' name='Nurse'><a href='Nurse.html'><img name="img/Nurse.png" alt="Nurse" width='20' height='20' class='ui-li-icon' />Nurse</a></li>
 <li class='object' name='OldMan'><a href='OldMan.html'><img name="img/Old_Man.png" alt="Old Man" width='20' height='20' class='ui-li-icon' />Old Man</a></li>
+<li class='object' name='SantaClaus'><a href='SantaClaus.html'><img name="img/Santa_Claus.png" alt="Santa Claus" width='20' height='20' class='ui-li-icon' />Santa Claus</a></li>
 <li class='object' name='Wizard'><a href='Wizard.html'><img name="img/Wizard.png" alt="Wizard" width='20' height='20' class='ui-li-icon' />Wizard</a></li>
 </ul>
 </div>

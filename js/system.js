@@ -2,12 +2,12 @@
 $(document).ready(function() {
     $.mobile.defaultPageTransition='none';
     $(document).bind('pagechange', function(event, data) {
-        console.log(data);
+        //console.log(data);
         var toPage=data.toPage;
-        console.log($(toPage));
-        console.log($(toPage).find('img'));
+        //console.log($(toPage));
+        //console.log($(toPage).find('img'));
         $(toPage).find('img').each(function() {   
-            console.log(this);
+            //console.log(this);
             var name=$(this).attr('name');
             if(!empty(name)) {
                 $(this).attr('src', name);
@@ -31,7 +31,7 @@ $(document).ready(function() {
             var n=cleanString($(this).attr('name'));
             //console.log({'n': n, 's': s});
             if(n.indexOf(s)!=-1) {
-                console.log(this);
+                //console.log(this);
                 f=true;
                 $('#searchResults').append(this);
             }
