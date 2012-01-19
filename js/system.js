@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    console.log('Ready event');
     $.mobile.defaultPageTransition='none';
     $(document).bind('pagechange', function(event, data) {
         //console.log(data);
@@ -7,7 +8,7 @@ $(document).ready(function() {
         //console.log($(toPage));
         //console.log($(toPage).find('img'));
         $(toPage).find('img').each(function() {   
-            //console.log(this);
+            console.log(this);
             var name=$(this).attr('name');
             if(!empty(name)) {
                 $(this).attr('src', name);
