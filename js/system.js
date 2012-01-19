@@ -1,19 +1,20 @@
 
 $(document).ready(function() {
-    console.log('Ready event');
+    //console.log('Ready event');
     $.mobile.defaultPageTransition='none';
     $(document).bind('pagechange', function(event, data) {
         //console.log(data);
         var toPage=data.toPage;
         //console.log($(toPage));
         //console.log($(toPage).find('img'));
-        $(toPage).find('img').each(function() {   
+        /*$(toPage).find('img').each(function() {   
             console.log(this);
             var name=$(this).attr('name');
             if(!empty(name)) {
                 $(this).attr('src', name);
             }
-        });
+        });*/
+        loadImages(toPage);
     });    
    document.addEventListener("menubutton", function() {
         location.href="index.html";
@@ -40,6 +41,7 @@ $(document).ready(function() {
         if(!f) {
             $('#searchResults').append('<li>No results found...</li>');
         }
+        loadImages('#searchResults');
         $('#searchResults').listview("refresh");
         $('#searchResults').show();
     });
@@ -64,4 +66,16 @@ cleanString=function(string) {
     string=string.replace("'",'');
     string=string.replace("`",'');
     return string;
+}
+
+loadImages=function(target) {
+    //console.log('Target: '+target);
+    $(target).find('img').each(function() {           
+        var name=$(this).attr('name');
+        //console.log('Name: '+name);
+        if(!empty(name)) {
+            $(this).attr('src', name);
+            //console.log('Src:'+$(this).attr('src'));
+        }
+    });
 }
