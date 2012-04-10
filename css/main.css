@@ -173,3 +173,8 @@ a {
     background-image:      -o-linear-gradient(#555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/); /* Opera 11.10+ */
     background-image:         linear-gradient(#555 /*{a-bup-background-start}*/, #333 /*{a-bup-background-end}*/);
 }
+
+.infobox {
+    width: 100%;
+    font-size: 95%;
+}
