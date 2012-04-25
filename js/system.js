@@ -51,7 +51,7 @@ $(document).ready(function() {
 document.addEventListener('deviceready', function () {
     alert('Device Ready');
     document.addEventListener('menubutton', function() {
-        location.href='index.html';
+        location.href='index.html#mainMenu';
     }, false);
     document.addEventListener('searchbutton', function() {
         location.href='index.html#search';
