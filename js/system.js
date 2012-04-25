@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
     //console.log('Ready event');
+    alert('DOM Ready');
     $.mobile.defaultPageTransition='none';
     $(document).bind('pagechange', function(event, data) {
         //console.log(data);
@@ -48,6 +49,7 @@ $(document).ready(function() {
 });
 
 document.addEvenListener('deviceready', function () {
+    alert('Device Ready');
     document.addEventListener('menubutton', function() {
         location.href='index.html';
     }, false);
