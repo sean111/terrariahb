@@ -48,7 +48,7 @@ $(document).ready(function() {
     });
 });
 
-document.addEvenListener('deviceready', function () {
+document.addEventListener('deviceready', function () {
     alert('Device Ready');
     document.addEventListener('menubutton', function() {
         location.href='index.html';
