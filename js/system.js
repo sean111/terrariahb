@@ -16,12 +16,12 @@ $(document).ready(function() {
         });*/
         loadImages(toPage);
     });    
-   document.addEventListener("menubutton", function() {
+   /*document.addEventListener("menubutton", function() {
         location.href="index.html";
     }, false);
     document.addEventListener("searchbutton", function() {
         location.href="index.html#search";        
-    }, false);    
+    }, false);*/
     $('#searchButton').bind('click', function() {
         //console.log('Searching...');
         $('#searchResults').empty();
@@ -46,6 +46,15 @@ $(document).ready(function() {
         $('#searchResults').show();
     });
 });
+
+document.addEvenListener('deviceready', function () {
+    document.addEventListener('menubutton', function() {
+        location.href='index.html';
+    }, false);
+    document.addEventListener('searchbutton', function() {
+        location.href='index.html#search';
+    }, false);
+}, false);
 
 $(window).bind('orientationchange', function() {
     if($(div).height()<window.innerHeight) {
