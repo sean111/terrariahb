@@ -1,24 +1,14 @@
-.infobox {
-    background-color: #fff;
-    border: 1px #AFCFE2 solid;
+table {
+    background-color: #F9F9F9;
+    border: 1px #aaa solid;
     margin: 0 auto;
+    width: 85%;
 }
 
-.craftbox {
-    background-color: #fff;
-    border: 1px #AFCFE2 solid;
-    margin: 0 auto;
-}
-
-.terraria {
-    background-color: #fff;
-    border: 1px #AFCFE2 solid;
-    margin: 0 auto;
-}
-
-.terraria th {
-    background-color: #E4F0F7;
-    color: #063B5E;
+th {
+    background-color: #CECECE;
+    color: #333;   
+    font-size: 16px;
 }
 
 body {
@@ -28,6 +18,24 @@ body {
 td {
     font-size: 14px;
 }
-th {
-    font-size: 16px;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto.woff') format('woff'),
+         url('fonts/Roboto.ttf') format('truetype'),
+         url('fonts/Roboto.svg#Roboto') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ui-link {
+    color: #333 !important;
+}
+
+body * {
+    font-family: 'Roboto', Arial, sans-serif !important;
+}
+
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
+    font-family: 'Roboto', Arial, sans-serif !important;
 }
