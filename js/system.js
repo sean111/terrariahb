@@ -8,7 +8,7 @@ $(document).ready(function() {
         var toPage=data.toPage;
         //console.log($(toPage));
         //console.log($(toPage).find('img'));
-        /*$(toPage).find('img').each(function() {   
+        /*$(toPage).find('img').each(function() {
             console.log(this);
             var name=$(this).attr('name');
             if(!empty(name)) {
@@ -16,12 +16,12 @@ $(document).ready(function() {
             }
         });*/
         loadImages(toPage);
-    });    
+    });
    /*document.addEventListener("menubutton", function() {
         location.href="index.html";
     }, false);
     document.addEventListener("searchbutton", function() {
-        location.href="index.html#search";        
+        location.href="index.html#search";
     }, false);*/
     $('#searchButton').bind('click', function() {
         //console.log('Searching...');
@@ -81,7 +81,7 @@ cleanString=function(string) {
 
 loadImages=function(target) {
     //console.log('Target: '+target);
-    $(target).find('img').each(function() {           
+    $(target).find('img').each(function() {
         var name=$(this).attr('name');
         //console.log('Name: '+name);
         if(!empty(name)) {
