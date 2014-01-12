@@ -83,10 +83,10 @@ loadImages=function(target) {
     //console.log('Target: '+target);
     $(target).find('img').each(function() {
         var name=$(this).attr('name');
-        //console.log('Name: '+name);
+        console.log('Name: '+name);
         if(!empty(name)) {
             $(this).attr('src', name);
-            //console.log('Src:'+$(this).attr('src'));
+            console.log('Src:'+$(this).attr('src'));
         }
     });
 }
