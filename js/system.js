@@ -1,4 +1,4 @@
-
+setIntegerProperty("loadUrlTimeoutValue", 30000);
 $(document).ready(function() {
     //console.log('Ready event');
     //alert('DOM Ready');
